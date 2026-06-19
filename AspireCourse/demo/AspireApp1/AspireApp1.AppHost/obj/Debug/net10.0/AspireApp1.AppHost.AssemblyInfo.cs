@@ -11,19 +11,21 @@ using System;
 using System.Reflection;
 
 [assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("fc19d9f7-54cd-4d14-8b19-fb5662124efa")]
-[assembly: System.Reflection.AssemblyMetadata("dcpclipath", ("C:\\Users\\User\\.nuget\\packages\\aspire.hosting.orchestration.win-x64\\13.4.4\\tools\\d" +
+[assembly: System.Reflection.AssemblyMetadata("dcpclipath", ("C:\\Users\\User\\.nuget\\packages\\aspire.hosting.orchestration.win-x64\\13.4.5\\tools\\d" +
     "cp.exe"))]
-[assembly: System.Reflection.AssemblyMetadata("dcpextensionpaths", ("C:\\Users\\User\\.nuget\\packages\\aspire.hosting.orchestration.win-x64\\13.4.4\\tools\\e" +
+[assembly: System.Reflection.AssemblyMetadata("dcpextensionpaths", ("C:\\Users\\User\\.nuget\\packages\\aspire.hosting.orchestration.win-x64\\13.4.5\\tools\\e" +
     "xt\\"))]
-[assembly: System.Reflection.AssemblyMetadata("apphostprojectpath", "C:\\Users\\User\\Projects\\AspireCourse\\demo\\AspireApp1\\AspireApp1.AppHost")]
+[assembly: System.Reflection.AssemblyMetadata("apphostprojectpath", ("C:\\Users\\User\\Documents\\GitHub\\Overflow\\AspireCourse\\demo\\AspireApp1\\AspireApp1.A" +
+    "ppHost"))]
 [assembly: System.Reflection.AssemblyMetadata("apphostprojectname", "AspireApp1.AppHost.csproj")]
-[assembly: System.Reflection.AssemblyMetadata("aspiredashboardpath", ("C:\\Users\\User\\.nuget\\packages\\aspire.dashboard.sdk.win-x64\\13.4.4\\tools\\Aspire.Da" +
+[assembly: System.Reflection.AssemblyMetadata("aspiredashboardpath", ("C:\\Users\\User\\.nuget\\packages\\aspire.dashboard.sdk.win-x64\\13.4.5\\tools\\Aspire.Da" +
     "shboard.exe"))]
-[assembly: System.Reflection.AssemblyMetadataAttribute("apphostprojectbaseintermediateoutputpath", "C:\\Users\\User\\Projects\\AspireCourse\\demo\\AspireApp1\\AspireApp1.AppHost\\obj\\")]
+[assembly: System.Reflection.AssemblyMetadataAttribute("apphostprojectbaseintermediateoutputpath", ("C:\\Users\\User\\Documents\\GitHub\\Overflow\\AspireCourse\\demo\\AspireApp1\\AspireApp1.A" +
+    "ppHost\\obj\\"))]
 [assembly: System.Reflection.AssemblyCompanyAttribute("AspireApp1.AppHost")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+01707158ac2272543cf29e98a98973273bc89789")]
 [assembly: System.Reflection.AssemblyProductAttribute("AspireApp1.AppHost")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AspireApp1.AppHost")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

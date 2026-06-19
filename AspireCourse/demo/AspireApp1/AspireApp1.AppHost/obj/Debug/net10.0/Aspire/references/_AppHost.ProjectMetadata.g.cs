@@ -17,5 +17,5 @@ public class AspireApp1_AppHost
     /// <summary>
     /// The path to the Aspire Host project.
     /// </summary>
-    public static string ProjectPath => """C:\Users\User\Projects\AspireCourse\demo\AspireApp1\AspireApp1.AppHost""";
+    public static string ProjectPath => """C:\Users\User\Documents\GitHub\Overflow\AspireCourse\demo\AspireApp1\AspireApp1.AppHost""";
 }

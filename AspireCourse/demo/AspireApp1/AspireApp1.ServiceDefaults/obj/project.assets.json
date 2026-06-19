@@ -2,6 +2,19 @@
   "version": 3,
   "targets": {
     "net10.0": {
+      "Microsoft.AspNetCore.Authorization/10.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net10.0/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/_._": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Extensions.AmbientMetadata.Application/10.6.0": {
         "type": "package",
         "compile": {
@@ -370,6 +383,25 @@
     }
   },
   "libraries": {
+    "Microsoft.AspNetCore.Authorization/10.0.3": {
+      "sha512": "pqm2ivtD2bj5f+4KnrGmJsD/iDZkMnJnK/uW/p1bpqKCR316TyWqyhhS5znLGw7QpX2fAWhXU+uQo1Cb89bedA==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.authorization/10.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net10.0/Microsoft.AspNetCore.Authorization.dll",
+        "lib/net10.0/Microsoft.AspNetCore.Authorization.xml",
+        "lib/net462/Microsoft.AspNetCore.Authorization.dll",
+        "lib/net462/Microsoft.AspNetCore.Authorization.xml",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Authorization.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Authorization.xml",
+        "microsoft.aspnetcore.authorization.10.0.3.nupkg.sha512",
+        "microsoft.aspnetcore.authorization.nuspec"
+      ]
+    },
     "Microsoft.Extensions.AmbientMetadata.Application/10.6.0": {
       "sha512": "MPAI1c5QqkDgEyEvsSj7KPPWHlTCqvXxtfp7JISul4P54GfDkSs+S7Vyq7tmS7MzpEjuH/6xrsFlUqAPlLyTUA==",
       "type": "package",
@@ -950,6 +982,7 @@
   },
   "projectFileDependencyGroups": {
     "net10.0": [
+      "Microsoft.AspNetCore.Authorization >= 10.0.3",
       "Microsoft.Extensions.Http.Resilience >= 10.6.0",
       "Microsoft.Extensions.ServiceDiscovery >= 10.6.0",
       "OpenTelemetry.Exporter.OpenTelemetryProtocol >= 1.15.3",
@@ -965,13 +998,14 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Projects\\AspireCourse\\demo\\AspireApp1\\AspireApp1.ServiceDefaults\\AspireApp1.ServiceDefaults.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Documents\\GitHub\\Overflow\\AspireCourse\\demo\\AspireApp1\\AspireApp1.ServiceDefaults\\AspireApp1.ServiceDefaults.csproj",
       "projectName": "AspireApp1.ServiceDefaults",
-      "projectPath": "C:\\Users\\User\\Projects\\AspireCourse\\demo\\AspireApp1\\AspireApp1.ServiceDefaults\\AspireApp1.ServiceDefaults.csproj",
+      "projectPath": "C:\\Users\\User\\Documents\\GitHub\\Overflow\\AspireCourse\\demo\\AspireApp1\\AspireApp1.ServiceDefaults\\AspireApp1.ServiceDefaults.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Projects\\AspireCourse\\demo\\AspireApp1\\AspireApp1.ServiceDefaults\\obj\\",
+      "outputPath": "C:\\Users\\User\\Documents\\GitHub\\Overflow\\AspireCourse\\demo\\AspireApp1\\AspireApp1.ServiceDefaults\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
+        "C:\\Users\\User\\Documents\\GitHub\\Overflow\\AspireCourse\\demo\\AspireApp1\\NuGet.Config",
         "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
@@ -1002,6 +1036,10 @@
       "net10.0": {
         "targetAlias": "net10.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Authorization": {
+            "target": "Package",
+            "version": "[10.0.3, )"
+          },
           "Microsoft.Extensions.Http.Resilience": {
             "target": "Package",
             "version": "[10.6.0, )"
@@ -1467,5 +1505,17 @@
         }
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1510",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "PackageReference Microsoft.AspNetCore.Authorization will not be pruned. Consider removing this package from your dependencies, as it is likely unnecessary.",
+      "libraryId": "Microsoft.AspNetCore.Authorization",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    }
+  ]
 }

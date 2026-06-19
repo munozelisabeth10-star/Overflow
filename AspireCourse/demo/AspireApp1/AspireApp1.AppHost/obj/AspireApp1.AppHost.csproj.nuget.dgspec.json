@@ -1,19 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Projects\\AspireCourse\\demo\\AspireApp1\\AspireApp1.AppHost\\AspireApp1.AppHost.csproj": {}
+    "C:\\Users\\User\\Documents\\GitHub\\Overflow\\AspireCourse\\demo\\AspireApp1\\AspireApp1.AppHost\\AspireApp1.AppHost.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Projects\\AspireCourse\\demo\\AspireApp1\\AspireApp1.AppHost\\AspireApp1.AppHost.csproj": {
+    "C:\\Users\\User\\Documents\\GitHub\\Overflow\\AspireCourse\\demo\\AspireApp1\\AspireApp1.AppHost\\AspireApp1.AppHost.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Projects\\AspireCourse\\demo\\AspireApp1\\AspireApp1.AppHost\\AspireApp1.AppHost.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Documents\\GitHub\\Overflow\\AspireCourse\\demo\\AspireApp1\\AspireApp1.AppHost\\AspireApp1.AppHost.csproj",
         "projectName": "AspireApp1.AppHost",
-        "projectPath": "C:\\Users\\User\\Projects\\AspireCourse\\demo\\AspireApp1\\AspireApp1.AppHost\\AspireApp1.AppHost.csproj",
+        "projectPath": "C:\\Users\\User\\Documents\\GitHub\\Overflow\\AspireCourse\\demo\\AspireApp1\\AspireApp1.AppHost\\AspireApp1.AppHost.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Projects\\AspireCourse\\demo\\AspireApp1\\AspireApp1.AppHost\\obj\\",
+        "outputPath": "C:\\Users\\User\\Documents\\GitHub\\Overflow\\AspireCourse\\demo\\AspireApp1\\AspireApp1.AppHost\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
+          "C:\\Users\\User\\Documents\\GitHub\\Overflow\\AspireCourse\\demo\\AspireApp1\\NuGet.Config",
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
@@ -46,22 +47,30 @@
           "dependencies": {
             "Aspire.Dashboard.Sdk.win-x64": {
               "target": "Package",
-              "version": "[13.4.4, )",
+              "version": "[13.4.5, )",
               "autoReferenced": true
             },
             "Aspire.Hosting.AppHost": {
               "target": "Package",
-              "version": "[13.4.4, )",
+              "version": "[13.4.5, )",
               "autoReferenced": true
             },
             "Aspire.Hosting.Keycloak": {
               "target": "Package",
-              "version": "[13.4.4-preview.1.26314.3, )"
+              "version": "[13.4.5-preview.1.26316.12, )"
             },
             "Aspire.Hosting.Orchestration.win-x64": {
               "target": "Package",
-              "version": "[13.4.4, )",
+              "version": "[13.4.5, )",
               "autoReferenced": true
+            },
+            "Aspire.Hosting.PostgreSQL": {
+              "target": "Package",
+              "version": "[13.4.5, )"
+            },
+            "Microsoft.AspNetCore.Authorization": {
+              "target": "Package",
+              "version": "[10.0.3, )"
             }
           },
           "imports": [
