@@ -9,7 +9,7 @@ public class Question
    [MaxLength(300)]
    public required string Title { get; set; } 
    [MaxLength(5000)]
-   public required string Coontents { get; set; }
+   public required string Content { get; set; }
    [MaxLength(36)]
    public required string AskerId { get; set; } 
    [MaxLength(300)]
