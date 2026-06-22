@@ -13,7 +13,7 @@ using QuestionService.Data;
 namespace QuestionService.Data.Migrations
 {
     [DbContext(typeof(QuestionDbContext))]
-    [Migration("20260619111111_Initial")]
+    [Migration("20260622101002_Initial")]
     partial class Initial
     {
         /// <inheritdoc />
@@ -62,7 +62,7 @@ namespace QuestionService.Data.Migrations
                         .HasMaxLength(300)
                         .HasColumnType("character varying(300)");
 
-                    b.Property<DateTime?>("UpdateAt")
+                    b.Property<DateTime?>("UpdatedAt")
                         .HasColumnType("timestamp with time zone");
 
                     b.Property<int>("ViewCount")

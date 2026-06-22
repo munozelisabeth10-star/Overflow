@@ -24,7 +24,7 @@ namespace QuestionService.Data.Migrations
                     AskerId = table.Column<string>(type: "character varying(36)", maxLength: 36, nullable: false),
                     AskerDisplayName = table.Column<string>(type: "character varying(300)", maxLength: 300, nullable: false),
                     CreatedAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
-                    UpdateAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: true),
+                    UpdatedAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: true),
                     ViewCount = table.Column<int>(type: "integer", nullable: false),
                     TagSlugs = table.Column<List<string>>(type: "text[]", nullable: false),
                     HasAcceptedAnswer = table.Column<bool>(type: "boolean", nullable: false),

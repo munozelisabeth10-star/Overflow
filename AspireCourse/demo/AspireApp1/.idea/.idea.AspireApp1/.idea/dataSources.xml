@@ -11,13 +11,23 @@
       </jdbc-additional-properties>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
-    <data-source source="LOCAL" name="postgres" uuid="429c8b90-d911-41e2-badc-8775a0d4e13e">
+    <data-source source="LOCAL" name="postgres" uuid="e3a38967-6154-49bf-86e3-c5279ebb0cf7">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://localhost:58948/?password=sTD%21%2Bu4gMbZ%7EHG267Paw%7E8&amp;user=postgres</jdbc-url>
+      <jdbc-url>jdbc:postgresql://localhost:53619/?password=sTD%21%2Bu4gMbZ%7EHG267Paw%7E8&amp;user=postgres</jdbc-url>
       <jdbc-additional-properties>
-        <property name="aspireResourceId" value="postgres-rvxxgpgf" />
+        <property name="aspireResourceId" value="postgres-uzhmtqsp" />
+      </jdbc-additional-properties>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+    <data-source source="LOCAL" name="postgres" uuid="aec9a76e-6af6-41f8-b3f2-ba9a0ebb877c">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:60156/?password=sTD%21%2Bu4gMbZ%7EHG267Paw%7E8&amp;user=postgres</jdbc-url>
+      <jdbc-additional-properties>
+        <property name="aspireResourceId" value="postgres-wmqsadma" />
       </jdbc-additional-properties>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
