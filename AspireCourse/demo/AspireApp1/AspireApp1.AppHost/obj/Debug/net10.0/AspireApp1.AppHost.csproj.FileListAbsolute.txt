@@ -218,3 +218,8 @@ C:\Users\User\Documents\GitHub\Overflow\AspireCourse\demo\AspireApp1\AspireApp1.
 C:\Users\User\Documents\GitHub\Overflow\AspireCourse\demo\AspireApp1\AspireApp1.AppHost\bin\Debug\net10.0\Aspire.Hosting.PostgreSQL.dll
 C:\Users\User\Documents\GitHub\Overflow\AspireCourse\demo\AspireApp1\AspireApp1.AppHost\bin\Debug\net10.0\HealthChecks.NpgSql.dll
 C:\Users\User\Documents\GitHub\Overflow\AspireCourse\demo\AspireApp1\AspireApp1.AppHost\bin\Debug\net10.0\Npgsql.dll
+C:\Users\User\Documents\GitHub\Overflow\AspireCourse\demo\AspireApp1\AspireApp1.AppHost\obj\Debug\net10.0\Aspire\references\SearchService.ProjectMetadata.g.cs
+C:\Users\User\Documents\GitHub\Overflow\AspireCourse\demo\AspireApp1\AspireApp1.AppHost\bin\Debug\net10.0\Aspire.Hosting.RabbitMQ.dll
+C:\Users\User\Documents\GitHub\Overflow\AspireCourse\demo\AspireApp1\AspireApp1.AppHost\bin\Debug\net10.0\HealthChecks.Rabbitmq.dll
+C:\Users\User\Documents\GitHub\Overflow\AspireCourse\demo\AspireApp1\AspireApp1.AppHost\bin\Debug\net10.0\RabbitMQ.Client.dll
+C:\Users\User\Documents\GitHub\Overflow\AspireCourse\demo\AspireApp1\AspireApp1.AppHost\bin\Debug\net10.0\OpenTelemetry.Instrumentation.AspNetCore.dll
