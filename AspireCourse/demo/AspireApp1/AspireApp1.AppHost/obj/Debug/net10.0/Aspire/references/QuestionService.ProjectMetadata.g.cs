@@ -15,7 +15,7 @@ public class QuestionService : global::Aspire.Hosting.IProjectMetadata
     /// <summary>
     /// The path to the QuestionService project.
     /// </summary>
-    public string ProjectPath => """C:\Users\User\Documents\GitHub\Overflow\AspireCourse\demo\AspireApp1\QuestionService\QuestionService.csproj""";
+    public string ProjectPath => """C:\Users\munoz\RiderProjects\Overflow\AspireCourse\demo\AspireApp1\QuestionService\QuestionService.csproj""";
 
     /// <summary>
     /// Gets a value indicating whether building the project before running it should be suppressed.

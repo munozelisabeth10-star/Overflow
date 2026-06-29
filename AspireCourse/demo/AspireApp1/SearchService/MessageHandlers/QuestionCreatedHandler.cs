@@ -5,7 +5,7 @@ using Typesense;
 
 namespace SearchService.MessageHandlers;
 
-public class QuestionMessageHandler(ITypesenseClient client)
+public class QuestionCreatedHandler(ITypesenseClient client)
 {
     public async Task HandleAsync(QuestionCreated message)
     {

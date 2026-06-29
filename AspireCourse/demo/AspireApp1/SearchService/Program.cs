@@ -14,6 +14,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddOpenApi();
 builder.AddServiceDefaults();
 
+
 builder.Services.AddOpenTelemetry().WithTracing(traceProvideBuilder =>
 {
     traceProvideBuilder.SetResourceBuilder(ResourceBuilder.CreateDefault()
@@ -55,7 +56,6 @@ if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
 }
-
 app.MapDefaultEndpoints();
 
 app.MapGet("/search", async (string query, ITypesenseClient client) =>
@@ -88,10 +88,24 @@ app.MapGet("/search", async (string query, ITypesenseClient client) =>
 });
 
 //mau
+app.MapGet("/search/similar-titles", async (string query, ITypesenseClient client) =>
+{
+    var searchParams = new SearchParameters(query, "title");
+
+    try
+    {
+        var result = await client.Search<SearchQuestion>("questions", searchParams);
+        return Results.Ok(result.Hits.Select(hit => hit.Document));
+    }
+    catch (Exception e)
+    {
+        return Results.Problem("Typesense search failed", e.Message);
+    }
+});
+
 using var scope = app.Services.CreateScope();
 var client = scope.ServiceProvider.GetRequiredService<ITypesenseClient>();
 await SearchInitializer.EnsureIndexExists(client);
-
 
 app.Run();
 

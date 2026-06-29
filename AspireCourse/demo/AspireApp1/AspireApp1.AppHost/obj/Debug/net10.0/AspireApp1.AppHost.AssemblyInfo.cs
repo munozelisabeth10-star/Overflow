@@ -11,21 +11,21 @@ using System;
 using System.Reflection;
 
 [assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("fc19d9f7-54cd-4d14-8b19-fb5662124efa")]
-[assembly: System.Reflection.AssemblyMetadata("dcpclipath", ("C:\\Users\\User\\.nuget\\packages\\aspire.hosting.orchestration.win-x64\\13.4.5\\tools\\d" +
-    "cp.exe"))]
-[assembly: System.Reflection.AssemblyMetadata("dcpextensionpaths", ("C:\\Users\\User\\.nuget\\packages\\aspire.hosting.orchestration.win-x64\\13.4.5\\tools\\e" +
-    "xt\\"))]
-[assembly: System.Reflection.AssemblyMetadata("apphostprojectpath", ("C:\\Users\\User\\Documents\\GitHub\\Overflow\\AspireCourse\\demo\\AspireApp1\\AspireApp1.A" +
-    "ppHost"))]
+[assembly: System.Reflection.AssemblyMetadata("dcpclipath", ("C:\\Users\\munoz\\.nuget\\packages\\aspire.hosting.orchestration.win-x64\\13.4.5\\tools\\" +
+    "dcp.exe"))]
+[assembly: System.Reflection.AssemblyMetadata("dcpextensionpaths", ("C:\\Users\\munoz\\.nuget\\packages\\aspire.hosting.orchestration.win-x64\\13.4.5\\tools\\" +
+    "ext\\"))]
+[assembly: System.Reflection.AssemblyMetadata("apphostprojectpath", ("C:\\Users\\munoz\\RiderProjects\\Overflow\\AspireCourse\\demo\\AspireApp1\\AspireApp1.App" +
+    "Host"))]
 [assembly: System.Reflection.AssemblyMetadata("apphostprojectname", "AspireApp1.AppHost.csproj")]
-[assembly: System.Reflection.AssemblyMetadata("aspiredashboardpath", ("C:\\Users\\User\\.nuget\\packages\\aspire.dashboard.sdk.win-x64\\13.4.5\\tools\\Aspire.Da" +
-    "shboard.exe"))]
-[assembly: System.Reflection.AssemblyMetadataAttribute("apphostprojectbaseintermediateoutputpath", ("C:\\Users\\User\\Documents\\GitHub\\Overflow\\AspireCourse\\demo\\AspireApp1\\AspireApp1.A" +
-    "ppHost\\obj\\"))]
+[assembly: System.Reflection.AssemblyMetadata("aspiredashboardpath", ("C:\\Users\\munoz\\.nuget\\packages\\aspire.dashboard.sdk.win-x64\\13.4.5\\tools\\Aspire.D" +
+    "ashboard.exe"))]
+[assembly: System.Reflection.AssemblyMetadataAttribute("apphostprojectbaseintermediateoutputpath", ("C:\\Users\\munoz\\RiderProjects\\Overflow\\AspireCourse\\demo\\AspireApp1\\AspireApp1.App" +
+    "Host\\obj\\"))]
 [assembly: System.Reflection.AssemblyCompanyAttribute("AspireApp1.AppHost")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dbfe94af9227fa983c945bc8e30df4e736c54b01")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b93041cc910d8b3ad7e8d44ff4ef8c43342e50a7")]
 [assembly: System.Reflection.AssemblyProductAttribute("AspireApp1.AppHost")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AspireApp1.AppHost")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

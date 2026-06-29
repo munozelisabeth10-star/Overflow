@@ -4812,20 +4812,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\User\\.nuget\\packages\\": {}
+    "C:\\Users\\munoz\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Documents\\GitHub\\Overflow\\AspireCourse\\demo\\AspireApp1\\QuestionService\\QuestionService.csproj",
+      "projectUniqueName": "C:\\Users\\munoz\\RiderProjects\\Overflow\\AspireCourse\\demo\\AspireApp1\\QuestionService\\QuestionService.csproj",
       "projectName": "QuestionService",
-      "projectPath": "C:\\Users\\User\\Documents\\GitHub\\Overflow\\AspireCourse\\demo\\AspireApp1\\QuestionService\\QuestionService.csproj",
-      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Documents\\GitHub\\Overflow\\AspireCourse\\demo\\AspireApp1\\QuestionService\\obj\\",
+      "projectPath": "C:\\Users\\munoz\\RiderProjects\\Overflow\\AspireCourse\\demo\\AspireApp1\\QuestionService\\QuestionService.csproj",
+      "packagesPath": "C:\\Users\\munoz\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\munoz\\RiderProjects\\Overflow\\AspireCourse\\demo\\AspireApp1\\QuestionService\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\User\\Documents\\GitHub\\Overflow\\AspireCourse\\demo\\AspireApp1\\NuGet.Config",
-        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\munoz\\RiderProjects\\Overflow\\AspireCourse\\demo\\AspireApp1\\NuGet.Config",
+        "C:\\Users\\munoz\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net10.0"
@@ -4837,11 +4837,11 @@
         "net10.0": {
           "targetAlias": "net10.0",
           "projectReferences": {
-            "C:\\Users\\User\\Documents\\GitHub\\Overflow\\AspireCourse\\demo\\AspireApp1\\AspireApp1.ServiceDefaults\\AspireApp1.ServiceDefaults.csproj": {
-              "projectPath": "C:\\Users\\User\\Documents\\GitHub\\Overflow\\AspireCourse\\demo\\AspireApp1\\AspireApp1.ServiceDefaults\\AspireApp1.ServiceDefaults.csproj"
+            "C:\\Users\\munoz\\RiderProjects\\Overflow\\AspireCourse\\demo\\AspireApp1\\AspireApp1.ServiceDefaults\\AspireApp1.ServiceDefaults.csproj": {
+              "projectPath": "C:\\Users\\munoz\\RiderProjects\\Overflow\\AspireCourse\\demo\\AspireApp1\\AspireApp1.ServiceDefaults\\AspireApp1.ServiceDefaults.csproj"
             },
-            "C:\\Users\\User\\Documents\\GitHub\\Overflow\\AspireCourse\\demo\\AspireApp1\\Contracts\\Contracts.csproj": {
-              "projectPath": "C:\\Users\\User\\Documents\\GitHub\\Overflow\\AspireCourse\\demo\\AspireApp1\\Contracts\\Contracts.csproj"
+            "C:\\Users\\munoz\\RiderProjects\\Overflow\\AspireCourse\\demo\\AspireApp1\\Contracts\\Contracts.csproj": {
+              "projectPath": "C:\\Users\\munoz\\RiderProjects\\Overflow\\AspireCourse\\demo\\AspireApp1\\Contracts\\Contracts.csproj"
             }
           }
         }
