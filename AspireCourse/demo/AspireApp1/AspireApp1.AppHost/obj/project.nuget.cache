@@ -1,16 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "1RJLCDTet7g=",
+  "dgSpecHash": "mDQlQS5r/bQ=",
   "success": true,
   "projectFilePath": "C:\\Users\\munoz\\RiderProjects\\Overflow\\AspireCourse\\demo\\AspireApp1\\AspireApp1.AppHost\\AspireApp1.AppHost.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\munoz\\.nuget\\packages\\aspire.dashboard.sdk.win-x64\\13.4.5\\aspire.dashboard.sdk.win-x64.13.4.5.nupkg.sha512",
+    "C:\\Users\\munoz\\.nuget\\packages\\aspire.dashboard.sdk.win-x64\\13.4.6\\aspire.dashboard.sdk.win-x64.13.4.6.nupkg.sha512",
     "C:\\Users\\munoz\\.nuget\\packages\\aspire.hosting\\13.4.6\\aspire.hosting.13.4.6.nupkg.sha512",
-    "C:\\Users\\munoz\\.nuget\\packages\\aspire.hosting.apphost\\13.4.5\\aspire.hosting.apphost.13.4.5.nupkg.sha512",
-    "C:\\Users\\munoz\\.nuget\\packages\\aspire.hosting.keycloak\\13.4.5-preview.1.26316.12\\aspire.hosting.keycloak.13.4.5-preview.1.26316.12.nupkg.sha512",
-    "C:\\Users\\munoz\\.nuget\\packages\\aspire.hosting.orchestration.win-x64\\13.4.5\\aspire.hosting.orchestration.win-x64.13.4.5.nupkg.sha512",
-    "C:\\Users\\munoz\\.nuget\\packages\\aspire.hosting.postgresql\\13.4.5\\aspire.hosting.postgresql.13.4.5.nupkg.sha512",
+    "C:\\Users\\munoz\\.nuget\\packages\\aspire.hosting.apphost\\13.4.6\\aspire.hosting.apphost.13.4.6.nupkg.sha512",
+    "C:\\Users\\munoz\\.nuget\\packages\\aspire.hosting.docker\\13.4.6\\aspire.hosting.docker.13.4.6.nupkg.sha512",
+    "C:\\Users\\munoz\\.nuget\\packages\\aspire.hosting.keycloak\\13.4.6-preview.1.26319.6\\aspire.hosting.keycloak.13.4.6-preview.1.26319.6.nupkg.sha512",
+    "C:\\Users\\munoz\\.nuget\\packages\\aspire.hosting.orchestration.win-x64\\13.4.6\\aspire.hosting.orchestration.win-x64.13.4.6.nupkg.sha512",
+    "C:\\Users\\munoz\\.nuget\\packages\\aspire.hosting.postgresql\\13.4.6\\aspire.hosting.postgresql.13.4.6.nupkg.sha512",
     "C:\\Users\\munoz\\.nuget\\packages\\aspire.hosting.rabbitmq\\13.4.6\\aspire.hosting.rabbitmq.13.4.6.nupkg.sha512",
+    "C:\\Users\\munoz\\.nuget\\packages\\aspire.hosting.yarp\\13.4.6\\aspire.hosting.yarp.13.4.6.nupkg.sha512",
     "C:\\Users\\munoz\\.nuget\\packages\\aspnetcore.healthchecks.npgsql\\9.0.0\\aspnetcore.healthchecks.npgsql.9.0.0.nupkg.sha512",
     "C:\\Users\\munoz\\.nuget\\packages\\aspnetcore.healthchecks.rabbitmq\\9.0.0\\aspnetcore.healthchecks.rabbitmq.9.0.0.nupkg.sha512",
     "C:\\Users\\munoz\\.nuget\\packages\\aspnetcore.healthchecks.uris\\9.0.0\\aspnetcore.healthchecks.uris.9.0.0.nupkg.sha512",
@@ -86,7 +88,8 @@
     "C:\\Users\\munoz\\.nuget\\packages\\system.diagnostics.eventlog\\10.0.8\\system.diagnostics.eventlog.10.0.8.nupkg.sha512",
     "C:\\Users\\munoz\\.nuget\\packages\\system.io.hashing\\10.0.8\\system.io.hashing.10.0.8.nupkg.sha512",
     "C:\\Users\\munoz\\.nuget\\packages\\system.threading.ratelimiting\\8.0.0\\system.threading.ratelimiting.8.0.0.nupkg.sha512",
-    "C:\\Users\\munoz\\.nuget\\packages\\yamldotnet\\16.3.0\\yamldotnet.16.3.0.nupkg.sha512"
+    "C:\\Users\\munoz\\.nuget\\packages\\yamldotnet\\16.3.0\\yamldotnet.16.3.0.nupkg.sha512",
+    "C:\\Users\\munoz\\.nuget\\packages\\yarp.reverseproxy\\2.3.0\\yarp.reverseproxy.2.3.0.nupkg.sha512"
   ],
   "logs": []
 }

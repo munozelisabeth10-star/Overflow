@@ -8,10 +8,12 @@
     ".NETCoreApp,Version=v10.0": {
       "AspireApp1.AppHost/1.0.0": {
         "dependencies": {
-          "Aspire.Hosting.AppHost": "13.4.5",
-          "Aspire.Hosting.Keycloak": "13.4.5-preview.1.26316.12",
-          "Aspire.Hosting.PostgreSQL": "13.4.5",
+          "Aspire.Hosting.AppHost": "13.4.6",
+          "Aspire.Hosting.Docker": "13.4.6",
+          "Aspire.Hosting.Keycloak": "13.4.6-preview.1.26319.6",
+          "Aspire.Hosting.PostgreSQL": "13.4.6",
           "Aspire.Hosting.RabbitMQ": "13.4.6",
+          "Aspire.Hosting.Yarp": "13.4.6",
           "OpenTelemetry.Instrumentation.AspNetCore": "1.16.0"
         },
         "runtime": {
@@ -84,7 +86,7 @@
           }
         }
       },
-      "Aspire.Hosting.AppHost/13.4.5": {
+      "Aspire.Hosting.AppHost/13.4.6": {
         "dependencies": {
           "AspNetCore.HealthChecks.Uris": "9.0.0",
           "Aspire.Hosting": "13.4.6",
@@ -105,12 +107,38 @@
         },
         "runtime": {
           "lib/net10.0/Aspire.Hosting.AppHost.dll": {
-            "assemblyVersion": "13.4.5.0",
-            "fileVersion": "13.400.526.31612"
+            "assemblyVersion": "13.4.6.0",
+            "fileVersion": "13.400.626.31906"
           }
         }
       },
-      "Aspire.Hosting.Keycloak/13.4.5-preview.1.26316.12": {
+      "Aspire.Hosting.Docker/13.4.6": {
+        "dependencies": {
+          "AspNetCore.HealthChecks.Uris": "9.0.0",
+          "Aspire.Hosting": "13.4.6",
+          "Google.Protobuf": "3.34.1",
+          "Grpc.AspNetCore": "2.80.0",
+          "Grpc.Net.ClientFactory": "2.80.0",
+          "Humanizer.Core": "3.0.10",
+          "JsonPatch.Net": "3.3.0",
+          "KubernetesClient": "19.0.2",
+          "ModelContextProtocol": "1.3.0",
+          "Newtonsoft.Json": "13.0.4",
+          "OpenTelemetry.Exporter.OpenTelemetryProtocol": "1.15.3",
+          "OpenTelemetry.Extensions.Hosting": "1.15.3",
+          "Polly.Core": "8.6.6",
+          "Semver": "3.0.0",
+          "StreamJsonRpc": "2.25.29",
+          "System.IO.Hashing": "10.0.8"
+        },
+        "runtime": {
+          "lib/net8.0/Aspire.Hosting.Docker.dll": {
+            "assemblyVersion": "13.4.6.0",
+            "fileVersion": "13.400.626.31906"
+          }
+        }
+      },
+      "Aspire.Hosting.Keycloak/13.4.6-preview.1.26319.6": {
         "dependencies": {
           "AspNetCore.HealthChecks.Uris": "9.0.0",
           "Aspire.Hosting": "13.4.6",
@@ -131,12 +159,12 @@
         },
         "runtime": {
           "lib/net8.0/Aspire.Hosting.Keycloak.dll": {
-            "assemblyVersion": "13.4.5.0",
-            "fileVersion": "13.400.526.31612"
+            "assemblyVersion": "13.4.6.0",
+            "fileVersion": "13.400.626.31906"
           }
         }
       },
-      "Aspire.Hosting.PostgreSQL/13.4.5": {
+      "Aspire.Hosting.PostgreSQL/13.4.6": {
         "dependencies": {
           "AspNetCore.HealthChecks.NpgSql": "9.0.0",
           "AspNetCore.HealthChecks.Uris": "9.0.0",
@@ -158,8 +186,8 @@
         },
         "runtime": {
           "lib/net8.0/Aspire.Hosting.PostgreSQL.dll": {
-            "assemblyVersion": "13.4.5.0",
-            "fileVersion": "13.400.526.31612"
+            "assemblyVersion": "13.4.6.0",
+            "fileVersion": "13.400.626.31906"
           }
         }
       },
@@ -186,6 +214,33 @@
         },
         "runtime": {
           "lib/net8.0/Aspire.Hosting.RabbitMQ.dll": {
+            "assemblyVersion": "13.4.6.0",
+            "fileVersion": "13.400.626.31906"
+          }
+        }
+      },
+      "Aspire.Hosting.Yarp/13.4.6": {
+        "dependencies": {
+          "AspNetCore.HealthChecks.Uris": "9.0.0",
+          "Aspire.Hosting": "13.4.6",
+          "Google.Protobuf": "3.34.1",
+          "Grpc.AspNetCore": "2.80.0",
+          "Grpc.Net.ClientFactory": "2.80.0",
+          "Humanizer.Core": "3.0.10",
+          "JsonPatch.Net": "3.3.0",
+          "KubernetesClient": "19.0.2",
+          "ModelContextProtocol": "1.3.0",
+          "Newtonsoft.Json": "13.0.4",
+          "OpenTelemetry.Exporter.OpenTelemetryProtocol": "1.15.3",
+          "OpenTelemetry.Extensions.Hosting": "1.15.3",
+          "Polly.Core": "8.6.6",
+          "Semver": "3.0.0",
+          "StreamJsonRpc": "2.25.29",
+          "System.IO.Hashing": "10.0.8",
+          "Yarp.ReverseProxy": "2.3.0"
+        },
+        "runtime": {
+          "lib/net8.0/Aspire.Hosting.Yarp.dll": {
             "assemblyVersion": "13.4.6.0",
             "fileVersion": "13.400.626.31906"
           }
@@ -725,6 +780,17 @@
             "fileVersion": "16.3.0.0"
           }
         }
+      },
+      "Yarp.ReverseProxy/2.3.0": {
+        "dependencies": {
+          "System.IO.Hashing": "10.0.8"
+        },
+        "runtime": {
+          "lib/net8.0/Yarp.ReverseProxy.dll": {
+            "assemblyVersion": "2.3.0.0",
+            "fileVersion": "2.300.25.12702"
+          }
+        }
       }
     }
   },
@@ -741,26 +807,33 @@
       "path": "aspire.hosting/13.4.6",
       "hashPath": "aspire.hosting.13.4.6.nupkg.sha512"
     },
-    "Aspire.Hosting.AppHost/13.4.5": {
+    "Aspire.Hosting.AppHost/13.4.6": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-aCeudJkJNBerBU+JRNWD7DSmCigP24IH3L/nNqf5q9zJ9+47P22RFAbzVu402xBGrMCbu92gjwjk/1AvSP7i8Q==",
-      "path": "aspire.hosting.apphost/13.4.5",
-      "hashPath": "aspire.hosting.apphost.13.4.5.nupkg.sha512"
+      "sha512": "sha512-+4BxGpb2JQDk3+uOmk5eDpK0Brg2d3hwqrK/7d/aDBAUoHYbjfwbItIfdYJjKjbxUkBiaotokcWdVbLNsMo9Nw==",
+      "path": "aspire.hosting.apphost/13.4.6",
+      "hashPath": "aspire.hosting.apphost.13.4.6.nupkg.sha512"
     },
-    "Aspire.Hosting.Keycloak/13.4.5-preview.1.26316.12": {
+    "Aspire.Hosting.Docker/13.4.6": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-mRbSBdGq02tmqdy5bZK/3Ra6WMAHcsUTbG7l1/RGi/cRrk1SkITTRSbTBgGNqcCNspjjTIwp/JlUcoOVH8yXHA==",
-      "path": "aspire.hosting.keycloak/13.4.5-preview.1.26316.12",
-      "hashPath": "aspire.hosting.keycloak.13.4.5-preview.1.26316.12.nupkg.sha512"
+      "sha512": "sha512-jktHP/Wl7hUedLkHqPKHbjH9yF68vvD1ZaRWQp7jDSkYXbCMhl8bPx3eXpS/TMYNpBh/ej5ivL04VEGUPhKPXw==",
+      "path": "aspire.hosting.docker/13.4.6",
+      "hashPath": "aspire.hosting.docker.13.4.6.nupkg.sha512"
     },
-    "Aspire.Hosting.PostgreSQL/13.4.5": {
+    "Aspire.Hosting.Keycloak/13.4.6-preview.1.26319.6": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-RfFsgwzvpb2oM0WzJDloWm2jvn4Z999kT9AMJafdSV6T9K2k4IfHfH5JF8gF7U7XuZGWGJhg/2UVPXHoQwNPZQ==",
-      "path": "aspire.hosting.postgresql/13.4.5",
-      "hashPath": "aspire.hosting.postgresql.13.4.5.nupkg.sha512"
+      "sha512": "sha512-KAtJVQGyTqgtcYGNfFgBEBbMfYiPUmhIQVg1VbK+WLICZ0YUeRSk3PvyKjvHzl96hwPITsXJL+vZK2RBPOoo+g==",
+      "path": "aspire.hosting.keycloak/13.4.6-preview.1.26319.6",
+      "hashPath": "aspire.hosting.keycloak.13.4.6-preview.1.26319.6.nupkg.sha512"
+    },
+    "Aspire.Hosting.PostgreSQL/13.4.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-NyL7O7e7DcpZSF0sAz332GIJ3S7X/66NoqhPqzVMPbNYfF97bTrk7C7Yq1tuilffHfq2SV2xi6aHbhGOmSoGqw==",
+      "path": "aspire.hosting.postgresql/13.4.6",
+      "hashPath": "aspire.hosting.postgresql.13.4.6.nupkg.sha512"
     },
     "Aspire.Hosting.RabbitMQ/13.4.6": {
       "type": "package",
@@ -768,6 +841,13 @@
       "sha512": "sha512-AZLjFJFGucS4JquL7xHJuTc/Oh4jLcJzfmxeUplNk0jwXgd+ZUrdpd0YwvC7uRkdfLb6hSLFzU1n3UZqUEnATQ==",
       "path": "aspire.hosting.rabbitmq/13.4.6",
       "hashPath": "aspire.hosting.rabbitmq.13.4.6.nupkg.sha512"
+    },
+    "Aspire.Hosting.Yarp/13.4.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-BOoKe5u/PMVwCmcQ44DJADJ7MFeB4ECD8AyB890Vr2tcwGBGKkNuF1J6cF+4sOHKq/gfPWGzANrsAlRsIosgNw==",
+      "path": "aspire.hosting.yarp/13.4.6",
+      "hashPath": "aspire.hosting.yarp.13.4.6.nupkg.sha512"
     },
     "AspNetCore.HealthChecks.NpgSql/9.0.0": {
       "type": "package",
@@ -1062,6 +1142,13 @@
       "sha512": "sha512-SgMOdxbz8X65z8hraIs6hOEdnkH6hESTAIUa7viEngHOYaH+6q5XJmwr1+yb9vJpNQ19hCQY69xbFsLtXpobQA==",
       "path": "yamldotnet/16.3.0",
       "hashPath": "yamldotnet.16.3.0.nupkg.sha512"
+    },
+    "Yarp.ReverseProxy/2.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-gxtkN3a+9biu9V9Zd5NaTO6VZWXAnS2mhQ0R/VXmSPoTuiQNZsakKikrKpDtKxrL5nUYzbRsHtl40WNq+ZBKKg==",
+      "path": "yarp.reverseproxy/2.3.0",
+      "hashPath": "yarp.reverseproxy.2.3.0.nupkg.sha512"
     }
   }
 }

@@ -308,7 +308,6 @@ C:\Users\munoz\RiderProjects\Overflow\AspireCourse\demo\AspireApp1\QuestionServi
 C:\Users\munoz\RiderProjects\Overflow\AspireCourse\demo\AspireApp1\QuestionService\bin\Debug\net10.0\Polly.RateLimiting.dll
 C:\Users\munoz\RiderProjects\Overflow\AspireCourse\demo\AspireApp1\QuestionService\bin\Debug\net10.0\RabbitMQ.Client.dll
 C:\Users\munoz\RiderProjects\Overflow\AspireCourse\demo\AspireApp1\QuestionService\bin\Debug\net10.0\Spectre.Console.dll
-C:\Users\munoz\RiderProjects\Overflow\AspireCourse\demo\AspireApp1\QuestionService\bin\Debug\net10.0\Spectre.Console.Ansi.dll
 C:\Users\munoz\RiderProjects\Overflow\AspireCourse\demo\AspireApp1\QuestionService\bin\Debug\net10.0\System.CodeDom.dll
 C:\Users\munoz\RiderProjects\Overflow\AspireCourse\demo\AspireApp1\QuestionService\bin\Debug\net10.0\System.Composition.AttributedModel.dll
 C:\Users\munoz\RiderProjects\Overflow\AspireCourse\demo\AspireApp1\QuestionService\bin\Debug\net10.0\System.Composition.Convention.dll
@@ -318,9 +317,7 @@ C:\Users\munoz\RiderProjects\Overflow\AspireCourse\demo\AspireApp1\QuestionServi
 C:\Users\munoz\RiderProjects\Overflow\AspireCourse\demo\AspireApp1\QuestionService\bin\Debug\net10.0\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\munoz\RiderProjects\Overflow\AspireCourse\demo\AspireApp1\QuestionService\bin\Debug\net10.0\Typesense.dll
 C:\Users\munoz\RiderProjects\Overflow\AspireCourse\demo\AspireApp1\QuestionService\bin\Debug\net10.0\Wolverine.dll
-C:\Users\munoz\RiderProjects\Overflow\AspireCourse\demo\AspireApp1\QuestionService\bin\Debug\net10.0\Wolverine.Newtonsoft.dll
 C:\Users\munoz\RiderProjects\Overflow\AspireCourse\demo\AspireApp1\QuestionService\bin\Debug\net10.0\Wolverine.RabbitMQ.dll
-C:\Users\munoz\RiderProjects\Overflow\AspireCourse\demo\AspireApp1\QuestionService\bin\Debug\net10.0\Wolverine.RuntimeCompilation.dll
 C:\Users\munoz\RiderProjects\Overflow\AspireCourse\demo\AspireApp1\QuestionService\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.resources.dll
 C:\Users\munoz\RiderProjects\Overflow\AspireCourse\demo\AspireApp1\QuestionService\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.resources.dll
 C:\Users\munoz\RiderProjects\Overflow\AspireCourse\demo\AspireApp1\QuestionService\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.resources.dll

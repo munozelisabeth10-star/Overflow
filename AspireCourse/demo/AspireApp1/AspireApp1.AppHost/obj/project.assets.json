@@ -1,8 +1,8 @@
 {
-  "version": 3,
+  "version": 4,
   "targets": {
     "net10.0": {
-      "Aspire.Dashboard.Sdk.win-x64/13.4.5": {
+      "Aspire.Dashboard.Sdk.win-x64/13.4.6": {
         "type": "package",
         "build": {
           "buildTransitive/Aspire.Dashboard.Sdk.win-x64.props": {},
@@ -99,11 +99,11 @@
           "buildTransitive/net8.0/Aspire.Hosting.targets": {}
         }
       },
-      "Aspire.Hosting.AppHost/13.4.5": {
+      "Aspire.Hosting.AppHost/13.4.6": {
         "type": "package",
         "dependencies": {
           "AspNetCore.HealthChecks.Uris": "9.0.0",
-          "Aspire.Hosting": "13.4.5",
+          "Aspire.Hosting": "13.4.6",
           "Google.Protobuf": "3.34.1",
           "Grpc.AspNetCore": "2.80.0",
           "Grpc.Net.ClientFactory": "2.80.0",
@@ -151,11 +151,55 @@
           "buildMultiTargeting/Aspire.Hosting.AppHost.targets": {}
         }
       },
-      "Aspire.Hosting.Keycloak/13.4.5-preview.1.26316.12": {
+      "Aspire.Hosting.Docker/13.4.6": {
         "type": "package",
         "dependencies": {
           "AspNetCore.HealthChecks.Uris": "9.0.0",
-          "Aspire.Hosting": "13.4.5",
+          "Aspire.Hosting": "13.4.6",
+          "Google.Protobuf": "3.34.1",
+          "Grpc.AspNetCore": "2.80.0",
+          "Grpc.Net.ClientFactory": "2.80.0",
+          "Grpc.Tools": "2.80.0",
+          "Humanizer.Core": "3.0.10",
+          "JsonPatch.Net": "3.3.0",
+          "KubernetesClient": "19.0.2",
+          "Microsoft.Extensions.Configuration.Abstractions": "10.0.8",
+          "Microsoft.Extensions.Configuration.Binder": "10.0.8",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.8",
+          "Microsoft.Extensions.Diagnostics.HealthChecks": "8.0.27",
+          "Microsoft.Extensions.FileSystemGlobbing": "10.0.8",
+          "Microsoft.Extensions.Hosting": "10.0.8",
+          "Microsoft.Extensions.Hosting.Abstractions": "10.0.8",
+          "Microsoft.Extensions.Http": "10.0.8",
+          "Microsoft.Extensions.Logging": "10.0.8",
+          "Microsoft.Extensions.Logging.Abstractions": "10.0.8",
+          "Microsoft.Extensions.Options": "10.0.8",
+          "Microsoft.Extensions.Primitives": "10.0.8",
+          "ModelContextProtocol": "1.3.0",
+          "Newtonsoft.Json": "13.0.4",
+          "OpenTelemetry.Exporter.OpenTelemetryProtocol": "1.15.3",
+          "OpenTelemetry.Extensions.Hosting": "1.15.3",
+          "Polly.Core": "8.6.6",
+          "Semver": "3.0.0",
+          "StreamJsonRpc": "2.25.29",
+          "System.IO.Hashing": "10.0.8"
+        },
+        "compile": {
+          "lib/net8.0/Aspire.Hosting.Docker.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Aspire.Hosting.Docker.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Aspire.Hosting.Keycloak/13.4.6-preview.1.26319.6": {
+        "type": "package",
+        "dependencies": {
+          "AspNetCore.HealthChecks.Uris": "9.0.0",
+          "Aspire.Hosting": "13.4.6",
           "Google.Protobuf": "3.34.1",
           "Grpc.AspNetCore": "2.80.0",
           "Grpc.Net.ClientFactory": "2.80.0",
@@ -195,7 +239,7 @@
           }
         }
       },
-      "Aspire.Hosting.Orchestration.win-x64/13.4.5": {
+      "Aspire.Hosting.Orchestration.win-x64/13.4.6": {
         "type": "package",
         "build": {
           "buildTransitive/Aspire.Hosting.Orchestration.win-x64.targets": {}
@@ -204,12 +248,12 @@
           "buildMultiTargeting/Aspire.Hosting.Orchestration.win-x64.targets": {}
         }
       },
-      "Aspire.Hosting.PostgreSQL/13.4.5": {
+      "Aspire.Hosting.PostgreSQL/13.4.6": {
         "type": "package",
         "dependencies": {
           "AspNetCore.HealthChecks.NpgSql": "9.0.0",
           "AspNetCore.HealthChecks.Uris": "9.0.0",
-          "Aspire.Hosting": "13.4.5",
+          "Aspire.Hosting": "13.4.6",
           "Google.Protobuf": "3.34.1",
           "Grpc.AspNetCore": "2.80.0",
           "Grpc.Net.ClientFactory": "2.80.0",
@@ -291,6 +335,51 @@
         },
         "runtime": {
           "lib/net8.0/Aspire.Hosting.RabbitMQ.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Aspire.Hosting.Yarp/13.4.6": {
+        "type": "package",
+        "dependencies": {
+          "AspNetCore.HealthChecks.Uris": "9.0.0",
+          "Aspire.Hosting": "13.4.6",
+          "Google.Protobuf": "3.34.1",
+          "Grpc.AspNetCore": "2.80.0",
+          "Grpc.Net.ClientFactory": "2.80.0",
+          "Grpc.Tools": "2.80.0",
+          "Humanizer.Core": "3.0.10",
+          "JsonPatch.Net": "3.3.0",
+          "KubernetesClient": "19.0.2",
+          "Microsoft.Extensions.Configuration.Abstractions": "10.0.8",
+          "Microsoft.Extensions.Configuration.Binder": "10.0.8",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.8",
+          "Microsoft.Extensions.Diagnostics.HealthChecks": "8.0.27",
+          "Microsoft.Extensions.FileSystemGlobbing": "10.0.8",
+          "Microsoft.Extensions.Hosting": "10.0.8",
+          "Microsoft.Extensions.Hosting.Abstractions": "10.0.8",
+          "Microsoft.Extensions.Http": "10.0.8",
+          "Microsoft.Extensions.Logging": "10.0.8",
+          "Microsoft.Extensions.Logging.Abstractions": "10.0.8",
+          "Microsoft.Extensions.Options": "10.0.8",
+          "Microsoft.Extensions.Primitives": "10.0.8",
+          "ModelContextProtocol": "1.3.0",
+          "Newtonsoft.Json": "13.0.4",
+          "OpenTelemetry.Exporter.OpenTelemetryProtocol": "1.15.3",
+          "OpenTelemetry.Extensions.Hosting": "1.15.3",
+          "Polly.Core": "8.6.6",
+          "Semver": "3.0.0",
+          "StreamJsonRpc": "2.25.29",
+          "System.IO.Hashing": "10.0.8",
+          "Yarp.ReverseProxy": "2.3.0"
+        },
+        "compile": {
+          "lib/net8.0/Aspire.Hosting.Yarp.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Aspire.Hosting.Yarp.dll": {
             "related": ".xml"
           }
         }
@@ -1784,21 +1873,43 @@
             "related": ".xml"
           }
         }
+      },
+      "Yarp.ReverseProxy/2.3.0": {
+        "type": "package",
+        "dependencies": {
+          "System.IO.Hashing": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0/Yarp.ReverseProxy.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Yarp.ReverseProxy.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ],
+        "build": {
+          "buildTransitive/net8.0/Yarp.ReverseProxy.targets": {}
+        }
       }
     }
   },
   "libraries": {
-    "Aspire.Dashboard.Sdk.win-x64/13.4.5": {
-      "sha512": "7P5SukQWJxxC12xmi+ZjiAC2nl2l8nRoyBjx7qMkZFCv90fDUbVwBabUcP2Iw8YSbXjXZCw0inrTma1lWIpoHA==",
+    "Aspire.Dashboard.Sdk.win-x64/13.4.6": {
+      "sha512": "IoN5kv4uMniYyETegmD3/5lW2TpsA4RXRZfgIEAD7gN93P92hhkUiqa+0DC2GrJLD3Voz1/Drmpnq/pQ5WzBow==",
       "type": "package",
-      "path": "aspire.dashboard.sdk.win-x64/13.4.5",
+      "path": "aspire.dashboard.sdk.win-x64/13.4.6",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "THIRD-PARTY-NOTICES.TXT",
-        "aspire.dashboard.sdk.win-x64.13.4.5.nupkg.sha512",
+        "aspire.dashboard.sdk.win-x64.13.4.6.nupkg.sha512",
         "aspire.dashboard.sdk.win-x64.nuspec",
         "build/Aspire.Dashboard.Sdk.win-x64.props",
         "build/Aspire.Dashboard.Sdk.win-x64.targets",
@@ -1971,10 +2082,10 @@
         "lib/net8.0/zh-Hant/Aspire.Hosting.resources.dll"
       ]
     },
-    "Aspire.Hosting.AppHost/13.4.5": {
-      "sha512": "aCeudJkJNBerBU+JRNWD7DSmCigP24IH3L/nNqf5q9zJ9+47P22RFAbzVu402xBGrMCbu92gjwjk/1AvSP7i8Q==",
+    "Aspire.Hosting.AppHost/13.4.6": {
+      "sha512": "+4BxGpb2JQDk3+uOmk5eDpK0Brg2d3hwqrK/7d/aDBAUoHYbjfwbItIfdYJjKjbxUkBiaotokcWdVbLNsMo9Nw==",
       "type": "package",
-      "path": "aspire.hosting.apphost/13.4.5",
+      "path": "aspire.hosting.apphost/13.4.6",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -1984,7 +2095,7 @@
         "README.md",
         "THIRD-PARTY-NOTICES.TXT",
         "analyzers/dotnet/cs/Aspire.Hosting.Analyzers.dll",
-        "aspire.hosting.apphost.13.4.5.nupkg.sha512",
+        "aspire.hosting.apphost.13.4.6.nupkg.sha512",
         "aspire.hosting.apphost.nuspec",
         "build/Aspire.Hosting.AppHost.props",
         "build/Aspire.Hosting.AppHost.targets",
@@ -2000,33 +2111,49 @@
         "tools/net8.0/Aspire.Hosting.Tasks.dll"
       ]
     },
-    "Aspire.Hosting.Keycloak/13.4.5-preview.1.26316.12": {
-      "sha512": "mRbSBdGq02tmqdy5bZK/3Ra6WMAHcsUTbG7l1/RGi/cRrk1SkITTRSbTBgGNqcCNspjjTIwp/JlUcoOVH8yXHA==",
+    "Aspire.Hosting.Docker/13.4.6": {
+      "sha512": "jktHP/Wl7hUedLkHqPKHbjH9yF68vvD1ZaRWQp7jDSkYXbCMhl8bPx3eXpS/TMYNpBh/ej5ivL04VEGUPhKPXw==",
       "type": "package",
-      "path": "aspire.hosting.keycloak/13.4.5-preview.1.26316.12",
+      "path": "aspire.hosting.docker/13.4.6",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "README.md",
         "THIRD-PARTY-NOTICES.TXT",
-        "aspire.hosting.keycloak.13.4.5-preview.1.26316.12.nupkg.sha512",
+        "aspire.hosting.docker.13.4.6.nupkg.sha512",
+        "aspire.hosting.docker.nuspec",
+        "lib/net8.0/Aspire.Hosting.Docker.dll",
+        "lib/net8.0/Aspire.Hosting.Docker.xml"
+      ]
+    },
+    "Aspire.Hosting.Keycloak/13.4.6-preview.1.26319.6": {
+      "sha512": "KAtJVQGyTqgtcYGNfFgBEBbMfYiPUmhIQVg1VbK+WLICZ0YUeRSk3PvyKjvHzl96hwPITsXJL+vZK2RBPOoo+g==",
+      "type": "package",
+      "path": "aspire.hosting.keycloak/13.4.6-preview.1.26319.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "README.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "aspire.hosting.keycloak.13.4.6-preview.1.26319.6.nupkg.sha512",
         "aspire.hosting.keycloak.nuspec",
         "lib/net8.0/Aspire.Hosting.Keycloak.dll",
         "lib/net8.0/Aspire.Hosting.Keycloak.xml"
       ]
     },
-    "Aspire.Hosting.Orchestration.win-x64/13.4.5": {
-      "sha512": "TkgGfqKmxQw7U38C3UQGKGqfZUGL7xnvAXCxBSMP1WnCnVDVYli9bMxUNbIn3cqrZOZ1V38UalnETz2csk3JVQ==",
+    "Aspire.Hosting.Orchestration.win-x64/13.4.6": {
+      "sha512": "TjpiZb4VAr7w/ViDq08kX2lXVo5eSDaQpGaLFMRas/0Q2jmuVOWoYFidmuXMbTf2InXVJO0pVjtwhJI2nNXihw==",
       "type": "package",
-      "path": "aspire.hosting.orchestration.win-x64/13.4.5",
+      "path": "aspire.hosting.orchestration.win-x64/13.4.6",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "THIRD-PARTY-NOTICES.TXT",
-        "aspire.hosting.orchestration.win-x64.13.4.5.nupkg.sha512",
+        "aspire.hosting.orchestration.win-x64.13.4.6.nupkg.sha512",
         "aspire.hosting.orchestration.win-x64.nuspec",
         "build/Aspire.Hosting.Orchestration.win-x64.targets",
         "buildMultiTargeting/Aspire.Hosting.Orchestration.win-x64.targets",
@@ -2044,17 +2171,17 @@
         "tools/dcptun_c"
       ]
     },
-    "Aspire.Hosting.PostgreSQL/13.4.5": {
-      "sha512": "RfFsgwzvpb2oM0WzJDloWm2jvn4Z999kT9AMJafdSV6T9K2k4IfHfH5JF8gF7U7XuZGWGJhg/2UVPXHoQwNPZQ==",
+    "Aspire.Hosting.PostgreSQL/13.4.6": {
+      "sha512": "NyL7O7e7DcpZSF0sAz332GIJ3S7X/66NoqhPqzVMPbNYfF97bTrk7C7Yq1tuilffHfq2SV2xi6aHbhGOmSoGqw==",
       "type": "package",
-      "path": "aspire.hosting.postgresql/13.4.5",
+      "path": "aspire.hosting.postgresql/13.4.6",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "README.md",
         "THIRD-PARTY-NOTICES.TXT",
-        "aspire.hosting.postgresql.13.4.5.nupkg.sha512",
+        "aspire.hosting.postgresql.13.4.6.nupkg.sha512",
         "aspire.hosting.postgresql.nuspec",
         "lib/net8.0/Aspire.Hosting.PostgreSQL.dll",
         "lib/net8.0/Aspire.Hosting.PostgreSQL.xml"
@@ -2074,6 +2201,22 @@
         "aspire.hosting.rabbitmq.nuspec",
         "lib/net8.0/Aspire.Hosting.RabbitMQ.dll",
         "lib/net8.0/Aspire.Hosting.RabbitMQ.xml"
+      ]
+    },
+    "Aspire.Hosting.Yarp/13.4.6": {
+      "sha512": "BOoKe5u/PMVwCmcQ44DJADJ7MFeB4ECD8AyB890Vr2tcwGBGKkNuF1J6cF+4sOHKq/gfPWGzANrsAlRsIosgNw==",
+      "type": "package",
+      "path": "aspire.hosting.yarp/13.4.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "README.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "aspire.hosting.yarp.13.4.6.nupkg.sha512",
+        "aspire.hosting.yarp.nuspec",
+        "lib/net8.0/Aspire.Hosting.Yarp.dll",
+        "lib/net8.0/Aspire.Hosting.Yarp.xml"
       ]
     },
     "AspNetCore.HealthChecks.NpgSql/9.0.0": {
@@ -4254,16 +4397,41 @@
         "yamldotnet.16.3.0.nupkg.sha512",
         "yamldotnet.nuspec"
       ]
+    },
+    "Yarp.ReverseProxy/2.3.0": {
+      "sha512": "gxtkN3a+9biu9V9Zd5NaTO6VZWXAnS2mhQ0R/VXmSPoTuiQNZsakKikrKpDtKxrL5nUYzbRsHtl40WNq+ZBKKg==",
+      "type": "package",
+      "path": "yarp.reverseproxy/2.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ConfigurationSchema.json",
+        "README.md",
+        "buildTransitive/net6.0/Yarp.ReverseProxy.targets",
+        "buildTransitive/net7.0/Yarp.ReverseProxy.targets",
+        "buildTransitive/net8.0/Yarp.ReverseProxy.targets",
+        "icon.png",
+        "lib/net6.0/Yarp.ReverseProxy.dll",
+        "lib/net6.0/Yarp.ReverseProxy.xml",
+        "lib/net7.0/Yarp.ReverseProxy.dll",
+        "lib/net7.0/Yarp.ReverseProxy.xml",
+        "lib/net8.0/Yarp.ReverseProxy.dll",
+        "lib/net8.0/Yarp.ReverseProxy.xml",
+        "yarp.reverseproxy.2.3.0.nupkg.sha512",
+        "yarp.reverseproxy.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     "net10.0": [
-      "Aspire.Dashboard.Sdk.win-x64 >= 13.4.5",
-      "Aspire.Hosting.AppHost >= 13.4.5",
-      "Aspire.Hosting.Keycloak >= 13.4.5-preview.1.26316.12",
-      "Aspire.Hosting.Orchestration.win-x64 >= 13.4.5",
-      "Aspire.Hosting.PostgreSQL >= 13.4.5",
+      "Aspire.Dashboard.Sdk.win-x64 >= 13.4.6",
+      "Aspire.Hosting.AppHost >= 13.4.6",
+      "Aspire.Hosting.Docker >= 13.4.6",
+      "Aspire.Hosting.Keycloak >= 13.4.6-preview.1.26319.6",
+      "Aspire.Hosting.Orchestration.win-x64 >= 13.4.6",
+      "Aspire.Hosting.PostgreSQL >= 13.4.6",
       "Aspire.Hosting.RabbitMQ >= 13.4.6",
+      "Aspire.Hosting.Yarp >= 13.4.6",
       "OpenTelemetry.Instrumentation.AspNetCore >= 1.16.0"
     ]
   },
@@ -4291,6 +4459,7 @@
       },
       "frameworks": {
         "net10.0": {
+          "framework": "net10.0",
           "targetAlias": "net10.0",
           "projectReferences": {}
         }
@@ -4309,32 +4478,40 @@
     },
     "frameworks": {
       "net10.0": {
+        "framework": "net10.0",
         "targetAlias": "net10.0",
         "dependencies": {
           "Aspire.Dashboard.Sdk.win-x64": {
             "target": "Package",
-            "version": "[13.4.5, )",
+            "version": "[13.4.6, )",
             "autoReferenced": true
           },
           "Aspire.Hosting.AppHost": {
             "target": "Package",
-            "version": "[13.4.5, )",
-            "autoReferenced": true
+            "version": "[13.4.6, )"
+          },
+          "Aspire.Hosting.Docker": {
+            "target": "Package",
+            "version": "[13.4.6, )"
           },
           "Aspire.Hosting.Keycloak": {
             "target": "Package",
-            "version": "[13.4.5-preview.1.26316.12, )"
+            "version": "[13.4.6-preview.1.26319.6, )"
           },
           "Aspire.Hosting.Orchestration.win-x64": {
             "target": "Package",
-            "version": "[13.4.5, )",
+            "version": "[13.4.6, )",
             "autoReferenced": true
           },
           "Aspire.Hosting.PostgreSQL": {
             "target": "Package",
-            "version": "[13.4.5, )"
+            "version": "[13.4.6, )"
           },
           "Aspire.Hosting.RabbitMQ": {
+            "target": "Package",
+            "version": "[13.4.6, )"
+          },
+          "Aspire.Hosting.Yarp": {
             "target": "Package",
             "version": "[13.4.6, )"
           },

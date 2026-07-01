@@ -11,21 +11,21 @@ using System;
 using System.Reflection;
 
 [assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("fc19d9f7-54cd-4d14-8b19-fb5662124efa")]
-[assembly: System.Reflection.AssemblyMetadata("dcpclipath", ("C:\\Users\\munoz\\.nuget\\packages\\aspire.hosting.orchestration.win-x64\\13.4.5\\tools\\" +
+[assembly: System.Reflection.AssemblyMetadata("dcpclipath", ("C:\\Users\\munoz\\.nuget\\packages\\aspire.hosting.orchestration.win-x64\\13.4.6\\tools\\" +
     "dcp.exe"))]
-[assembly: System.Reflection.AssemblyMetadata("dcpextensionpaths", ("C:\\Users\\munoz\\.nuget\\packages\\aspire.hosting.orchestration.win-x64\\13.4.5\\tools\\" +
+[assembly: System.Reflection.AssemblyMetadata("dcpextensionpaths", ("C:\\Users\\munoz\\.nuget\\packages\\aspire.hosting.orchestration.win-x64\\13.4.6\\tools\\" +
     "ext\\"))]
 [assembly: System.Reflection.AssemblyMetadata("apphostprojectpath", ("C:\\Users\\munoz\\RiderProjects\\Overflow\\AspireCourse\\demo\\AspireApp1\\AspireApp1.App" +
     "Host"))]
 [assembly: System.Reflection.AssemblyMetadata("apphostprojectname", "AspireApp1.AppHost.csproj")]
-[assembly: System.Reflection.AssemblyMetadata("aspiredashboardpath", ("C:\\Users\\munoz\\.nuget\\packages\\aspire.dashboard.sdk.win-x64\\13.4.5\\tools\\Aspire.D" +
+[assembly: System.Reflection.AssemblyMetadata("aspiredashboardpath", ("C:\\Users\\munoz\\.nuget\\packages\\aspire.dashboard.sdk.win-x64\\13.4.6\\tools\\Aspire.D" +
     "ashboard.exe"))]
 [assembly: System.Reflection.AssemblyMetadataAttribute("apphostprojectbaseintermediateoutputpath", ("C:\\Users\\munoz\\RiderProjects\\Overflow\\AspireCourse\\demo\\AspireApp1\\AspireApp1.App" +
     "Host\\obj\\"))]
 [assembly: System.Reflection.AssemblyCompanyAttribute("AspireApp1.AppHost")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+75e1a149b3bf9f5239c756a99dc799810380bde8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+73bd0689d9547c80c13769d50e4f3379f2ec3614")]
 [assembly: System.Reflection.AssemblyProductAttribute("AspireApp1.AppHost")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AspireApp1.AppHost")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
