@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "TwBqjqM/O/g=",
+  "dgSpecHash": "zbPdbSEd+wc=",
   "success": true,
   "projectFilePath": "C:\\Users\\munoz\\RiderProjects\\Overflow\\AspireCourse\\demo\\AspireApp1\\QuestionService\\QuestionService.csproj",
   "expectedPackageFiles": [
@@ -64,14 +64,15 @@
     "C:\\Users\\munoz\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\10.0.0\\npgsql.entityframeworkcore.postgresql.10.0.0.nupkg.sha512",
     "C:\\Users\\munoz\\.nuget\\packages\\npgsql.opentelemetry\\10.0.2\\npgsql.opentelemetry.10.0.2.nupkg.sha512",
     "C:\\Users\\munoz\\.nuget\\packages\\opentelemetry\\1.15.3\\opentelemetry.1.15.3.nupkg.sha512",
-    "C:\\Users\\munoz\\.nuget\\packages\\opentelemetry.api\\1.16.0\\opentelemetry.api.1.16.0.nupkg.sha512",
-    "C:\\Users\\munoz\\.nuget\\packages\\opentelemetry.api.providerbuilderextensions\\1.16.0\\opentelemetry.api.providerbuilderextensions.1.16.0.nupkg.sha512",
+    "C:\\Users\\munoz\\.nuget\\packages\\opentelemetry.api\\1.15.3\\opentelemetry.api.1.15.3.nupkg.sha512",
+    "C:\\Users\\munoz\\.nuget\\packages\\opentelemetry.api.providerbuilderextensions\\1.15.3\\opentelemetry.api.providerbuilderextensions.1.15.3.nupkg.sha512",
     "C:\\Users\\munoz\\.nuget\\packages\\opentelemetry.exporter.opentelemetryprotocol\\1.15.3\\opentelemetry.exporter.opentelemetryprotocol.1.15.3.nupkg.sha512",
     "C:\\Users\\munoz\\.nuget\\packages\\opentelemetry.extensions.hosting\\1.15.3\\opentelemetry.extensions.hosting.1.15.3.nupkg.sha512",
-    "C:\\Users\\munoz\\.nuget\\packages\\opentelemetry.instrumentation.aspnetcore\\1.16.0\\opentelemetry.instrumentation.aspnetcore.1.16.0.nupkg.sha512",
+    "C:\\Users\\munoz\\.nuget\\packages\\opentelemetry.instrumentation.aspnetcore\\1.15.2\\opentelemetry.instrumentation.aspnetcore.1.15.2.nupkg.sha512",
     "C:\\Users\\munoz\\.nuget\\packages\\opentelemetry.instrumentation.http\\1.15.1\\opentelemetry.instrumentation.http.1.15.1.nupkg.sha512",
     "C:\\Users\\munoz\\.nuget\\packages\\opentelemetry.instrumentation.runtime\\1.15.1\\opentelemetry.instrumentation.runtime.1.15.1.nupkg.sha512",
-    "C:\\Users\\munoz\\.nuget\\packages\\polly.core\\8.6.5\\polly.core.8.6.5.nupkg.sha512",
+    "C:\\Users\\munoz\\.nuget\\packages\\polly\\8.7.0\\polly.8.7.0.nupkg.sha512",
+    "C:\\Users\\munoz\\.nuget\\packages\\polly.core\\8.7.0\\polly.core.8.7.0.nupkg.sha512",
     "C:\\Users\\munoz\\.nuget\\packages\\polly.extensions\\8.4.2\\polly.extensions.8.4.2.nupkg.sha512",
     "C:\\Users\\munoz\\.nuget\\packages\\polly.ratelimiting\\8.4.2\\polly.ratelimiting.8.4.2.nupkg.sha512",
     "C:\\Users\\munoz\\.nuget\\packages\\rabbitmq.client\\7.1.2\\rabbitmq.client.7.1.2.nupkg.sha512",
@@ -86,21 +87,19 @@
     "C:\\Users\\munoz\\.nuget\\packages\\system.identitymodel.tokens.jwt\\8.0.1\\system.identitymodel.tokens.jwt.8.0.1.nupkg.sha512",
     "C:\\Users\\munoz\\.nuget\\packages\\typesense\\8.5.0\\typesense.8.5.0.nupkg.sha512",
     "C:\\Users\\munoz\\.nuget\\packages\\wolverinefx\\5.16.4\\wolverinefx.5.16.4.nupkg.sha512",
-    "C:\\Users\\munoz\\.nuget\\packages\\wolverinefx.rabbitmq\\5.16.4\\wolverinefx.rabbitmq.5.16.4.nupkg.sha512",
-    "C:\\Users\\munoz\\.nuget\\packages\\microsoft.netcore.app.host.linux-x64\\10.0.9\\microsoft.netcore.app.host.linux-x64.10.0.9.nupkg.sha512"
+    "C:\\Users\\munoz\\.nuget\\packages\\wolverinefx.rabbitmq\\5.16.4\\wolverinefx.rabbitmq.5.16.4.nupkg.sha512"
   ],
   "logs": [
     {
       "code": "NU1903",
       "level": "Warning",
-      "message": "El paquete \"Microsoft.OpenApi\" 2.0.0 tiene una vulnerabilidad de gravedad alta conocida, https://github.com/advisories/GHSA-v5pm-xwqc-g5wc",
+      "message": "Package 'Microsoft.OpenApi' 2.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-v5pm-xwqc-g5wc",
       "projectPath": "C:\\Users\\munoz\\RiderProjects\\Overflow\\AspireCourse\\demo\\AspireApp1\\QuestionService\\QuestionService.csproj",
       "warningLevel": 1,
       "filePath": "C:\\Users\\munoz\\RiderProjects\\Overflow\\AspireCourse\\demo\\AspireApp1\\QuestionService\\QuestionService.csproj",
       "libraryId": "Microsoft.OpenApi",
       "targetGraphs": [
-        "net10.0",
-        "net10.0/linux-x64"
+        "net10.0"
       ]
     }
   ]

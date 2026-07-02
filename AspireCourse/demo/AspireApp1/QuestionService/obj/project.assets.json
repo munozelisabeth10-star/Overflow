@@ -1,5 +1,5 @@
 {
-  "version": 4,
+  "version": 3,
   "targets": {
     "net10.0": {
       "Aspire.Keycloak.Authentication/13.4.6-preview.1.26319.6": {
@@ -1351,7 +1351,7 @@
           }
         }
       },
-      "OpenTelemetry.Api/1.16.0": {
+      "OpenTelemetry.Api/1.15.3": {
         "type": "package",
         "compile": {
           "lib/net10.0/OpenTelemetry.Api.dll": {
@@ -1364,10 +1364,10 @@
           }
         }
       },
-      "OpenTelemetry.Api.ProviderBuilderExtensions/1.16.0": {
+      "OpenTelemetry.Api.ProviderBuilderExtensions/1.15.3": {
         "type": "package",
         "dependencies": {
-          "OpenTelemetry.Api": "1.16.0"
+          "OpenTelemetry.Api": "1.15.3"
         },
         "compile": {
           "lib/net10.0/OpenTelemetry.Api.ProviderBuilderExtensions.dll": {
@@ -1412,10 +1412,10 @@
           }
         }
       },
-      "OpenTelemetry.Instrumentation.AspNetCore/1.16.0": {
+      "OpenTelemetry.Instrumentation.AspNetCore/1.15.2": {
         "type": "package",
         "dependencies": {
-          "OpenTelemetry.Api.ProviderBuilderExtensions": "[1.16.0, 2.0.0)"
+          "OpenTelemetry.Api.ProviderBuilderExtensions": "[1.15.3, 2.0.0)"
         },
         "compile": {
           "lib/net10.0/OpenTelemetry.Instrumentation.AspNetCore.dll": {
@@ -1463,7 +1463,23 @@
           }
         }
       },
-      "Polly.Core/8.6.5": {
+      "Polly/8.7.0": {
+        "type": "package",
+        "dependencies": {
+          "Polly.Core": "8.7.0"
+        },
+        "compile": {
+          "lib/net6.0/Polly.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Polly.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Polly.Core/8.7.0": {
         "type": "package",
         "compile": {
           "lib/net8.0/Polly.Core.dll": {
@@ -1749,1767 +1765,21 @@
           "Microsoft.AspNetCore.App"
         ]
       },
-      "Contracts/1.0.0": {
+      "Common/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
-          "Typesense": "8.5.0"
+          "Aspire.Keycloak.Authentication": "13.4.6-preview.1.26319.6",
+          "AspireApp1.ServiceDefaults": "1.0.0",
+          "Polly": "8.7.0",
+          "WolverineFx.RabbitMQ": "5.16.4"
         },
         "compile": {
-          "bin/placeholder/Contracts.dll": {}
+          "bin/placeholder/Common.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Contracts.dll": {}
+          "bin/placeholder/Common.dll": {}
         }
-      }
-    },
-    "net10.0/linux-x64": {
-      "Aspire.Keycloak.Authentication/13.4.6-preview.1.26319.6": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.AspNetCore.Authentication.JwtBearer": "10.0.8",
-          "Microsoft.AspNetCore.Authentication.OpenIdConnect": "10.0.8"
-        },
-        "compile": {
-          "lib/net10.0/Aspire.Keycloak.Authentication.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net10.0/Aspire.Keycloak.Authentication.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Aspire.Npgsql.EntityFrameworkCore.PostgreSQL/13.4.6": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore": "10.0.8",
-          "Npgsql.DependencyInjection": "10.0.2",
-          "Npgsql.EntityFrameworkCore.PostgreSQL": "10.0.0",
-          "Npgsql.OpenTelemetry": "10.0.2",
-          "OpenTelemetry.Extensions.Hosting": "1.15.3"
-        },
-        "compile": {
-          "lib/net10.0/Aspire.Npgsql.EntityFrameworkCore.PostgreSQL.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net10.0/Aspire.Npgsql.EntityFrameworkCore.PostgreSQL.dll": {
-            "related": ".xml"
-          }
-        },
-        "build": {
-          "buildTransitive/net10.0/Aspire.Npgsql.EntityFrameworkCore.PostgreSQL.targets": {}
-        }
-      },
-      "FastExpressionCompiler/5.3.0": {
-        "type": "package",
-        "compile": {
-          "lib/net9.0/FastExpressionCompiler.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net9.0/FastExpressionCompiler.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Humanizer.Core/2.14.1": {
-        "type": "package",
-        "compile": {
-          "lib/net6.0/_._": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/Humanizer.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "ImTools/4.0.0": {
-        "type": "package",
-        "contentFiles": {
-          "contentFiles/any/any/_._": {
-            "buildAction": "None",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          }
-        }
-      },
-      "JasperFx/1.20.0": {
-        "type": "package",
-        "dependencies": {
-          "FastExpressionCompiler": "5.3.0",
-          "ImTools": "4.0.0",
-          "Microsoft.Bcl.TimeProvider": "10.0.0",
-          "Polly.Core": "8.6.5",
-          "Spectre.Console": "0.53.0"
-        },
-        "compile": {
-          "lib/net10.0/JasperFx.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net10.0/JasperFx.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "JasperFx.Events/1.22.0": {
-        "type": "package",
-        "dependencies": {
-          "JasperFx": "1.20.0"
-        },
-        "compile": {
-          "lib/net10.0/JasperFx.Events.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net10.0/JasperFx.Events.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "JasperFx.RuntimeCompiler/4.4.0": {
-        "type": "package",
-        "dependencies": {
-          "JasperFx": "1.18.0",
-          "Microsoft.CodeAnalysis": "5.0.0",
-          "Microsoft.CodeAnalysis.CSharp": "5.0.0",
-          "Microsoft.CodeAnalysis.Scripting": "5.0.0"
-        },
-        "compile": {
-          "lib/net10.0/JasperFx.RuntimeCompiler.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net10.0/JasperFx.RuntimeCompiler.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.AspNetCore.Authentication.JwtBearer/10.0.8": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.IdentityModel.Protocols.OpenIdConnect": "8.0.1"
-        },
-        "compile": {
-          "lib/net10.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net10.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll": {
-            "related": ".xml"
-          }
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
-      },
-      "Microsoft.AspNetCore.Authentication.OpenIdConnect/10.0.8": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.IdentityModel.Protocols.OpenIdConnect": "8.0.1"
-        },
-        "compile": {
-          "lib/net10.0/Microsoft.AspNetCore.Authentication.OpenIdConnect.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net10.0/Microsoft.AspNetCore.Authentication.OpenIdConnect.dll": {
-            "related": ".xml"
-          }
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
-      },
-      "Microsoft.AspNetCore.OpenApi/10.0.9": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.OpenApi": "2.0.0"
-        },
-        "compile": {
-          "lib/net10.0/Microsoft.AspNetCore.OpenApi.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net10.0/Microsoft.AspNetCore.OpenApi.dll": {
-            "related": ".xml"
-          }
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ],
-        "build": {
-          "build/Microsoft.AspNetCore.OpenApi.targets": {}
-        }
-      },
-      "Microsoft.Bcl.AsyncInterfaces/9.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {
-            "related": ".xml"
-          }
-        },
-        "build": {
-          "buildTransitive/net8.0/_._": {}
-        }
-      },
-      "Microsoft.Bcl.TimeProvider/10.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/net8.0/Microsoft.Bcl.TimeProvider.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/Microsoft.Bcl.TimeProvider.dll": {
-            "related": ".xml"
-          }
-        },
-        "build": {
-          "buildTransitive/net8.0/_._": {}
-        }
-      },
-      "Microsoft.Build.Framework/18.0.2": {
-        "type": "package",
-        "compile": {
-          "ref/net10.0/_._": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net10.0/Microsoft.Build.Framework.dll": {
-            "related": ".pdb;.xml"
-          }
-        }
-      },
-      "Microsoft.CodeAnalysis/5.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Humanizer.Core": "2.14.1",
-          "Microsoft.Bcl.AsyncInterfaces": "9.0.0",
-          "Microsoft.CodeAnalysis.Analyzers": "3.11.0",
-          "Microsoft.CodeAnalysis.CSharp.Workspaces": "[5.0.0]",
-          "Microsoft.CodeAnalysis.VisualBasic.Workspaces": "[5.0.0]",
-          "System.Composition": "9.0.0"
-        }
-      },
-      "Microsoft.CodeAnalysis.Analyzers/3.11.0": {
-        "type": "package",
-        "build": {
-          "buildTransitive/Microsoft.CodeAnalysis.Analyzers.props": {},
-          "buildTransitive/Microsoft.CodeAnalysis.Analyzers.targets": {}
-        }
-      },
-      "Microsoft.CodeAnalysis.Common/5.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.CodeAnalysis.Analyzers": "3.11.0"
-        },
-        "compile": {
-          "lib/net9.0/Microsoft.CodeAnalysis.dll": {
-            "related": ".pdb;.xml"
-          }
-        },
-        "runtime": {
-          "lib/net9.0/Microsoft.CodeAnalysis.dll": {
-            "related": ".pdb;.xml"
-          }
-        },
-        "resource": {
-          "lib/net9.0/cs/Microsoft.CodeAnalysis.resources.dll": {
-            "locale": "cs"
-          },
-          "lib/net9.0/de/Microsoft.CodeAnalysis.resources.dll": {
-            "locale": "de"
-          },
-          "lib/net9.0/es/Microsoft.CodeAnalysis.resources.dll": {
-            "locale": "es"
-          },
-          "lib/net9.0/fr/Microsoft.CodeAnalysis.resources.dll": {
-            "locale": "fr"
-          },
-          "lib/net9.0/it/Microsoft.CodeAnalysis.resources.dll": {
-            "locale": "it"
-          },
-          "lib/net9.0/ja/Microsoft.CodeAnalysis.resources.dll": {
-            "locale": "ja"
-          },
-          "lib/net9.0/ko/Microsoft.CodeAnalysis.resources.dll": {
-            "locale": "ko"
-          },
-          "lib/net9.0/pl/Microsoft.CodeAnalysis.resources.dll": {
-            "locale": "pl"
-          },
-          "lib/net9.0/pt-BR/Microsoft.CodeAnalysis.resources.dll": {
-            "locale": "pt-BR"
-          },
-          "lib/net9.0/ru/Microsoft.CodeAnalysis.resources.dll": {
-            "locale": "ru"
-          },
-          "lib/net9.0/tr/Microsoft.CodeAnalysis.resources.dll": {
-            "locale": "tr"
-          },
-          "lib/net9.0/zh-Hans/Microsoft.CodeAnalysis.resources.dll": {
-            "locale": "zh-Hans"
-          },
-          "lib/net9.0/zh-Hant/Microsoft.CodeAnalysis.resources.dll": {
-            "locale": "zh-Hant"
-          }
-        }
-      },
-      "Microsoft.CodeAnalysis.CSharp/5.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.CodeAnalysis.Analyzers": "3.11.0",
-          "Microsoft.CodeAnalysis.Common": "[5.0.0]"
-        },
-        "compile": {
-          "lib/net9.0/Microsoft.CodeAnalysis.CSharp.dll": {
-            "related": ".pdb;.xml"
-          }
-        },
-        "runtime": {
-          "lib/net9.0/Microsoft.CodeAnalysis.CSharp.dll": {
-            "related": ".pdb;.xml"
-          }
-        },
-        "resource": {
-          "lib/net9.0/cs/Microsoft.CodeAnalysis.CSharp.resources.dll": {
-            "locale": "cs"
-          },
-          "lib/net9.0/de/Microsoft.CodeAnalysis.CSharp.resources.dll": {
-            "locale": "de"
-          },
-          "lib/net9.0/es/Microsoft.CodeAnalysis.CSharp.resources.dll": {
-            "locale": "es"
-          },
-          "lib/net9.0/fr/Microsoft.CodeAnalysis.CSharp.resources.dll": {
-            "locale": "fr"
-          },
-          "lib/net9.0/it/Microsoft.CodeAnalysis.CSharp.resources.dll": {
-            "locale": "it"
-          },
-          "lib/net9.0/ja/Microsoft.CodeAnalysis.CSharp.resources.dll": {
-            "locale": "ja"
-          },
-          "lib/net9.0/ko/Microsoft.CodeAnalysis.CSharp.resources.dll": {
-            "locale": "ko"
-          },
-          "lib/net9.0/pl/Microsoft.CodeAnalysis.CSharp.resources.dll": {
-            "locale": "pl"
-          },
-          "lib/net9.0/pt-BR/Microsoft.CodeAnalysis.CSharp.resources.dll": {
-            "locale": "pt-BR"
-          },
-          "lib/net9.0/ru/Microsoft.CodeAnalysis.CSharp.resources.dll": {
-            "locale": "ru"
-          },
-          "lib/net9.0/tr/Microsoft.CodeAnalysis.CSharp.resources.dll": {
-            "locale": "tr"
-          },
-          "lib/net9.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll": {
-            "locale": "zh-Hans"
-          },
-          "lib/net9.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll": {
-            "locale": "zh-Hant"
-          }
-        }
-      },
-      "Microsoft.CodeAnalysis.CSharp.Scripting/5.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.CodeAnalysis.Analyzers": "3.11.0",
-          "Microsoft.CodeAnalysis.CSharp": "[5.0.0]",
-          "Microsoft.CodeAnalysis.Common": "[5.0.0]",
-          "Microsoft.CodeAnalysis.Scripting.Common": "[5.0.0]"
-        },
-        "compile": {
-          "lib/net9.0/Microsoft.CodeAnalysis.CSharp.Scripting.dll": {
-            "related": ".pdb;.xml"
-          }
-        },
-        "runtime": {
-          "lib/net9.0/Microsoft.CodeAnalysis.CSharp.Scripting.dll": {
-            "related": ".pdb;.xml"
-          }
-        },
-        "resource": {
-          "lib/net9.0/cs/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll": {
-            "locale": "cs"
-          },
-          "lib/net9.0/de/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll": {
-            "locale": "de"
-          },
-          "lib/net9.0/es/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll": {
-            "locale": "es"
-          },
-          "lib/net9.0/fr/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll": {
-            "locale": "fr"
-          },
-          "lib/net9.0/it/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll": {
-            "locale": "it"
-          },
-          "lib/net9.0/ja/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll": {
-            "locale": "ja"
-          },
-          "lib/net9.0/ko/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll": {
-            "locale": "ko"
-          },
-          "lib/net9.0/pl/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll": {
-            "locale": "pl"
-          },
-          "lib/net9.0/pt-BR/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll": {
-            "locale": "pt-BR"
-          },
-          "lib/net9.0/ru/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll": {
-            "locale": "ru"
-          },
-          "lib/net9.0/tr/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll": {
-            "locale": "tr"
-          },
-          "lib/net9.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll": {
-            "locale": "zh-Hans"
-          },
-          "lib/net9.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll": {
-            "locale": "zh-Hant"
-          }
-        }
-      },
-      "Microsoft.CodeAnalysis.CSharp.Workspaces/5.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Humanizer.Core": "2.14.1",
-          "Microsoft.CodeAnalysis.Analyzers": "3.11.0",
-          "Microsoft.CodeAnalysis.CSharp": "[5.0.0]",
-          "Microsoft.CodeAnalysis.Common": "[5.0.0]",
-          "Microsoft.CodeAnalysis.Workspaces.Common": "[5.0.0]",
-          "System.Composition": "9.0.0"
-        },
-        "compile": {
-          "lib/net9.0/Microsoft.CodeAnalysis.CSharp.Workspaces.dll": {
-            "related": ".pdb;.xml"
-          }
-        },
-        "runtime": {
-          "lib/net9.0/Microsoft.CodeAnalysis.CSharp.Workspaces.dll": {
-            "related": ".pdb;.xml"
-          }
-        },
-        "resource": {
-          "lib/net9.0/cs/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll": {
-            "locale": "cs"
-          },
-          "lib/net9.0/de/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll": {
-            "locale": "de"
-          },
-          "lib/net9.0/es/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll": {
-            "locale": "es"
-          },
-          "lib/net9.0/fr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll": {
-            "locale": "fr"
-          },
-          "lib/net9.0/it/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll": {
-            "locale": "it"
-          },
-          "lib/net9.0/ja/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll": {
-            "locale": "ja"
-          },
-          "lib/net9.0/ko/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll": {
-            "locale": "ko"
-          },
-          "lib/net9.0/pl/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll": {
-            "locale": "pl"
-          },
-          "lib/net9.0/pt-BR/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll": {
-            "locale": "pt-BR"
-          },
-          "lib/net9.0/ru/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll": {
-            "locale": "ru"
-          },
-          "lib/net9.0/tr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll": {
-            "locale": "tr"
-          },
-          "lib/net9.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll": {
-            "locale": "zh-Hans"
-          },
-          "lib/net9.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll": {
-            "locale": "zh-Hant"
-          }
-        }
-      },
-      "Microsoft.CodeAnalysis.Scripting/5.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.CodeAnalysis.Analyzers": "3.11.0",
-          "Microsoft.CodeAnalysis.CSharp.Scripting": "[5.0.0]"
-        }
-      },
-      "Microsoft.CodeAnalysis.Scripting.Common/5.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.CodeAnalysis.Analyzers": "3.11.0",
-          "Microsoft.CodeAnalysis.Common": "[5.0.0]"
-        },
-        "compile": {
-          "lib/net9.0/Microsoft.CodeAnalysis.Scripting.dll": {
-            "related": ".pdb;.xml"
-          }
-        },
-        "runtime": {
-          "lib/net9.0/Microsoft.CodeAnalysis.Scripting.dll": {
-            "related": ".pdb;.xml"
-          }
-        },
-        "resource": {
-          "lib/net9.0/cs/Microsoft.CodeAnalysis.Scripting.resources.dll": {
-            "locale": "cs"
-          },
-          "lib/net9.0/de/Microsoft.CodeAnalysis.Scripting.resources.dll": {
-            "locale": "de"
-          },
-          "lib/net9.0/es/Microsoft.CodeAnalysis.Scripting.resources.dll": {
-            "locale": "es"
-          },
-          "lib/net9.0/fr/Microsoft.CodeAnalysis.Scripting.resources.dll": {
-            "locale": "fr"
-          },
-          "lib/net9.0/it/Microsoft.CodeAnalysis.Scripting.resources.dll": {
-            "locale": "it"
-          },
-          "lib/net9.0/ja/Microsoft.CodeAnalysis.Scripting.resources.dll": {
-            "locale": "ja"
-          },
-          "lib/net9.0/ko/Microsoft.CodeAnalysis.Scripting.resources.dll": {
-            "locale": "ko"
-          },
-          "lib/net9.0/pl/Microsoft.CodeAnalysis.Scripting.resources.dll": {
-            "locale": "pl"
-          },
-          "lib/net9.0/pt-BR/Microsoft.CodeAnalysis.Scripting.resources.dll": {
-            "locale": "pt-BR"
-          },
-          "lib/net9.0/ru/Microsoft.CodeAnalysis.Scripting.resources.dll": {
-            "locale": "ru"
-          },
-          "lib/net9.0/tr/Microsoft.CodeAnalysis.Scripting.resources.dll": {
-            "locale": "tr"
-          },
-          "lib/net9.0/zh-Hans/Microsoft.CodeAnalysis.Scripting.resources.dll": {
-            "locale": "zh-Hans"
-          },
-          "lib/net9.0/zh-Hant/Microsoft.CodeAnalysis.Scripting.resources.dll": {
-            "locale": "zh-Hant"
-          }
-        }
-      },
-      "Microsoft.CodeAnalysis.VisualBasic/5.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.CodeAnalysis.Analyzers": "3.11.0",
-          "Microsoft.CodeAnalysis.Common": "[5.0.0]"
-        },
-        "compile": {
-          "lib/net9.0/Microsoft.CodeAnalysis.VisualBasic.dll": {
-            "related": ".pdb;.xml"
-          }
-        },
-        "runtime": {
-          "lib/net9.0/Microsoft.CodeAnalysis.VisualBasic.dll": {
-            "related": ".pdb;.xml"
-          }
-        },
-        "resource": {
-          "lib/net9.0/cs/Microsoft.CodeAnalysis.VisualBasic.resources.dll": {
-            "locale": "cs"
-          },
-          "lib/net9.0/de/Microsoft.CodeAnalysis.VisualBasic.resources.dll": {
-            "locale": "de"
-          },
-          "lib/net9.0/es/Microsoft.CodeAnalysis.VisualBasic.resources.dll": {
-            "locale": "es"
-          },
-          "lib/net9.0/fr/Microsoft.CodeAnalysis.VisualBasic.resources.dll": {
-            "locale": "fr"
-          },
-          "lib/net9.0/it/Microsoft.CodeAnalysis.VisualBasic.resources.dll": {
-            "locale": "it"
-          },
-          "lib/net9.0/ja/Microsoft.CodeAnalysis.VisualBasic.resources.dll": {
-            "locale": "ja"
-          },
-          "lib/net9.0/ko/Microsoft.CodeAnalysis.VisualBasic.resources.dll": {
-            "locale": "ko"
-          },
-          "lib/net9.0/pl/Microsoft.CodeAnalysis.VisualBasic.resources.dll": {
-            "locale": "pl"
-          },
-          "lib/net9.0/pt-BR/Microsoft.CodeAnalysis.VisualBasic.resources.dll": {
-            "locale": "pt-BR"
-          },
-          "lib/net9.0/ru/Microsoft.CodeAnalysis.VisualBasic.resources.dll": {
-            "locale": "ru"
-          },
-          "lib/net9.0/tr/Microsoft.CodeAnalysis.VisualBasic.resources.dll": {
-            "locale": "tr"
-          },
-          "lib/net9.0/zh-Hans/Microsoft.CodeAnalysis.VisualBasic.resources.dll": {
-            "locale": "zh-Hans"
-          },
-          "lib/net9.0/zh-Hant/Microsoft.CodeAnalysis.VisualBasic.resources.dll": {
-            "locale": "zh-Hant"
-          }
-        }
-      },
-      "Microsoft.CodeAnalysis.VisualBasic.Workspaces/5.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Humanizer.Core": "2.14.1",
-          "Microsoft.CodeAnalysis.Analyzers": "3.11.0",
-          "Microsoft.CodeAnalysis.Common": "[5.0.0]",
-          "Microsoft.CodeAnalysis.VisualBasic": "[5.0.0]",
-          "Microsoft.CodeAnalysis.Workspaces.Common": "[5.0.0]",
-          "System.Composition": "9.0.0"
-        },
-        "compile": {
-          "lib/net9.0/Microsoft.CodeAnalysis.VisualBasic.Workspaces.dll": {
-            "related": ".pdb;.xml"
-          }
-        },
-        "runtime": {
-          "lib/net9.0/Microsoft.CodeAnalysis.VisualBasic.Workspaces.dll": {
-            "related": ".pdb;.xml"
-          }
-        },
-        "resource": {
-          "lib/net9.0/cs/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll": {
-            "locale": "cs"
-          },
-          "lib/net9.0/de/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll": {
-            "locale": "de"
-          },
-          "lib/net9.0/es/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll": {
-            "locale": "es"
-          },
-          "lib/net9.0/fr/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll": {
-            "locale": "fr"
-          },
-          "lib/net9.0/it/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll": {
-            "locale": "it"
-          },
-          "lib/net9.0/ja/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll": {
-            "locale": "ja"
-          },
-          "lib/net9.0/ko/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll": {
-            "locale": "ko"
-          },
-          "lib/net9.0/pl/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll": {
-            "locale": "pl"
-          },
-          "lib/net9.0/pt-BR/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll": {
-            "locale": "pt-BR"
-          },
-          "lib/net9.0/ru/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll": {
-            "locale": "ru"
-          },
-          "lib/net9.0/tr/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll": {
-            "locale": "tr"
-          },
-          "lib/net9.0/zh-Hans/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll": {
-            "locale": "zh-Hans"
-          },
-          "lib/net9.0/zh-Hant/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll": {
-            "locale": "zh-Hant"
-          }
-        }
-      },
-      "Microsoft.CodeAnalysis.Workspaces.Common/5.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Humanizer.Core": "2.14.1",
-          "Microsoft.CodeAnalysis.Analyzers": "3.11.0",
-          "Microsoft.CodeAnalysis.Common": "[5.0.0]",
-          "System.Composition": "9.0.0"
-        },
-        "compile": {
-          "lib/net9.0/Microsoft.CodeAnalysis.Workspaces.dll": {
-            "related": ".pdb;.xml"
-          }
-        },
-        "runtime": {
-          "lib/net9.0/Microsoft.CodeAnalysis.Workspaces.dll": {
-            "related": ".pdb;.xml"
-          }
-        },
-        "resource": {
-          "lib/net9.0/cs/Microsoft.CodeAnalysis.Workspaces.resources.dll": {
-            "locale": "cs"
-          },
-          "lib/net9.0/de/Microsoft.CodeAnalysis.Workspaces.resources.dll": {
-            "locale": "de"
-          },
-          "lib/net9.0/es/Microsoft.CodeAnalysis.Workspaces.resources.dll": {
-            "locale": "es"
-          },
-          "lib/net9.0/fr/Microsoft.CodeAnalysis.Workspaces.resources.dll": {
-            "locale": "fr"
-          },
-          "lib/net9.0/it/Microsoft.CodeAnalysis.Workspaces.resources.dll": {
-            "locale": "it"
-          },
-          "lib/net9.0/ja/Microsoft.CodeAnalysis.Workspaces.resources.dll": {
-            "locale": "ja"
-          },
-          "lib/net9.0/ko/Microsoft.CodeAnalysis.Workspaces.resources.dll": {
-            "locale": "ko"
-          },
-          "lib/net9.0/pl/Microsoft.CodeAnalysis.Workspaces.resources.dll": {
-            "locale": "pl"
-          },
-          "lib/net9.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.resources.dll": {
-            "locale": "pt-BR"
-          },
-          "lib/net9.0/ru/Microsoft.CodeAnalysis.Workspaces.resources.dll": {
-            "locale": "ru"
-          },
-          "lib/net9.0/tr/Microsoft.CodeAnalysis.Workspaces.resources.dll": {
-            "locale": "tr"
-          },
-          "lib/net9.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.resources.dll": {
-            "locale": "zh-Hans"
-          },
-          "lib/net9.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll": {
-            "locale": "zh-Hant"
-          }
-        }
-      },
-      "Microsoft.CodeAnalysis.Workspaces.MSBuild/5.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Humanizer.Core": "2.14.1",
-          "Microsoft.Build.Framework": "17.11.31",
-          "Microsoft.CodeAnalysis.Analyzers": "3.11.0",
-          "Microsoft.CodeAnalysis.Workspaces.Common": "[5.0.0]",
-          "Microsoft.VisualStudio.SolutionPersistence": "1.0.52",
-          "Newtonsoft.Json": "13.0.3",
-          "System.Composition": "9.0.0"
-        },
-        "compile": {
-          "lib/net9.0/_._": {}
-        },
-        "runtime": {
-          "lib/net9.0/Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler.dll": {},
-          "lib/net9.0/Microsoft.CodeAnalysis.Workspaces.MSBuild.dll": {
-            "related": ".pdb;.xml"
-          }
-        },
-        "resource": {
-          "lib/net9.0/cs/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll": {
-            "locale": "cs"
-          },
-          "lib/net9.0/de/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll": {
-            "locale": "de"
-          },
-          "lib/net9.0/es/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll": {
-            "locale": "es"
-          },
-          "lib/net9.0/fr/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll": {
-            "locale": "fr"
-          },
-          "lib/net9.0/it/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll": {
-            "locale": "it"
-          },
-          "lib/net9.0/ja/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll": {
-            "locale": "ja"
-          },
-          "lib/net9.0/ko/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll": {
-            "locale": "ko"
-          },
-          "lib/net9.0/pl/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll": {
-            "locale": "pl"
-          },
-          "lib/net9.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll": {
-            "locale": "pt-BR"
-          },
-          "lib/net9.0/ru/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll": {
-            "locale": "ru"
-          },
-          "lib/net9.0/tr/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll": {
-            "locale": "tr"
-          },
-          "lib/net9.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll": {
-            "locale": "zh-Hans"
-          },
-          "lib/net9.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll": {
-            "locale": "zh-Hant"
-          }
-        },
-        "contentFiles": {
-          "contentFiles/any/any/_._": {
-            "buildAction": "None",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          }
-        }
-      },
-      "Microsoft.EntityFrameworkCore/10.0.9": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.Abstractions": "10.0.9",
-          "Microsoft.EntityFrameworkCore.Analyzers": "10.0.9"
-        },
-        "compile": {
-          "lib/net10.0/Microsoft.EntityFrameworkCore.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net10.0/Microsoft.EntityFrameworkCore.dll": {
-            "related": ".xml"
-          }
-        },
-        "build": {
-          "buildTransitive/net10.0/Microsoft.EntityFrameworkCore.props": {}
-        }
-      },
-      "Microsoft.EntityFrameworkCore.Abstractions/10.0.9": {
-        "type": "package",
-        "compile": {
-          "lib/net10.0/Microsoft.EntityFrameworkCore.Abstractions.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net10.0/Microsoft.EntityFrameworkCore.Abstractions.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.EntityFrameworkCore.Analyzers/10.0.9": {
-        "type": "package"
-      },
-      "Microsoft.EntityFrameworkCore.Design/10.0.9": {
-        "type": "package",
-        "dependencies": {
-          "Humanizer.Core": "2.14.1",
-          "Microsoft.Build.Framework": "18.0.2",
-          "Microsoft.CodeAnalysis.CSharp": "5.0.0",
-          "Microsoft.CodeAnalysis.CSharp.Workspaces": "5.0.0",
-          "Microsoft.CodeAnalysis.Workspaces.MSBuild": "5.0.0",
-          "Microsoft.EntityFrameworkCore.Relational": "10.0.9",
-          "Microsoft.Extensions.DependencyModel": "10.0.9",
-          "Mono.TextTemplating": "3.0.0",
-          "Newtonsoft.Json": "13.0.3"
-        },
-        "compile": {
-          "lib/net10.0/_._": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net10.0/Microsoft.EntityFrameworkCore.Design.dll": {
-            "related": ".xml"
-          }
-        },
-        "build": {
-          "build/net10.0/Microsoft.EntityFrameworkCore.Design.props": {}
-        }
-      },
-      "Microsoft.EntityFrameworkCore.Relational/10.0.9": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore": "10.0.9"
-        },
-        "compile": {
-          "lib/net10.0/Microsoft.EntityFrameworkCore.Relational.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net10.0/Microsoft.EntityFrameworkCore.Relational.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.Extensions.AmbientMetadata.Application/10.7.0": {
-        "type": "package",
-        "compile": {
-          "lib/net10.0/Microsoft.Extensions.AmbientMetadata.Application.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net10.0/Microsoft.Extensions.AmbientMetadata.Application.dll": {
-            "related": ".xml"
-          }
-        },
-        "build": {
-          "buildTransitive/net8.0/_._": {}
-        }
-      },
-      "Microsoft.Extensions.Compliance.Abstractions/10.7.0": {
-        "type": "package",
-        "compile": {
-          "lib/net10.0/Microsoft.Extensions.Compliance.Abstractions.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net10.0/Microsoft.Extensions.Compliance.Abstractions.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.Extensions.DependencyInjection.AutoActivation/10.7.0": {
-        "type": "package",
-        "compile": {
-          "lib/net10.0/Microsoft.Extensions.DependencyInjection.AutoActivation.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net10.0/Microsoft.Extensions.DependencyInjection.AutoActivation.dll": {
-            "related": ".xml"
-          }
-        },
-        "build": {
-          "buildTransitive/net8.0/_._": {}
-        }
-      },
-      "Microsoft.Extensions.DependencyModel/10.0.9": {
-        "type": "package",
-        "compile": {
-          "lib/net10.0/_._": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net10.0/Microsoft.Extensions.DependencyModel.dll": {
-            "related": ".xml"
-          }
-        },
-        "build": {
-          "buildTransitive/net8.0/_._": {}
-        }
-      },
-      "Microsoft.Extensions.Diagnostics.ExceptionSummarization/10.7.0": {
-        "type": "package",
-        "compile": {
-          "lib/net10.0/Microsoft.Extensions.Diagnostics.ExceptionSummarization.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net10.0/Microsoft.Extensions.Diagnostics.ExceptionSummarization.dll": {
-            "related": ".xml"
-          }
-        },
-        "build": {
-          "buildTransitive/net8.0/_._": {}
-        }
-      },
-      "Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore/10.0.8": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.Relational": "10.0.8"
-        },
-        "compile": {
-          "lib/net10.0/Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net10.0/Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.Extensions.Http.Diagnostics/10.7.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.Telemetry": "10.7.0"
-        },
-        "compile": {
-          "lib/net10.0/Microsoft.Extensions.Http.Diagnostics.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net10.0/Microsoft.Extensions.Http.Diagnostics.dll": {
-            "related": ".xml"
-          }
-        },
-        "build": {
-          "buildTransitive/net8.0/_._": {}
-        }
-      },
-      "Microsoft.Extensions.Http.Resilience/10.7.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.Http.Diagnostics": "10.7.0",
-          "Microsoft.Extensions.Resilience": "10.7.0"
-        },
-        "compile": {
-          "lib/net10.0/Microsoft.Extensions.Http.Resilience.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net10.0/Microsoft.Extensions.Http.Resilience.dll": {
-            "related": ".xml"
-          }
-        },
-        "build": {
-          "buildTransitive/net8.0/Microsoft.Extensions.Http.Resilience.targets": {}
-        }
-      },
-      "Microsoft.Extensions.Resilience/10.7.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.Diagnostics.ExceptionSummarization": "10.7.0",
-          "Microsoft.Extensions.Telemetry.Abstractions": "10.7.0",
-          "Polly.Extensions": "8.4.2",
-          "Polly.RateLimiting": "8.4.2"
-        },
-        "compile": {
-          "lib/net10.0/Microsoft.Extensions.Resilience.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net10.0/Microsoft.Extensions.Resilience.dll": {
-            "related": ".xml"
-          }
-        },
-        "build": {
-          "buildTransitive/net8.0/_._": {}
-        }
-      },
-      "Microsoft.Extensions.ServiceDiscovery/10.6.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.ServiceDiscovery.Abstractions": "10.6.0"
-        },
-        "compile": {
-          "lib/net10.0/Microsoft.Extensions.ServiceDiscovery.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net10.0/Microsoft.Extensions.ServiceDiscovery.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.Extensions.ServiceDiscovery.Abstractions/10.6.0": {
-        "type": "package",
-        "compile": {
-          "lib/net10.0/Microsoft.Extensions.ServiceDiscovery.Abstractions.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net10.0/Microsoft.Extensions.ServiceDiscovery.Abstractions.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.Extensions.Telemetry/10.7.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.AmbientMetadata.Application": "10.7.0",
-          "Microsoft.Extensions.DependencyInjection.AutoActivation": "10.7.0",
-          "Microsoft.Extensions.Telemetry.Abstractions": "10.7.0"
-        },
-        "compile": {
-          "lib/net10.0/Microsoft.Extensions.Telemetry.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net10.0/Microsoft.Extensions.Telemetry.dll": {
-            "related": ".xml"
-          }
-        },
-        "build": {
-          "buildTransitive/net8.0/_._": {}
-        }
-      },
-      "Microsoft.Extensions.Telemetry.Abstractions/10.7.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.Compliance.Abstractions": "10.7.0"
-        },
-        "compile": {
-          "lib/net10.0/Microsoft.Extensions.Telemetry.Abstractions.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net10.0/Microsoft.Extensions.Telemetry.Abstractions.dll": {
-            "related": ".xml"
-          }
-        },
-        "build": {
-          "buildTransitive/net8.0/Microsoft.Extensions.Telemetry.Abstractions.props": {},
-          "buildTransitive/net8.0/Microsoft.Extensions.Telemetry.Abstractions.targets": {}
-        }
-      },
-      "Microsoft.IdentityModel.Abstractions/8.0.1": {
-        "type": "package",
-        "compile": {
-          "lib/net9.0/Microsoft.IdentityModel.Abstractions.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net9.0/Microsoft.IdentityModel.Abstractions.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.IdentityModel.JsonWebTokens/8.0.1": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.IdentityModel.Tokens": "8.0.1"
-        },
-        "compile": {
-          "lib/net9.0/Microsoft.IdentityModel.JsonWebTokens.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net9.0/Microsoft.IdentityModel.JsonWebTokens.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.IdentityModel.Logging/8.0.1": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.IdentityModel.Abstractions": "8.0.1"
-        },
-        "compile": {
-          "lib/net9.0/Microsoft.IdentityModel.Logging.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net9.0/Microsoft.IdentityModel.Logging.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.IdentityModel.Protocols/8.0.1": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.IdentityModel.Tokens": "8.0.1"
-        },
-        "compile": {
-          "lib/net9.0/Microsoft.IdentityModel.Protocols.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net9.0/Microsoft.IdentityModel.Protocols.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.IdentityModel.Protocols.OpenIdConnect/8.0.1": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.IdentityModel.Protocols": "8.0.1",
-          "System.IdentityModel.Tokens.Jwt": "8.0.1"
-        },
-        "compile": {
-          "lib/net9.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net9.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.IdentityModel.Tokens/8.0.1": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.IdentityModel.Logging": "8.0.1"
-        },
-        "compile": {
-          "lib/net9.0/Microsoft.IdentityModel.Tokens.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net9.0/Microsoft.IdentityModel.Tokens.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.OpenApi/2.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/net8.0/Microsoft.OpenApi.dll": {
-            "related": ".pdb;.xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/Microsoft.OpenApi.dll": {
-            "related": ".pdb;.xml"
-          }
-        }
-      },
-      "Microsoft.VisualStudio.SolutionPersistence/1.0.52": {
-        "type": "package",
-        "compile": {
-          "lib/net8.0/_._": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/Microsoft.VisualStudio.SolutionPersistence.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Mono.TextTemplating/3.0.0": {
-        "type": "package",
-        "dependencies": {
-          "System.CodeDom": "6.0.0"
-        },
-        "compile": {
-          "lib/net6.0/_._": {}
-        },
-        "runtime": {
-          "lib/net6.0/Mono.TextTemplating.dll": {}
-        },
-        "build": {
-          "buildTransitive/Mono.TextTemplating.targets": {}
-        }
-      },
-      "NewId/4.0.1": {
-        "type": "package",
-        "compile": {
-          "lib/net6.0/NewId.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/NewId.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Newtonsoft.Json/13.0.3": {
-        "type": "package",
-        "compile": {
-          "lib/net6.0/Newtonsoft.Json.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/Newtonsoft.Json.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Npgsql/10.0.2": {
-        "type": "package",
-        "compile": {
-          "lib/net10.0/Npgsql.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net10.0/Npgsql.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Npgsql.DependencyInjection/10.0.2": {
-        "type": "package",
-        "dependencies": {
-          "Npgsql": "10.0.2"
-        },
-        "compile": {
-          "lib/net8.0/Npgsql.DependencyInjection.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/Npgsql.DependencyInjection.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Npgsql.EntityFrameworkCore.PostgreSQL/10.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore": "[10.0.0, 11.0.0)",
-          "Microsoft.EntityFrameworkCore.Relational": "[10.0.0, 11.0.0)",
-          "Npgsql": "10.0.0"
-        },
-        "compile": {
-          "lib/net10.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net10.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Npgsql.OpenTelemetry/10.0.2": {
-        "type": "package",
-        "dependencies": {
-          "Npgsql": "10.0.2",
-          "OpenTelemetry.API": "1.14.0"
-        },
-        "compile": {
-          "lib/net8.0/Npgsql.OpenTelemetry.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/Npgsql.OpenTelemetry.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "OpenTelemetry/1.15.3": {
-        "type": "package",
-        "dependencies": {
-          "OpenTelemetry.Api.ProviderBuilderExtensions": "1.15.3"
-        },
-        "compile": {
-          "lib/net10.0/OpenTelemetry.dll": {
-            "related": ".dll.sigstore.json;.xml"
-          }
-        },
-        "runtime": {
-          "lib/net10.0/OpenTelemetry.dll": {
-            "related": ".dll.sigstore.json;.xml"
-          }
-        }
-      },
-      "OpenTelemetry.Api/1.16.0": {
-        "type": "package",
-        "compile": {
-          "lib/net10.0/OpenTelemetry.Api.dll": {
-            "related": ".dll.sigstore.json;.xml"
-          }
-        },
-        "runtime": {
-          "lib/net10.0/OpenTelemetry.Api.dll": {
-            "related": ".dll.sigstore.json;.xml"
-          }
-        }
-      },
-      "OpenTelemetry.Api.ProviderBuilderExtensions/1.16.0": {
-        "type": "package",
-        "dependencies": {
-          "OpenTelemetry.Api": "1.16.0"
-        },
-        "compile": {
-          "lib/net10.0/OpenTelemetry.Api.ProviderBuilderExtensions.dll": {
-            "related": ".dll.sigstore.json;.xml"
-          }
-        },
-        "runtime": {
-          "lib/net10.0/OpenTelemetry.Api.ProviderBuilderExtensions.dll": {
-            "related": ".dll.sigstore.json;.xml"
-          }
-        }
-      },
-      "OpenTelemetry.Exporter.OpenTelemetryProtocol/1.15.3": {
-        "type": "package",
-        "dependencies": {
-          "OpenTelemetry": "1.15.3"
-        },
-        "compile": {
-          "lib/net10.0/OpenTelemetry.Exporter.OpenTelemetryProtocol.dll": {
-            "related": ".dll.sigstore.json;.xml"
-          }
-        },
-        "runtime": {
-          "lib/net10.0/OpenTelemetry.Exporter.OpenTelemetryProtocol.dll": {
-            "related": ".dll.sigstore.json;.xml"
-          }
-        }
-      },
-      "OpenTelemetry.Extensions.Hosting/1.15.3": {
-        "type": "package",
-        "dependencies": {
-          "OpenTelemetry": "1.15.3"
-        },
-        "compile": {
-          "lib/net10.0/OpenTelemetry.Extensions.Hosting.dll": {
-            "related": ".dll.sigstore.json;.xml"
-          }
-        },
-        "runtime": {
-          "lib/net10.0/OpenTelemetry.Extensions.Hosting.dll": {
-            "related": ".dll.sigstore.json;.xml"
-          }
-        }
-      },
-      "OpenTelemetry.Instrumentation.AspNetCore/1.16.0": {
-        "type": "package",
-        "dependencies": {
-          "OpenTelemetry.Api.ProviderBuilderExtensions": "[1.16.0, 2.0.0)"
-        },
-        "compile": {
-          "lib/net10.0/OpenTelemetry.Instrumentation.AspNetCore.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net10.0/OpenTelemetry.Instrumentation.AspNetCore.dll": {
-            "related": ".xml"
-          }
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
-      },
-      "OpenTelemetry.Instrumentation.Http/1.15.1": {
-        "type": "package",
-        "dependencies": {
-          "OpenTelemetry.Api.ProviderBuilderExtensions": "[1.15.3, 2.0.0)"
-        },
-        "compile": {
-          "lib/net10.0/OpenTelemetry.Instrumentation.Http.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net10.0/OpenTelemetry.Instrumentation.Http.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "OpenTelemetry.Instrumentation.Runtime/1.15.1": {
-        "type": "package",
-        "dependencies": {
-          "OpenTelemetry.Api": "[1.15.3, 2.0.0)"
-        },
-        "compile": {
-          "lib/net10.0/OpenTelemetry.Instrumentation.Runtime.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net10.0/OpenTelemetry.Instrumentation.Runtime.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Polly.Core/8.6.5": {
-        "type": "package",
-        "compile": {
-          "lib/net8.0/Polly.Core.dll": {
-            "related": ".pdb;.xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/Polly.Core.dll": {
-            "related": ".pdb;.xml"
-          }
-        }
-      },
-      "Polly.Extensions/8.4.2": {
-        "type": "package",
-        "dependencies": {
-          "Polly.Core": "8.4.2"
-        },
-        "compile": {
-          "lib/net8.0/Polly.Extensions.dll": {
-            "related": ".pdb;.xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/Polly.Extensions.dll": {
-            "related": ".pdb;.xml"
-          }
-        }
-      },
-      "Polly.RateLimiting/8.4.2": {
-        "type": "package",
-        "dependencies": {
-          "Polly.Core": "8.4.2"
-        },
-        "compile": {
-          "lib/net8.0/Polly.RateLimiting.dll": {
-            "related": ".pdb;.xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/Polly.RateLimiting.dll": {
-            "related": ".pdb;.xml"
-          }
-        }
-      },
-      "RabbitMQ.Client/7.1.2": {
-        "type": "package",
-        "compile": {
-          "lib/net8.0/RabbitMQ.Client.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/RabbitMQ.Client.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Spectre.Console/0.53.0": {
-        "type": "package",
-        "compile": {
-          "lib/net9.0/Spectre.Console.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net9.0/Spectre.Console.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "System.CodeDom/6.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/net6.0/_._": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/System.CodeDom.dll": {
-            "related": ".xml"
-          }
-        },
-        "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
-        }
-      },
-      "System.Composition/9.0.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Composition.AttributedModel": "9.0.0",
-          "System.Composition.Convention": "9.0.0",
-          "System.Composition.Hosting": "9.0.0",
-          "System.Composition.Runtime": "9.0.0",
-          "System.Composition.TypedParts": "9.0.0"
-        },
-        "compile": {
-          "lib/netcoreapp2.0/_._": {}
-        },
-        "runtime": {
-          "lib/netcoreapp2.0/_._": {}
-        },
-        "build": {
-          "buildTransitive/net8.0/_._": {}
-        }
-      },
-      "System.Composition.AttributedModel/9.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/net9.0/System.Composition.AttributedModel.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net9.0/System.Composition.AttributedModel.dll": {
-            "related": ".xml"
-          }
-        },
-        "build": {
-          "buildTransitive/net8.0/_._": {}
-        }
-      },
-      "System.Composition.Convention/9.0.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Composition.AttributedModel": "9.0.0"
-        },
-        "compile": {
-          "lib/net9.0/System.Composition.Convention.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net9.0/System.Composition.Convention.dll": {
-            "related": ".xml"
-          }
-        },
-        "build": {
-          "buildTransitive/net8.0/_._": {}
-        }
-      },
-      "System.Composition.Hosting/9.0.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Composition.Runtime": "9.0.0"
-        },
-        "compile": {
-          "lib/net9.0/System.Composition.Hosting.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net9.0/System.Composition.Hosting.dll": {
-            "related": ".xml"
-          }
-        },
-        "build": {
-          "buildTransitive/net8.0/_._": {}
-        }
-      },
-      "System.Composition.Runtime/9.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/net9.0/System.Composition.Runtime.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net9.0/System.Composition.Runtime.dll": {
-            "related": ".xml"
-          }
-        },
-        "build": {
-          "buildTransitive/net8.0/_._": {}
-        }
-      },
-      "System.Composition.TypedParts/9.0.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Composition.AttributedModel": "9.0.0",
-          "System.Composition.Hosting": "9.0.0",
-          "System.Composition.Runtime": "9.0.0"
-        },
-        "compile": {
-          "lib/net9.0/System.Composition.TypedParts.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net9.0/System.Composition.TypedParts.dll": {
-            "related": ".xml"
-          }
-        },
-        "build": {
-          "buildTransitive/net8.0/_._": {}
-        }
-      },
-      "System.IdentityModel.Tokens.Jwt/8.0.1": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.IdentityModel.JsonWebTokens": "8.0.1",
-          "Microsoft.IdentityModel.Tokens": "8.0.1"
-        },
-        "compile": {
-          "lib/net9.0/System.IdentityModel.Tokens.Jwt.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net9.0/System.IdentityModel.Tokens.Jwt.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Typesense/8.5.0": {
-        "type": "package",
-        "compile": {
-          "lib/net8.0/Typesense.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/Typesense.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "WolverineFx/5.16.4": {
-        "type": "package",
-        "dependencies": {
-          "JasperFx": "1.20.0",
-          "JasperFx.Events": "1.22.0",
-          "JasperFx.RuntimeCompiler": "4.4.0",
-          "NewId": "4.0.1",
-          "Newtonsoft.Json": "13.0.3"
-        },
-        "compile": {
-          "lib/net10.0/Wolverine.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net10.0/Wolverine.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "WolverineFx.RabbitMQ/5.16.4": {
-        "type": "package",
-        "dependencies": {
-          "RabbitMQ.Client": "7.1.2",
-          "WolverineFx": "5.16.4"
-        },
-        "compile": {
-          "lib/net10.0/Wolverine.RabbitMQ.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net10.0/Wolverine.RabbitMQ.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "AspireApp1.ServiceDefaults/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v10.0",
-        "dependencies": {
-          "Microsoft.Extensions.Http.Resilience": "10.7.0",
-          "Microsoft.Extensions.ServiceDiscovery": "10.6.0",
-          "OpenTelemetry.Exporter.OpenTelemetryProtocol": "1.15.3",
-          "OpenTelemetry.Extensions.Hosting": "1.15.3",
-          "OpenTelemetry.Instrumentation.AspNetCore": "1.15.2",
-          "OpenTelemetry.Instrumentation.Http": "1.15.1",
-          "OpenTelemetry.Instrumentation.Runtime": "1.15.1"
-        },
-        "compile": {
-          "bin/placeholder/AspireApp1.ServiceDefaults.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/AspireApp1.ServiceDefaults.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
       },
       "Contracts/1.0.0": {
         "type": "project",
@@ -5862,10 +4132,10 @@
         "opentelemetry.nuspec"
       ]
     },
-    "OpenTelemetry.Api/1.16.0": {
-      "sha512": "WZP8Eb6vZTeNqeV+fjBitc7iefBoTHIhaWorqg/h/YiQBlcQJu0bICuTqKV0XRyjiE0eWs80yLlnUtHAFSkFWA==",
+    "OpenTelemetry.Api/1.15.3": {
+      "sha512": "fX+fkCysfPut+qCcT3bKqyX4QN9Saf4CgX8HLOHywEVD+Xr7sULtfuypITpoDysjx8R59dn/3mWhgimMH8cm/g==",
       "type": "package",
-      "path": "opentelemetry.api/1.16.0",
+      "path": "opentelemetry.api/1.15.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -5888,14 +4158,14 @@
         "lib/netstandard2.0/OpenTelemetry.Api.dll.sigstore.json",
         "lib/netstandard2.0/OpenTelemetry.Api.xml",
         "opentelemetry-icon-color.png",
-        "opentelemetry.api.1.16.0.nupkg.sha512",
+        "opentelemetry.api.1.15.3.nupkg.sha512",
         "opentelemetry.api.nuspec"
       ]
     },
-    "OpenTelemetry.Api.ProviderBuilderExtensions/1.16.0": {
-      "sha512": "hZwaHAkXvUNn9+cS+vEvYBgIrIQOQRz2cIRUODZ5gxHsDsLeNCueLgZFkybopjE0jUhLut6lm5eL3LTqbW0hMg==",
+    "OpenTelemetry.Api.ProviderBuilderExtensions/1.15.3": {
+      "sha512": "SYn0lqYDwLMWhv/zlNGsQcl2yX++yTumanX46bmOZE/ZDOd1WjPBO2kZaZgKLEZTZk48pavIFGJ6vOvxXgWVFQ==",
       "type": "package",
-      "path": "opentelemetry.api.providerbuilderextensions/1.16.0",
+      "path": "opentelemetry.api.providerbuilderextensions/1.15.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -5918,7 +4188,7 @@
         "lib/netstandard2.0/OpenTelemetry.Api.ProviderBuilderExtensions.dll.sigstore.json",
         "lib/netstandard2.0/OpenTelemetry.Api.ProviderBuilderExtensions.xml",
         "opentelemetry-icon-color.png",
-        "opentelemetry.api.providerbuilderextensions.1.16.0.nupkg.sha512",
+        "opentelemetry.api.providerbuilderextensions.1.15.3.nupkg.sha512",
         "opentelemetry.api.providerbuilderextensions.nuspec"
       ]
     },
@@ -5985,10 +4255,10 @@
         "opentelemetry.extensions.hosting.nuspec"
       ]
     },
-    "OpenTelemetry.Instrumentation.AspNetCore/1.16.0": {
-      "sha512": "vSC5EsmBVNcqXMh9BGkkq8zkoUjrg8ghBDb9zbKR8Bqjd05utjVgVft+fqsqQVsvlV5olGj1pBliHBngcIGSIg==",
+    "OpenTelemetry.Instrumentation.AspNetCore/1.15.2": {
+      "sha512": "2nPd7r0ug/gd6/CNFL6Rlu+RSQ9WYGSGHAYQ1ssbSqyzKJpqTunfx2I/1O0WB5k+L0cyXbG4XVZpoSoUc3M7wg==",
       "type": "package",
-      "path": "opentelemetry.instrumentation.aspnetcore/1.16.0",
+      "path": "opentelemetry.instrumentation.aspnetcore/1.15.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -6001,7 +4271,7 @@
         "lib/netstandard2.0/OpenTelemetry.Instrumentation.AspNetCore.dll",
         "lib/netstandard2.0/OpenTelemetry.Instrumentation.AspNetCore.xml",
         "opentelemetry-icon-color.png",
-        "opentelemetry.instrumentation.aspnetcore.1.16.0.nupkg.sha512",
+        "opentelemetry.instrumentation.aspnetcore.1.15.2.nupkg.sha512",
         "opentelemetry.instrumentation.aspnetcore.nuspec"
       ]
     },
@@ -6049,10 +4319,36 @@
         "opentelemetry.instrumentation.runtime.nuspec"
       ]
     },
-    "Polly.Core/8.6.5": {
-      "sha512": "t+sUVrIwvo7UmsgHGgOG9F0GDZSRIm47u2ylH17Gvcv1q5hNEwgD5GoBlFyc0kh/pebmPyrAgvGsR/65ZBaXlg==",
+    "Polly/8.7.0": {
+      "sha512": "0qR4f0OR8FeCAfLWcfwzAM7w6EmpUgwa22PgxKjcL25dEAto7sKpQQXbtxp38vVvK+V3RFkh/TeI7g/iUdoYIQ==",
       "type": "package",
-      "path": "polly.core/8.6.5",
+      "path": "polly/8.7.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "lib/net462/Polly.dll",
+        "lib/net462/Polly.pdb",
+        "lib/net462/Polly.xml",
+        "lib/net472/Polly.dll",
+        "lib/net472/Polly.pdb",
+        "lib/net472/Polly.xml",
+        "lib/net6.0/Polly.dll",
+        "lib/net6.0/Polly.pdb",
+        "lib/net6.0/Polly.xml",
+        "lib/netstandard2.0/Polly.dll",
+        "lib/netstandard2.0/Polly.pdb",
+        "lib/netstandard2.0/Polly.xml",
+        "package-icon.png",
+        "package-readme.md",
+        "polly.8.7.0.nupkg.sha512",
+        "polly.nuspec"
+      ]
+    },
+    "Polly.Core/8.7.0": {
+      "sha512": "BS2t+nsBer16PIebCEPNBK5fgMisADQyRCd7K+BgkMWpFmSaiYE+rVVNpFhGRqUkJmNSLmw0uCNzHHWfgml28Q==",
+      "type": "package",
+      "path": "polly.core/8.7.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -6074,7 +4370,7 @@
         "lib/netstandard2.0/Polly.Core.xml",
         "package-icon.png",
         "package-readme.md",
-        "polly.core.8.6.5.nupkg.sha512",
+        "polly.core.8.7.0.nupkg.sha512",
         "polly.core.nuspec"
       ]
     },
@@ -6436,6 +4732,11 @@
       "path": "../AspireApp1.ServiceDefaults/AspireApp1.ServiceDefaults.csproj",
       "msbuildProject": "../AspireApp1.ServiceDefaults/AspireApp1.ServiceDefaults.csproj"
     },
+    "Common/1.0.0": {
+      "type": "project",
+      "path": "../Common/Common.csproj",
+      "msbuildProject": "../Common/Common.csproj"
+    },
     "Contracts/1.0.0": {
       "type": "project",
       "path": "../Contracts/Contracts.csproj",
@@ -6444,16 +4745,11 @@
   },
   "projectFileDependencyGroups": {
     "net10.0": [
-      "Aspire.Keycloak.Authentication >= 13.4.6-preview.1.26319.6",
       "Aspire.Npgsql.EntityFrameworkCore.PostgreSQL >= 13.4.6",
-      "AspireApp1.ServiceDefaults >= 1.0.0",
+      "Common >= 1.0.0",
       "Contracts >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 10.0.9",
-      "Microsoft.EntityFrameworkCore.Design >= 10.0.9",
-      "OpenTelemetry.Instrumentation.AspNetCore >= 1.16.0",
-      "Typesense >= 8.5.0",
-      "WolverineFx >= 5.16.4",
-      "WolverineFx.RabbitMQ >= 5.16.4"
+      "Microsoft.EntityFrameworkCore.Design >= 10.0.9"
     ]
   },
   "packageFolders": {
@@ -6480,11 +4776,10 @@
       },
       "frameworks": {
         "net10.0": {
-          "framework": "net10.0",
           "targetAlias": "net10.0",
           "projectReferences": {
-            "C:\\Users\\munoz\\RiderProjects\\Overflow\\AspireCourse\\demo\\AspireApp1\\AspireApp1.ServiceDefaults\\AspireApp1.ServiceDefaults.csproj": {
-              "projectPath": "C:\\Users\\munoz\\RiderProjects\\Overflow\\AspireCourse\\demo\\AspireApp1\\AspireApp1.ServiceDefaults\\AspireApp1.ServiceDefaults.csproj"
+            "C:\\Users\\munoz\\RiderProjects\\Overflow\\AspireCourse\\demo\\AspireApp1\\Common\\Common.csproj": {
+              "projectPath": "C:\\Users\\munoz\\RiderProjects\\Overflow\\AspireCourse\\demo\\AspireApp1\\Common\\Common.csproj"
             },
             "C:\\Users\\munoz\\RiderProjects\\Overflow\\AspireCourse\\demo\\AspireApp1\\Contracts\\Contracts.csproj": {
               "projectPath": "C:\\Users\\munoz\\RiderProjects\\Overflow\\AspireCourse\\demo\\AspireApp1\\Contracts\\Contracts.csproj"
@@ -6509,13 +4804,8 @@
     },
     "frameworks": {
       "net10.0": {
-        "framework": "net10.0",
         "targetAlias": "net10.0",
         "dependencies": {
-          "Aspire.Keycloak.Authentication": {
-            "target": "Package",
-            "version": "[13.4.6-preview.1.26319.6, )"
-          },
           "Aspire.Npgsql.EntityFrameworkCore.PostgreSQL": {
             "target": "Package",
             "version": "[13.4.6, )"
@@ -6529,22 +4819,6 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[10.0.9, )"
-          },
-          "OpenTelemetry.Instrumentation.AspNetCore": {
-            "target": "Package",
-            "version": "[1.16.0, )"
-          },
-          "Typesense": {
-            "target": "Package",
-            "version": "[8.5.0, )"
-          },
-          "WolverineFx": {
-            "target": "Package",
-            "version": "[5.16.4, )"
-          },
-          "WolverineFx.RabbitMQ": {
-            "target": "Package",
-            "version": "[5.16.4, )"
           }
         },
         "imports": [
@@ -6558,12 +4832,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.NETCore.App.Host.linux-x64",
-            "version": "[10.0.9, 10.0.9]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -6988,11 +5256,6 @@
           "System.Xml.XPath.XDocument": "(,5.0.32767]"
         }
       }
-    },
-    "runtimes": {
-      "linux-x64": {
-        "#import": []
-      }
     }
   },
   "logs": [
@@ -7000,11 +5263,10 @@
       "code": "NU1903",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "El paquete \"Microsoft.OpenApi\" 2.0.0 tiene una vulnerabilidad de gravedad alta conocida, https://github.com/advisories/GHSA-v5pm-xwqc-g5wc",
+      "message": "Package 'Microsoft.OpenApi' 2.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-v5pm-xwqc-g5wc",
       "libraryId": "Microsoft.OpenApi",
       "targetGraphs": [
-        "net10.0",
-        "net10.0/linux-x64"
+        "net10.0"
       ]
     }
   ]

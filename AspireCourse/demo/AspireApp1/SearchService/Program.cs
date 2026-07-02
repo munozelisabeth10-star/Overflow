@@ -1,4 +1,5 @@
 using System.Text.RegularExpressions;
+using Common;
 using OpenTelemetry.Trace;
 using OpenTelemetry.Resources;
 using SearchService.Data;
@@ -15,20 +16,13 @@ builder.Services.AddOpenApi();
 builder.AddServiceDefaults();
 
 
-builder.Services.AddOpenTelemetry().WithTracing(traceProvideBuilder =>
+await builder.UseWolverineWithRabbitMqAsync(opts =>
 {
-    traceProvideBuilder.SetResourceBuilder(ResourceBuilder.CreateDefault()
-            .AddService(builder.Environment.ApplicationName))
-        .AddSource("Wolverine");
-});
-
-builder.Host.UseWolverine(opts =>
-{
-    opts.UseRabbitMqUsingNamedConnection("messaging").AutoProvision();
     opts.ListenToRabbitQueue("questions.search", cfg =>
     {
         cfg.BindExchange("questions");
-    });
+    }); 
+    opts.ApplicationAssembly = typeof(Program).Assembly;
 });
 
 var typesenseUri = builder.Configuration["services:typesense:typesense:0"];

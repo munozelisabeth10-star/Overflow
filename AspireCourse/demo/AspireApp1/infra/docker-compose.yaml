@@ -19,9 +19,15 @@ services:
       KC_BOOTSTRAP_ADMIN_PASSWORD: "${KEYCLOAK_PASSWORD}"
       KC_HEALTH_ENABLED: "true"
       KC_FEATURES: "opentelemetry"
+      KC_HTTP_ENABLED: "true"
+      KC_HOSTNAME_STRICT: "false"
+      VIRTUAL_HOST: "id.overflow.local"
+      VIRTUAL_PORT: "8080"
       OTEL_EXPORTER_OTLP_ENDPOINT: "http://production-dashboard:18889"
       OTEL_EXPORTER_OTLP_PROTOCOL: "grpc"
       OTEL_SERVICE_NAME: "keycloak"
+    ports:
+      - "6001:8080"
     expose:
       - "8080"
       - "9000"
@@ -30,6 +36,10 @@ services:
         target: "/opt/keycloak/data"
         source: "Keycloak-data"
         read_only: false
+      - type: "bind"
+        target: "/opt/keycloak/data/import"
+        source: "${KEYCLOAK_BINDMOUNT_0}"
+        read_only: true
     networks:
       - "aspire"
   postgres:
@@ -86,6 +96,8 @@ services:
       HTTP_PORTS: "${QUESTION_SVC_PORT}"
       KEYCLOAK_HTTP: "http://keycloak:8080"
       services__keycloak__http__0: "http://keycloak:8080"
+      KEYCLOAK_KEYCLOAK: "keycloak://keycloak:8080"
+      services__keycloak__keycloak__0: "keycloak://keycloak:8080"
       ConnectionStrings__questionDb: "Host=postgres;Port=5432;Username=postgres;Password=${POSTGRES_PASSWORD};Database=questionDb"
       QUESTIONDB_HOST: "postgres"
       QUESTIONDB_PORT: "5432"
@@ -164,6 +176,8 @@ services:
       services__search-svc__http__0: "http://search-svc:${SEARCH_SVC_PORT}"
       SEARCH_SVC_HTTPS: "https://search-svc:${SEARCH_SVC_PORT}"
       ASPNETCORE_URLS: "http://*:8001"
+      VIRTUAL_HOST: "api.overflow.local"
+      VIRTUAL_PORT: "8001"
       OTEL_EXPORTER_OTLP_ENDPOINT: "http://production-dashboard:18889"
       OTEL_EXPORTER_OTLP_PROTOCOL: "grpc"
       OTEL_SERVICE_NAME: "gateway"
@@ -171,6 +185,17 @@ services:
       - "8001:8001"
     expose:
       - "5000"
+    networks:
+      - "aspire"
+  nginx-proxy:
+    image: "nginxproxy/nginx-proxy:1.11"
+    ports:
+      - "80:80"
+    volumes:
+      - type: "bind"
+        target: "/tmp/docker.sock"
+        source: "/var/run/docker.sock"
+        read_only: true
     networks:
       - "aspire"
 networks:

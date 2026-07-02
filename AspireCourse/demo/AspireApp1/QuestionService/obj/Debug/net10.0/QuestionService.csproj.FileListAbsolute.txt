@@ -463,3 +463,6 @@ C:\Users\munoz\RiderProjects\Overflow\AspireCourse\demo\AspireApp1\QuestionServi
 C:\Users\munoz\RiderProjects\Overflow\AspireCourse\demo\AspireApp1\QuestionService\obj\Debug\net10.0\QuestionService.pdb
 C:\Users\munoz\RiderProjects\Overflow\AspireCourse\demo\AspireApp1\QuestionService\obj\Debug\net10.0\QuestionService.genruntimeconfig.cache
 C:\Users\munoz\RiderProjects\Overflow\AspireCourse\demo\AspireApp1\QuestionService\obj\Debug\net10.0\ref\QuestionService.dll
+C:\Users\munoz\RiderProjects\Overflow\AspireCourse\demo\AspireApp1\QuestionService\bin\Debug\net10.0\Polly.dll
+C:\Users\munoz\RiderProjects\Overflow\AspireCourse\demo\AspireApp1\QuestionService\bin\Debug\net10.0\Common.dll
+C:\Users\munoz\RiderProjects\Overflow\AspireCourse\demo\AspireApp1\QuestionService\bin\Debug\net10.0\Common.pdb
