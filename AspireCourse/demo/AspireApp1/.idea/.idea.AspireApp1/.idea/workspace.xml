@@ -15,79 +15,7 @@
     <configurations />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3410c2c5-45e1-48e8-84c6-c7c133854895" name="Changes" comment="por si acaso deployed">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.AspireApp1/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.AspireApp1/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AspireApp1/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.AspireApp1/.idea/db-forest-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AspireApp1/.idea/db-forest-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.AspireApp1/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AspireApp1/.idea/indexLayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AspireApp1.AppHost/AppHost.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AspireApp1.AppHost/AppHost.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AspireApp1.AppHost/bin/Debug/net10.0/AspireApp1.AppHost.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AspireApp1.AppHost/bin/Debug/net10.0/AspireApp1.AppHost.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AspireApp1.AppHost/bin/Debug/net10.0/AspireApp1.AppHost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/AspireApp1.AppHost/bin/Debug/net10.0/AspireApp1.AppHost.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AspireApp1.AppHost/bin/Debug/net10.0/AspireApp1.AppHost.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/AspireApp1.AppHost/bin/Debug/net10.0/AspireApp1.AppHost.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AspireApp1.AppHost/obj/AspireApp1.AppHost.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/AspireApp1.AppHost/obj/AspireApp1.AppHost.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AspireApp1.AppHost/obj/Debug/net10.0/AspireApp1.AppHost.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AspireApp1.AppHost/obj/Debug/net10.0/AspireApp1.AppHost.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AspireApp1.AppHost/obj/Debug/net10.0/AspireApp1.AppHost.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AspireApp1.AppHost/obj/Debug/net10.0/AspireApp1.AppHost.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AspireApp1.AppHost/obj/Debug/net10.0/AspireApp1.AppHost.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AspireApp1.AppHost/obj/Debug/net10.0/AspireApp1.AppHost.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AspireApp1.AppHost/obj/Debug/net10.0/AspireApp1.AppHost.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/AspireApp1.AppHost/obj/Debug/net10.0/AspireApp1.AppHost.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AspireApp1.AppHost/obj/Debug/net10.0/AspireApp1.AppHost.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/AspireApp1.AppHost/obj/Debug/net10.0/AspireApp1.AppHost.sourcelink.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AspireApp1.AppHost/obj/Debug/net10.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/AspireApp1.AppHost/obj/Debug/net10.0/apphost.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AspireApp1.AppHost/obj/Debug/net10.0/ref/AspireApp1.AppHost.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AspireApp1.AppHost/obj/Debug/net10.0/ref/AspireApp1.AppHost.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AspireApp1.AppHost/obj/Debug/net10.0/refint/AspireApp1.AppHost.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AspireApp1.AppHost/obj/Debug/net10.0/refint/AspireApp1.AppHost.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AspireApp1.AppHost/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/AspireApp1.AppHost/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AspireApp1.AppHost/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AspireApp1.AppHost/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AspireApp1.AppHost/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/AspireApp1.AppHost/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AspireApp1.AppHost/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/AspireApp1.AppHost/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AspireApp1.ServiceDefaults/bin/Debug/net10.0/AspireApp1.ServiceDefaults.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AspireApp1.ServiceDefaults/bin/Debug/net10.0/AspireApp1.ServiceDefaults.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AspireApp1.ServiceDefaults/bin/Debug/net10.0/AspireApp1.ServiceDefaults.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/AspireApp1.ServiceDefaults/bin/Debug/net10.0/AspireApp1.ServiceDefaults.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AspireApp1.ServiceDefaults/obj/AspireApp1.ServiceDefaults.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/AspireApp1.ServiceDefaults/obj/AspireApp1.ServiceDefaults.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AspireApp1.ServiceDefaults/obj/Debug/net10.0/AspireApp1.ServiceDefaults.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AspireApp1.ServiceDefaults/obj/Debug/net10.0/AspireApp1.ServiceDefaults.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AspireApp1.ServiceDefaults/obj/Debug/net10.0/AspireApp1.ServiceDefaults.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AspireApp1.ServiceDefaults/obj/Debug/net10.0/AspireApp1.ServiceDefaults.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AspireApp1.ServiceDefaults/obj/Debug/net10.0/AspireApp1.ServiceDefaults.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AspireApp1.ServiceDefaults/obj/Debug/net10.0/AspireApp1.ServiceDefaults.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AspireApp1.ServiceDefaults/obj/Debug/net10.0/AspireApp1.ServiceDefaults.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/AspireApp1.ServiceDefaults/obj/Debug/net10.0/AspireApp1.ServiceDefaults.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AspireApp1.ServiceDefaults/obj/Debug/net10.0/AspireApp1.ServiceDefaults.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/AspireApp1.ServiceDefaults/obj/Debug/net10.0/AspireApp1.ServiceDefaults.sourcelink.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AspireApp1.ServiceDefaults/obj/Debug/net10.0/ref/AspireApp1.ServiceDefaults.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AspireApp1.ServiceDefaults/obj/Debug/net10.0/ref/AspireApp1.ServiceDefaults.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AspireApp1.ServiceDefaults/obj/Debug/net10.0/refint/AspireApp1.ServiceDefaults.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AspireApp1.ServiceDefaults/obj/Debug/net10.0/refint/AspireApp1.ServiceDefaults.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AspireApp1.ServiceDefaults/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/AspireApp1.ServiceDefaults/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AspireApp1.ServiceDefaults/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AspireApp1.ServiceDefaults/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AspireApp1.ServiceDefaults/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/AspireApp1.ServiceDefaults/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AspireApp1.ServiceDefaults/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/AspireApp1.ServiceDefaults/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AspireApp1.sln" beforeDir="false" afterPath="$PROJECT_DIR$/AspireApp1.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuestionService/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuestionService/QuestionService.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/QuestionService.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuestionService/bin/Debug/net10.0/AspireApp1.ServiceDefaults.dll" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/bin/Debug/net10.0/AspireApp1.ServiceDefaults.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuestionService/bin/Debug/net10.0/AspireApp1.ServiceDefaults.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/bin/Debug/net10.0/AspireApp1.ServiceDefaults.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuestionService/bin/Debug/net10.0/OpenTelemetry.Api.ProviderBuilderExtensions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/bin/Debug/net10.0/OpenTelemetry.Api.ProviderBuilderExtensions.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuestionService/bin/Debug/net10.0/OpenTelemetry.Api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/bin/Debug/net10.0/OpenTelemetry.Api.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuestionService/bin/Debug/net10.0/OpenTelemetry.Instrumentation.AspNetCore.dll" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/bin/Debug/net10.0/OpenTelemetry.Instrumentation.AspNetCore.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuestionService/bin/Debug/net10.0/Polly.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/bin/Debug/net10.0/Polly.Core.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuestionService/bin/Debug/net10.0/QuestionService.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/bin/Debug/net10.0/QuestionService.deps.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuestionService/bin/Debug/net10.0/QuestionService.dll" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/bin/Debug/net10.0/QuestionService.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuestionService/bin/Debug/net10.0/QuestionService.exe" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/bin/Debug/net10.0/QuestionService.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuestionService/bin/Debug/net10.0/QuestionService.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/bin/Debug/net10.0/QuestionService.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuestionService/obj/Debug/net10.0/QuestionService.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/obj/Debug/net10.0/QuestionService.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuestionService/obj/Debug/net10.0/QuestionService.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/obj/Debug/net10.0/QuestionService.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuestionService/obj/Debug/net10.0/QuestionService.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/obj/Debug/net10.0/QuestionService.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuestionService/obj/Debug/net10.0/QuestionService.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/obj/Debug/net10.0/QuestionService.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuestionService/obj/Debug/net10.0/QuestionService.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/obj/Debug/net10.0/QuestionService.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuestionService/obj/Debug/net10.0/QuestionService.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/obj/Debug/net10.0/QuestionService.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuestionService/obj/Debug/net10.0/QuestionService.dll" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/obj/Debug/net10.0/QuestionService.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuestionService/obj/Debug/net10.0/QuestionService.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/obj/Debug/net10.0/QuestionService.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuestionService/obj/Debug/net10.0/QuestionService.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/obj/Debug/net10.0/QuestionService.sourcelink.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuestionService/obj/Debug/net10.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/obj/Debug/net10.0/apphost.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuestionService/obj/Debug/net10.0/ref/QuestionService.dll" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/obj/Debug/net10.0/ref/QuestionService.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuestionService/obj/Debug/net10.0/refint/QuestionService.dll" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/obj/Debug/net10.0/refint/QuestionService.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuestionService/obj/Debug/net10.0/rjsmcshtml.dswa.cache.json" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/obj/Debug/net10.0/rjsmcshtml.dswa.cache.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuestionService/obj/Debug/net10.0/rjsmrazor.dswa.cache.json" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/obj/Debug/net10.0/rjsmrazor.dswa.cache.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuestionService/obj/QuestionService.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/obj/QuestionService.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuestionService/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuestionService/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuestionService/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuestionService/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuestionService/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SearchService/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SearchService/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SearchService/SearchService.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/SearchService/SearchService.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infra/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/infra/docker-compose.yaml" afterDir="false" />
-    </list>
+    <list default="true" id="3410c2c5-45e1-48e8-84c6-c7c133854895" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -117,9 +45,9 @@
     <setting file="file://$USER_HOME$/Downloads/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/Downloads/recursosAspirePostmanRider/Downloads/OverflowAssets/postman/Aspire overflow.postman_collection.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/Downloads/recursosAspirePostmanRider/Downloads/OverflowAssets/realms/overflow-realm.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/.idea/.idea.AspireApp1/.idea/.idea.AspireApp1/.idea/.idea.AspireApp1/.idea/.idea.AspireApp1/.idea/.idea.AspireApp1/.idea/.idea.AspireApp1/.idea/.idea.AspireApp1/Common/AuthExtensions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/.idea/.idea.AspireApp1/.idea/.idea.AspireApp1/.idea/.idea.AspireApp1/.idea/.idea.AspireApp1/.idea/.idea.AspireApp1/.idea/.idea.AspireApp1/.idea/.idea.AspireApp1/Common/WolverineExtensions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/.idea/.idea.AspireApp1/.idea/.idea.AspireApp1/.idea/.idea.AspireApp1/.idea/.idea.AspireApp1/.idea/.idea.AspireApp1/.idea/Overflow/Overflow.AppHost/bin/Debug/net10.0/Overflow.AppHost.runtimeconfig.json" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/QuestionService/Properties/launchSettings.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SearchService/Properties/launchSettings.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/webapp/package-lock.json" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
@@ -132,61 +60,61 @@
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.234014736764112" />
-      <entry key="MS500" value="2.9851293136709787" />
-      <entry key="S2" value="6.827421417079696" />
-      <entry key="S5" value="13.796338308843442" />
-      <entry key="S10" value="21.978284782794226" />
-      <entry key="S30" value="34.85035632052616" />
-      <entry key="S60" value="40.20593877522994" />
-      <entry key="M2" value="43.57753961484244" />
-      <entry key="M5" value="51.41954586028788" />
-      <entry key="M10" value="67.42249118703242" />
-      <entry key="M15" value="80.33785266378501" />
-      <entry key="M30" value="108.42041482897226" />
-      <entry key="H1" value="172.42171933782944" />
-      <entry key="H2" value="332.4460087299947" />
-      <entry key="H4" value="623.4250881481498" />
-      <entry key="D1" value="1421.7092197713505" />
-      <entry key="W1" value="1695.6541654864668" />
+      <entry key="MS100" value="1.0000279893685522" />
+      <entry key="MS500" value="1.2116702767931589" />
+      <entry key="S2" value="2.1401655905253483" />
+      <entry key="S5" value="2.597304029961033" />
+      <entry key="S10" value="2.7873345928226554" />
+      <entry key="S30" value="2.926436243156976" />
+      <entry key="S60" value="2.963306248312633" />
+      <entry key="M2" value="3.0355948026810027" />
+      <entry key="M5" value="4.39195978784956" />
+      <entry key="M10" value="8.447960640772513" />
+      <entry key="M15" value="13.17925158419837" />
+      <entry key="M30" value="32.48821278872039" />
+      <entry key="H1" value="82.62326273390788" />
+      <entry key="H2" value="210.91742703886533" />
+      <entry key="H4" value="514.4232504264928" />
+      <entry key="D1" value="1942.4486837374986" />
+      <entry key="W1" value="2656.93913023395" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
       <entry key="MS500" value="0.0" />
       <entry key="S2" value="0.0" />
-      <entry key="S5" value="8.97379357749232E-188" />
-      <entry key="S10" value="3.0337565148820536E-94" />
-      <entry key="S30" value="8.611200810955038E-32" />
-      <entry key="S60" value="5.075730379567762E-16" />
-      <entry key="M2" value="5.1636262525387125E-8" />
-      <entry key="M5" value="0.0037772407502478294" />
-      <entry key="M10" value="0.16190124639075612" />
-      <entry key="M15" value="0.5745861042059885" />
-      <entry key="M30" value="2.3280498039608872" />
-      <entry key="H1" value="6.37482513337581" />
-      <entry key="H2" value="14.61781150093802" />
-      <entry key="H4" value="30.19222220038391" />
-      <entry key="D1" value="79.41808587181347" />
-      <entry key="W1" value="97.50103771404365" />
+      <entry key="S5" value="3.8550445096538574E-290" />
+      <entry key="S10" value="1.9634267263266682E-145" />
+      <entry key="S30" value="5.812212412130665E-49" />
+      <entry key="S60" value="7.647573174289743E-25" />
+      <entry key="M2" value="9.422475820748448E-13" />
+      <entry key="M5" value="2.6742677095547045E-5" />
+      <entry key="M10" value="0.012599470728495406" />
+      <entry key="M15" value="0.11147163119838227" />
+      <entry key="M30" value="1.1074534830511675" />
+      <entry key="H1" value="4.111413295056324" />
+      <entry key="H2" value="11.244729553452006" />
+      <entry key="H4" value="27.682788932320168" />
+      <entry key="D1" value="109.59341148937408" />
+      <entry key="W1" value="152.79972959753042" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.4468414657802278" />
-      <entry key="MS500" value="2.7143524760542075" />
-      <entry key="S2" value="6.748221520695948" />
-      <entry key="S5" value="13.76117611224394" />
-      <entry key="S10" value="21.958951990628215" />
-      <entry key="S30" value="34.84302738029914" />
-      <entry key="S60" value="40.202091577179694" />
-      <entry key="M2" value="43.57550460745789" />
-      <entry key="M5" value="51.42162720542019" />
-      <entry key="M10" value="67.58151881565361" />
-      <entry key="M15" value="80.90827290380346" />
-      <entry key="M30" value="110.74181289651605" />
-      <entry key="H1" value="178.78627488396359" />
-      <entry key="H2" value="347.04964691521576" />
-      <entry key="H4" value="653.6007716840716" />
-      <entry key="D1" value="1501.1194367528674" />
-      <entry key="W1" value="1793.1538100913585" />
+      <entry key="MS100" value="0.051860137882451786" />
+      <entry key="MS500" value="0.7644685671982204" />
+      <entry key="S2" value="2.0020118008829852" />
+      <entry key="S5" value="2.5394942817771318" />
+      <entry key="S10" value="2.7579848716477486" />
+      <entry key="S30" value="2.9165521644049117" />
+      <entry key="S60" value="2.9583510944909004" />
+      <entry key="M2" value="3.033080663338719" />
+      <entry key="M5" value="4.390645821322148" />
+      <entry key="M10" value="8.4589851639997" />
+      <entry key="M15" value="13.287808977936894" />
+      <entry key="M30" value="33.586208099430216" />
+      <entry key="H1" value="86.7159246912126" />
+      <entry key="H2" value="222.13318733351727" />
+      <entry key="H4" value="542.0712019420317" />
+      <entry key="D1" value="2052.0239822750123" />
+      <entry key="W1" value="2809.7354725534938" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -218,18 +146,22 @@
     &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.runtime&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\munoz\\RiderProjects\\Overflow\\AspireCourse\\demo\\AspireApp1\\webapp\\node_modules\\typescript\\lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RunManager" selected="Aspire.AspireApp1.AppHost: http">
     <configuration name="AspireApp1" type="AspireHostConfiguration" factoryName="Aspire Host" activateToolWindowBeforeRun="false">
-      <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/AspireApp1.AppHost/AspireApp1.AppHost.csproj" />
+      <option name="PROJECT_FILE_PATH" value="" />
       <option name="PROJECT_TFM" value="" />
       <option name="LAUNCH_PROFILE_NAME" value="" />
       <option name="TRACK_ARGUMENTS" value="1" />
@@ -254,12 +186,12 @@
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/AspireApp1.AppHost" />
       <option name="TRACK_ENVS" value="1" />
       <envs>
-        <env name="DOTNET_ENVIRONMENT" value="Development" />
         <env name="ASPNETCORE_ENVIRONMENT" value="Development" />
+        <env name="DOTNET_ENVIRONMENT" value="Development" />
         <env name="ASPIRE_DASHBOARD_OTLP_ENDPOINT_URL" value="http://localhost:19002" />
-        <env name="ASPNETCORE_URLS" value="http://localhost:5001" />
         <env name="ASPIRE_RESOURCE_SERVICE_ENDPOINT_URL" value="http://localhost:20246" />
         <env name="DOTNET_LAUNCH_PROFILE" value="http" />
+        <env name="ASPNETCORE_URLS" value="http://localhost:5001" />
       </envs>
       <option name="USE_PODMAN_RUNTIME" value="0" />
       <option name="TRACK_URL" value="1" />
@@ -358,6 +290,14 @@
       <envs />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue=".NET Launch Settings Profile.QuestionService: http" />
+      <item itemvalue=".NET Launch Settings Profile.SearchService: http" />
+      <item itemvalue=".NET Project.QuestionService" />
+      <item itemvalue=".NET Project.SearchService" />
+      <item itemvalue="Aspire.AspireApp1" />
+      <item itemvalue="Aspire.AspireApp1.AppHost: http" />
+    </list>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -375,6 +315,17 @@
       <workItem from="1782985305835" duration="71000" />
       <workItem from="1782985426920" duration="162000" />
       <workItem from="1782985655806" duration="1289000" />
+      <workItem from="1783321451515" duration="5548000" />
+      <workItem from="1783327104441" duration="1116000" />
+      <workItem from="1783328270075" duration="4181000" />
+      <workItem from="1783332657457" duration="3088000" />
+      <workItem from="1783407649556" duration="13887000" />
+      <workItem from="1783493924319" duration="5364000" />
+      <workItem from="1783499902449" duration="7293000" />
+      <workItem from="1783544340423" duration="797000" />
+      <workItem from="1783550344235" duration="2053000" />
+      <workItem from="1783580351309" duration="436000" />
+      <workItem from="1783580803364" duration="2439000" />
     </task>
     <task id="LOCAL-00001" summary="por si acaso">
       <option name="closed" value="true" />
@@ -408,7 +359,15 @@
       <option name="project" value="LOCAL" />
       <updated>1782892031615</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="por si acaso 7,5">
+      <option name="closed" value="true" />
+      <created>1783583314095</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1783583314095</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -431,7 +390,8 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="por si acaso" />
     <MESSAGE value="por si acaso deployed" />
-    <option name="LAST_COMMIT_MESSAGE" value="por si acaso deployed" />
+    <MESSAGE value="por si acaso 7,5" />
+    <option name="LAST_COMMIT_MESSAGE" value="por si acaso 7,5" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

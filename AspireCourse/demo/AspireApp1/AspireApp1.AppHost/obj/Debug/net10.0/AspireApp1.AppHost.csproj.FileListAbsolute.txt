@@ -344,3 +344,5 @@ C:\Users\munoz\RiderProjects\Overflow\AspireCourse\demo\AspireApp1\AspireApp1.Ap
 C:\Users\munoz\RiderProjects\Overflow\AspireCourse\demo\AspireApp1\AspireApp1.AppHost\bin\Debug\net10.0\Aspire.Hosting.Yarp.dll
 C:\Users\munoz\RiderProjects\Overflow\AspireCourse\demo\AspireApp1\AspireApp1.AppHost\bin\Debug\net10.0\Yarp.ReverseProxy.dll
 C:\Users\munoz\RiderProjects\Overflow\AspireCourse\demo\AspireApp1\AspireApp1.AppHost\bin\Debug\net10.0\Aspire.Hosting.Docker.dll
+C:\Users\munoz\RiderProjects\Overflow\AspireCourse\demo\AspireApp1\AspireApp1.AppHost\bin\Debug\net10.0\Aspire.Hosting.JavaScript.dll
+C:\Users\munoz\RiderProjects\Overflow\AspireCourse\demo\AspireApp1\AspireApp1.AppHost\bin\Debug\net10.0\Aspire.Hosting.NodeJs.dll

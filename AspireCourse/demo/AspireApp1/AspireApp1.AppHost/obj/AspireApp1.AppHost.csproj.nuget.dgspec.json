@@ -58,9 +58,17 @@
               "target": "Package",
               "version": "[13.4.6, )"
             },
+            "Aspire.Hosting.JavaScript": {
+              "target": "Package",
+              "version": "[13.4.6, )"
+            },
             "Aspire.Hosting.Keycloak": {
               "target": "Package",
               "version": "[13.4.6-preview.1.26319.6, )"
+            },
+            "Aspire.Hosting.NodeJs": {
+              "target": "Package",
+              "version": "[9.5.2, )"
             },
             "Aspire.Hosting.Orchestration.win-x64": {
               "target": "Package",

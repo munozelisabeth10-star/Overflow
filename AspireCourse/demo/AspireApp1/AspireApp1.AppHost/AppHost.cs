@@ -63,8 +63,12 @@ var yarp = builder.AddYarp("gateway")
     .WithEnvironment("ASPNETCORE_URLS", "http://*:8001")
     .WithEndpoint(port: 8001, targetPort: 8001, scheme: "http", name: "gateway", isExternal: true)
     .WithEnvironment("VIRTUAL_HOST", "api.overflow.local")
-    .WithEnvironment("VIRTUAL_PORT", "8001"); 
+    .WithEnvironment("VIRTUAL_PORT", "8001");
 
+var webapp = builder.AddJavaScriptApp("webapp", "../webapp")//esta be
+    .WithReference(keycloak)
+    .WithHttpEndpoint(env: "PORT", port: 3000);
+    
 if (!builder.Environment.IsDevelopment())
 {   
     builder.AddContainer("nginx-proxy", "nginxproxy/nginx-proxy", "1.11")
