@@ -1,19 +1,12 @@
-import {getQuestions} from "@/lib/actions/question-actions";
-import QuestionCard from "@/app/questions/QuestionCard";
-import QuestionsHeader from "@/app/questions/QuestionsHeader";
+import {AcademicCapIcon} from "@heroicons/react/24/solid";
 
-export default async function QuestionsPage({searchParams}: {searchParams?: Promise<{tag?: string}>}) {
-    const params = await searchParams;
-    const questions = await getQuestions(params?.tag);
-
+export default function Home() {
     return (
-        <>
-            <QuestionsHeader total={questions.length} tag={params?.tag} />
-            {questions.map(question => (
-                <div key={question.id} className="py-4 not-last:border-b w-full flex">
-                    <QuestionCard question={question} key={question.id}/>
-                </div>
-            ))}
-        </>
-    )
+        <div className='z-50 flex items-center h-[calc(100vh-160px)] justify-center bg-stone-200: dark:bg-neutral-900'>
+            <div className='flex flex-col justify-center items-center gap-5 text-5xl text-secondary font-bold '>
+                <AcademicCapIcon className='h-96 w-96'/>
+                <div>Welcome to overflow!</div>
+            </div>
+        </div>
+    );
 }

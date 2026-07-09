@@ -1,7 +1,7 @@
 import {Question} from "@/lib/types";
 import {Chip} from "@heroui/chip";
 import {Avatar} from "@heroui/avatar";
-import Link from "next/link";
+import {LinkComponent} from "@/components/LinkComponent";
 
 type Props = {
     question: Question;
@@ -13,7 +13,7 @@ export default function QuestionFooter({question}: Props) {
                 <div className="flex gap-2">
                     {question.tagSlugs.map((tag: string) => (
                         <Chip
-                            as={Link}
+                            as={LinkComponent}
                             variant='bordered'
                             href={`/questions?tag=${tag}`}
                             key={tag}

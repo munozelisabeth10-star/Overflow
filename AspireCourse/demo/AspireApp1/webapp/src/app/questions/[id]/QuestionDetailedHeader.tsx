@@ -1,6 +1,7 @@
 import {Question} from "@/lib/types";
 import {Button} from "@heroui/button";
-import Link from "next/link";
+import {LinkComponent} from "@/components/LinkComponent";
+
 
 type Props = {
     question: Question;
@@ -10,9 +11,11 @@ export default function QuestionDetailedHeader({question}: Props) {
     return (
         <div className='flex flex-col w-full border-b gap-4 pb-4 px-6'>
             <div className='flex justify-between gap-4'>
-                <div className='text-3xl font-semibold first-letter:uppercase'>{question.title}</div>
+                <div className='text-3xl font-semibold first-letter:uppercase'>
+                    {question.title}
+                </div>
                 <Button
-                    as={Link}
+                    as={LinkComponent}
                     href='/questions/ask'
                     className='w-[20%]'
                     color='secondary'>Ask Question</Button>

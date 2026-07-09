@@ -1,35 +1,5 @@
 <DataSourcesHistory>
   <DataSourceFromHistory isRemovedFromProject="true">
-    <data-source source="LOCAL" name="postgres" uuid="3df5f441-e449-452e-9124-43ac1c860754">
-      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="POSTGRES" />
-      <driver-ref>postgresql</driver-ref>
-      <synchronize>true</synchronize>
-      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://localhost:65495/?password=cKTkbx%29%2800gw%2B951yrden5&amp;user=postgres</jdbc-url>
-      <jdbc-additional-properties>
-        <property name="aspireResourceId" value="postgres-gmangbsw" />
-      </jdbc-additional-properties>
-      <secret-storage>master_key</secret-storage>
-      <schema-mapping />
-      <working-dir>$ProjectFileDir$</working-dir>
-    </data-source>
-  </DataSourceFromHistory>
-  <DataSourceFromHistory isRemovedFromProject="true">
-    <data-source source="LOCAL" name="postgres" uuid="c03509e2-3dd6-4b23-bcd1-37905cecef8b">
-      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="POSTGRES" />
-      <driver-ref>postgresql</driver-ref>
-      <synchronize>true</synchronize>
-      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://localhost:53574/?password=cKTkbx%29%2800gw%2B951yrden5&amp;user=postgres</jdbc-url>
-      <jdbc-additional-properties>
-        <property name="aspireResourceId" value="postgres-ktswqgpv" />
-      </jdbc-additional-properties>
-      <secret-storage>master_key</secret-storage>
-      <schema-mapping />
-      <working-dir>$ProjectFileDir$</working-dir>
-    </data-source>
-  </DataSourceFromHistory>
-  <DataSourceFromHistory isRemovedFromProject="true">
     <data-source source="LOCAL" name="postgres" uuid="5bfe2df0-95fe-4aa6-a7d8-3767eeff7fe5">
       <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="POSTGRES" />
       <driver-ref>postgresql</driver-ref>
@@ -494,7 +464,7 @@
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </DataSourceFromHistory>
-  <DataSourceFromHistory isRemovedFromProject="false">
+  <DataSourceFromHistory isRemovedFromProject="true">
     <data-source source="LOCAL" name="postgres" uuid="0a959b95-cf0d-42fd-aa7c-743b8572ecf4">
       <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="POSTGRES" />
       <driver-ref>postgresql</driver-ref>
@@ -503,6 +473,36 @@
       <jdbc-url>jdbc:postgresql://localhost:60930/?password=cKTkbx%29%2800gw%2B951yrden5&amp;user=postgres</jdbc-url>
       <jdbc-additional-properties>
         <property name="aspireResourceId" value="postgres-vgrjatpg" />
+      </jdbc-additional-properties>
+      <secret-storage>master_key</secret-storage>
+      <schema-mapping />
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+  </DataSourceFromHistory>
+  <DataSourceFromHistory isRemovedFromProject="true">
+    <data-source source="LOCAL" name="postgres" uuid="cc44e84b-0f53-4ba9-a19e-b7058fe20191">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="POSTGRES" />
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:62174/?password=cKTkbx%29%2800gw%2B951yrden5&amp;user=postgres</jdbc-url>
+      <jdbc-additional-properties>
+        <property name="aspireResourceId" value="postgres-rjjmqqmw" />
+      </jdbc-additional-properties>
+      <secret-storage>master_key</secret-storage>
+      <schema-mapping />
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+  </DataSourceFromHistory>
+  <DataSourceFromHistory isRemovedFromProject="false">
+    <data-source source="LOCAL" name="postgres" uuid="e807e02a-de63-417a-bd58-185063e49984">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="POSTGRES" />
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:56150/?password=cKTkbx%29%2800gw%2B951yrden5&amp;user=postgres</jdbc-url>
+      <jdbc-additional-properties>
+        <property name="aspireResourceId" value="postgres-rejtgstg" />
       </jdbc-additional-properties>
       <secret-storage>master_key</secret-storage>
       <schema-mapping />

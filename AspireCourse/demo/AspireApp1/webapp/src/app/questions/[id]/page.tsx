@@ -1,9 +1,11 @@
+'use server';
 import {getQuestionById} from "@/lib/actions/question-actions";
-import {notFound} from "next/navigation";
 import QuestionDetailedHeader from "@/app/questions/[id]/QuestionDetailedHeader";
+import {notFound} from "next/navigation";
 import QuestionContent from "@/app/questions/[id]/QuestionContent";
 import AnswerContent from "@/app/questions/[id]/AnswerContent";
 import AnswersHeader from "@/app/questions/[id]/AnswersHeader";
+
 
 type Params = Promise<{ id: string }>
 
@@ -21,8 +23,9 @@ export default async function QuestionDetailed({ params }: {params: Params}) {
                 <AnswersHeader answerCount={question.answers.length} />
             )}
             {question.answers.map(answer => (
-                <AnswerContent answer={answer} key={answer.id} />
+                <AnswerContent answer={answer} key={answer.id}/>
             ))}
+            
         </div>
     )
 }

@@ -1,6 +1,8 @@
 'use client';
+
 import {Button} from '@heroui/button';
-import Link from 'next/link';
+import {LinkComponent} from "@/components/LinkComponent";
+
 
 export default function NotFound() {
     return (
@@ -10,7 +12,7 @@ export default function NotFound() {
                 <p className='text-lg text-foreground-500'>
                     Sorry, the page you are looking for doesn’t exist.
                 </p>
-                <Button as={Link} href='/' color='primary'>Go Home</Button>
+                <Button as={LinkComponent} href='/' color='primary'>Go Home</Button>
             </div>
         </div>
     );
