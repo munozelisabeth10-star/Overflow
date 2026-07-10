@@ -16,20 +16,209 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3410c2c5-45e1-48e8-84c6-c7c133854895" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/webapp/src/app/error.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/app/session/ErrorButtons.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/app/session/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/lib/actions/error-actions.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/lib/fetchClient.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AspireApp1.rar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AspireApp1/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AspireApp1/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AspireApp1/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AspireApp1/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AspireApp1/.idea/dataSources/data_sources_history.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AspireApp1/.idea/dataSources/data_sources_history.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AspireApp1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AspireApp1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/app/not-found.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/app/not-found.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/app/questions/[id]/AnswerContent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/app/questions/[id]/AnswerContent.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/app/questions/[id]/AnswerFooter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/app/questions/[id]/AnswerFooter.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/app/questions/[id]/AnswersHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/app/questions/[id]/AnswersHeader.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/app/questions/[id]/QuestionContent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/app/questions/[id]/QuestionContent.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/app/questions/[id]/QuestionDetailedHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/app/questions/[id]/QuestionDetailedHeader.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/app/questions/[id]/QuestionFooter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/app/questions/[id]/QuestionFooter.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AspireApp1.AppHost/bin/Debug/net10.0/AspireApp1.AppHost.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AspireApp1.AppHost/bin/Debug/net10.0/AspireApp1.AppHost.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AspireApp1.AppHost/bin/Debug/net10.0/AspireApp1.AppHost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/AspireApp1.AppHost/bin/Debug/net10.0/AspireApp1.AppHost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AspireApp1.AppHost/bin/Debug/net10.0/AspireApp1.AppHost.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/AspireApp1.AppHost/bin/Debug/net10.0/AspireApp1.AppHost.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AspireApp1.AppHost/obj/Debug/net10.0/AspireApp1.AppHost.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AspireApp1.AppHost/obj/Debug/net10.0/AspireApp1.AppHost.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AspireApp1.AppHost/obj/Debug/net10.0/AspireApp1.AppHost.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AspireApp1.AppHost/obj/Debug/net10.0/AspireApp1.AppHost.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AspireApp1.AppHost/obj/Debug/net10.0/AspireApp1.AppHost.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AspireApp1.AppHost/obj/Debug/net10.0/AspireApp1.AppHost.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AspireApp1.AppHost/obj/Debug/net10.0/AspireApp1.AppHost.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/AspireApp1.AppHost/obj/Debug/net10.0/AspireApp1.AppHost.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AspireApp1.AppHost/obj/Debug/net10.0/AspireApp1.AppHost.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/AspireApp1.AppHost/obj/Debug/net10.0/AspireApp1.AppHost.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AspireApp1.AppHost/obj/Debug/net10.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/AspireApp1.AppHost/obj/Debug/net10.0/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AspireApp1.AppHost/obj/Debug/net10.0/ref/AspireApp1.AppHost.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AspireApp1.AppHost/obj/Debug/net10.0/ref/AspireApp1.AppHost.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AspireApp1.AppHost/obj/Debug/net10.0/refint/AspireApp1.AppHost.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AspireApp1.AppHost/obj/Debug/net10.0/refint/AspireApp1.AppHost.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AspireApp1.AppHost/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/AspireApp1.AppHost/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AspireApp1.AppHost/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/AspireApp1.AppHost/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AspireApp1.ServiceDefaults/bin/Debug/net10.0/AspireApp1.ServiceDefaults.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AspireApp1.ServiceDefaults/bin/Debug/net10.0/AspireApp1.ServiceDefaults.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AspireApp1.ServiceDefaults/bin/Debug/net10.0/AspireApp1.ServiceDefaults.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/AspireApp1.ServiceDefaults/bin/Debug/net10.0/AspireApp1.ServiceDefaults.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AspireApp1.ServiceDefaults/obj/Debug/net10.0/AspireApp1.ServiceDefaults.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AspireApp1.ServiceDefaults/obj/Debug/net10.0/AspireApp1.ServiceDefaults.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AspireApp1.ServiceDefaults/obj/Debug/net10.0/AspireApp1.ServiceDefaults.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AspireApp1.ServiceDefaults/obj/Debug/net10.0/AspireApp1.ServiceDefaults.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AspireApp1.ServiceDefaults/obj/Debug/net10.0/AspireApp1.ServiceDefaults.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AspireApp1.ServiceDefaults/obj/Debug/net10.0/AspireApp1.ServiceDefaults.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AspireApp1.ServiceDefaults/obj/Debug/net10.0/AspireApp1.ServiceDefaults.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/AspireApp1.ServiceDefaults/obj/Debug/net10.0/AspireApp1.ServiceDefaults.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AspireApp1.ServiceDefaults/obj/Debug/net10.0/AspireApp1.ServiceDefaults.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/AspireApp1.ServiceDefaults/obj/Debug/net10.0/AspireApp1.ServiceDefaults.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AspireApp1.ServiceDefaults/obj/Debug/net10.0/ref/AspireApp1.ServiceDefaults.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AspireApp1.ServiceDefaults/obj/Debug/net10.0/ref/AspireApp1.ServiceDefaults.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AspireApp1.ServiceDefaults/obj/Debug/net10.0/refint/AspireApp1.ServiceDefaults.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AspireApp1.ServiceDefaults/obj/Debug/net10.0/refint/AspireApp1.ServiceDefaults.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AspireApp1.ServiceDefaults/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/AspireApp1.ServiceDefaults/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AspireApp1.ServiceDefaults/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/AspireApp1.ServiceDefaults/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestionService/bin/Debug/net10.0/AspireApp1.ServiceDefaults.dll" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/bin/Debug/net10.0/AspireApp1.ServiceDefaults.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestionService/bin/Debug/net10.0/AspireApp1.ServiceDefaults.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/bin/Debug/net10.0/AspireApp1.ServiceDefaults.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestionService/bin/Debug/net10.0/QuestionService.dll" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/bin/Debug/net10.0/QuestionService.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestionService/bin/Debug/net10.0/QuestionService.exe" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/bin/Debug/net10.0/QuestionService.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestionService/bin/Debug/net10.0/QuestionService.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/bin/Debug/net10.0/QuestionService.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestionService/obj/Debug/net10.0/QuestionService.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/obj/Debug/net10.0/QuestionService.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestionService/obj/Debug/net10.0/QuestionService.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/obj/Debug/net10.0/QuestionService.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestionService/obj/Debug/net10.0/QuestionService.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/obj/Debug/net10.0/QuestionService.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestionService/obj/Debug/net10.0/QuestionService.dll" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/obj/Debug/net10.0/QuestionService.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestionService/obj/Debug/net10.0/QuestionService.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/obj/Debug/net10.0/QuestionService.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestionService/obj/Debug/net10.0/QuestionService.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/obj/Debug/net10.0/QuestionService.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestionService/obj/Debug/net10.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/obj/Debug/net10.0/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestionService/obj/Debug/net10.0/ref/QuestionService.dll" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/obj/Debug/net10.0/ref/QuestionService.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestionService/obj/Debug/net10.0/refint/QuestionService.dll" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/obj/Debug/net10.0/refint/QuestionService.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestionService/obj/Debug/net10.0/rjsmcshtml.dswa.cache.json" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/obj/Debug/net10.0/rjsmcshtml.dswa.cache.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestionService/obj/Debug/net10.0/rjsmrazor.dswa.cache.json" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/obj/Debug/net10.0/rjsmrazor.dswa.cache.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestionService/obj/Debug/net10.0/rpswa.dswa.cache.json" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/obj/Debug/net10.0/rpswa.dswa.cache.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestionService/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestionService/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webapp/src/app/questions/[id]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/app/questions/[id]/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/components/nav/LinkComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/components/LinkComponent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/app/questions/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/app/questions/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/lib/actions/question-actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/lib/actions/question-actions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/.idea/.idea.Overflow/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/.idea/.idea.Overflow/.idea/indexLayout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/.idea/.idea.Overflow/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/AppHost.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/Overflow.AppHost.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/Properties/launchSettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/appsettings.Development.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/appsettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/Aspire.Hosting.AppHost.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/Aspire.Hosting.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/Fractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/Google.Protobuf.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/Grpc.AspNetCore.Server.ClientFactory.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/Grpc.AspNetCore.Server.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/Grpc.Core.Api.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/Grpc.Net.Client.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/Grpc.Net.ClientFactory.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/Grpc.Net.Common.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/HealthChecks.Uris.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/Humanizer.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/Json.More.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/JsonPatch.Net.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/JsonPointer.Net.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/KubernetesClient.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/MessagePack.Annotations.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/MessagePack.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/Microsoft.Extensions.AI.Abstractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/Microsoft.NET.StringTools.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/Microsoft.VisualStudio.Threading.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/Microsoft.VisualStudio.Validation.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/ModelContextProtocol.Core.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/ModelContextProtocol.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/Nerdbank.Streams.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/Newtonsoft.Json.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/OpenTelemetry.Api.ProviderBuilderExtensions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/OpenTelemetry.Api.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/OpenTelemetry.Exporter.OpenTelemetryProtocol.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/OpenTelemetry.Extensions.Hosting.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/OpenTelemetry.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/Overflow.AppHost.deps.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/Overflow.AppHost.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/Overflow.AppHost.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/Overflow.AppHost.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/Overflow.AppHost.runtimeconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/Polly.Core.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/Semver.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/StreamJsonRpc.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/System.IO.Hashing.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/YamlDotNet.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/cs/Aspire.Hosting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/cs/Microsoft.VisualStudio.Threading.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/cs/Microsoft.VisualStudio.Validation.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/cs/StreamJsonRpc.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/de/Aspire.Hosting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/de/Microsoft.VisualStudio.Threading.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/de/Microsoft.VisualStudio.Validation.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/de/StreamJsonRpc.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/es/Aspire.Hosting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/es/Microsoft.VisualStudio.Threading.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/es/Microsoft.VisualStudio.Validation.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/es/StreamJsonRpc.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/fr/Aspire.Hosting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/fr/Microsoft.VisualStudio.Threading.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/fr/Microsoft.VisualStudio.Validation.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/fr/StreamJsonRpc.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/it/Aspire.Hosting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/it/Microsoft.VisualStudio.Threading.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/it/Microsoft.VisualStudio.Validation.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/it/StreamJsonRpc.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/ja/Aspire.Hosting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/ja/Microsoft.VisualStudio.Threading.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/ja/Microsoft.VisualStudio.Validation.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/ja/StreamJsonRpc.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/ko/Aspire.Hosting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/ko/Microsoft.VisualStudio.Threading.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/ko/Microsoft.VisualStudio.Validation.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/ko/StreamJsonRpc.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/pl/Aspire.Hosting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/pl/Microsoft.VisualStudio.Threading.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/pl/Microsoft.VisualStudio.Validation.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/pl/StreamJsonRpc.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/pt-BR/Aspire.Hosting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/pt-BR/Microsoft.VisualStudio.Threading.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/pt-BR/Microsoft.VisualStudio.Validation.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/pt-BR/StreamJsonRpc.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/ru/Aspire.Hosting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/ru/Microsoft.VisualStudio.Threading.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/ru/Microsoft.VisualStudio.Validation.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/ru/StreamJsonRpc.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/tr/Aspire.Hosting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/tr/Microsoft.VisualStudio.Threading.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/tr/Microsoft.VisualStudio.Validation.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/tr/StreamJsonRpc.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/zh-Hans/Aspire.Hosting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/zh-Hans/Microsoft.VisualStudio.Threading.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/zh-Hans/Microsoft.VisualStudio.Validation.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/zh-Hans/StreamJsonRpc.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/zh-Hant/Aspire.Hosting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/zh-Hant/Microsoft.VisualStudio.Threading.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/zh-Hant/Microsoft.VisualStudio.Validation.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/bin/Debug/net10.0/zh-Hant/StreamJsonRpc.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/obj/Debug/net10.0/.NETCoreApp,Version=v10.0.AssemblyAttributes.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/obj/Debug/net10.0/Aspire/references/_AppHost.ProjectMetadata.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/obj/Debug/net10.0/Overflow.2A6891A2.Up2Date" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/obj/Debug/net10.0/Overflow.AppHost.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/obj/Debug/net10.0/Overflow.AppHost.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/obj/Debug/net10.0/Overflow.AppHost.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/obj/Debug/net10.0/Overflow.AppHost.GlobalUsings.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/obj/Debug/net10.0/Overflow.AppHost.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/obj/Debug/net10.0/Overflow.AppHost.csproj.AssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/obj/Debug/net10.0/Overflow.AppHost.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/obj/Debug/net10.0/Overflow.AppHost.csproj.FileListAbsolute.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/obj/Debug/net10.0/Overflow.AppHost.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/obj/Debug/net10.0/Overflow.AppHost.genruntimeconfig.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/obj/Debug/net10.0/Overflow.AppHost.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/obj/Debug/net10.0/Overflow.AppHost.sourcelink.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/obj/Debug/net10.0/apphost.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/obj/Debug/net10.0/ref/Overflow.AppHost.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/obj/Debug/net10.0/refint/Overflow.AppHost.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/obj/Overflow.AppHost.csproj.nuget.dgspec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/obj/Overflow.AppHost.csproj.nuget.g.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/obj/Overflow.AppHost.csproj.nuget.g.targets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/obj/project.assets.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/obj/project.nuget.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/obj/project.packagespec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/obj/rider.project.model.nuget.info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.AppHost/obj/rider.project.restore.info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.ServiceDefaults/Extensions.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.ServiceDefaults/Overflow.ServiceDefaults.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.ServiceDefaults/obj/Debug/net10.0/.NETCoreApp,Version=v10.0.AssemblyAttributes.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.ServiceDefaults/obj/Debug/net10.0/Overflow.ServiceDefaults.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.ServiceDefaults/obj/Debug/net10.0/Overflow.ServiceDefaults.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.ServiceDefaults/obj/Debug/net10.0/Overflow.ServiceDefaults.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.ServiceDefaults/obj/Debug/net10.0/Overflow.ServiceDefaults.GlobalUsings.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.ServiceDefaults/obj/Debug/net10.0/Overflow.ServiceDefaults.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.ServiceDefaults/obj/Debug/net10.0/Overflow.ServiceDefaults.csproj.AssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.ServiceDefaults/obj/Overflow.ServiceDefaults.csproj.nuget.dgspec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.ServiceDefaults/obj/Overflow.ServiceDefaults.csproj.nuget.g.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.ServiceDefaults/obj/Overflow.ServiceDefaults.csproj.nuget.g.targets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.ServiceDefaults/obj/project.assets.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.ServiceDefaults/obj/project.nuget.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.ServiceDefaults/obj/project.packagespec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.ServiceDefaults/obj/rider.project.model.nuget.info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.ServiceDefaults/obj/rider.project.restore.info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/Overflow.sln" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Overflow/aspire.config.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,61 +264,61 @@
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0003601846856909" />
-      <entry key="S2" value="1.1991277809664083" />
-      <entry key="S5" value="2.068541339134022" />
-      <entry key="S10" value="3.3068273216338944" />
-      <entry key="S30" value="5.860610818190545" />
-      <entry key="S60" value="7.525050127561221" />
-      <entry key="M2" value="9.396499248957687" />
-      <entry key="M5" value="13.758278293502583" />
-      <entry key="M10" value="24.732916245289832" />
-      <entry key="M15" value="38.99321639390633" />
-      <entry key="M30" value="81.65634152381494" />
-      <entry key="H1" value="152.52722236161478" />
-      <entry key="H2" value="286.2728587674794" />
-      <entry key="H4" value="582.2661959124085" />
-      <entry key="D1" value="2068.282286794838" />
-      <entry key="W1" value="2851.27123210699" />
+      <entry key="MS100" value="1.01733702300106" />
+      <entry key="MS500" value="1.4444223035571635" />
+      <entry key="S2" value="1.847811874604064" />
+      <entry key="S5" value="2.1723458480529354" />
+      <entry key="S10" value="2.46068811212288" />
+      <entry key="S30" value="2.9657800190147316" />
+      <entry key="S60" value="4.76264575343208" />
+      <entry key="M2" value="12.4684910487419" />
+      <entry key="M5" value="40.25174693126516" />
+      <entry key="M10" value="72.2467490359516" />
+      <entry key="M15" value="93.58827099821242" />
+      <entry key="M30" value="141.09595077409972" />
+      <entry key="H1" value="218.52488999859492" />
+      <entry key="H2" value="358.12038421805136" />
+      <entry key="H4" value="653.0032956076419" />
+      <entry key="D1" value="2178.601210253951" />
+      <entry key="W1" value="3008.6509237233004" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="2.139664693201908E-92" />
-      <entry key="MS500" value="4.635207112526651E-19" />
-      <entry key="S2" value="2.6211228044291147E-5" />
-      <entry key="S5" value="0.016372979922124897" />
-      <entry key="S10" value="0.16243526596901978" />
-      <entry key="S30" value="0.8859933913475928" />
-      <entry key="S60" value="1.505162452579187" />
-      <entry key="M2" value="2.0681174770392188" />
-      <entry key="M5" value="2.6073315938628348" />
-      <entry key="M10" value="3.2160767181512306" />
-      <entry key="M15" value="3.9476797306916867" />
-      <entry key="M30" value="5.956423251653447" />
-      <entry key="H1" value="9.23349373157521" />
-      <entry key="H2" value="15.936857514878083" />
-      <entry key="H4" value="31.517452619351374" />
-      <entry key="D1" value="115.90160238551005" />
-      <entry key="W1" value="162.8584507307131" />
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="9.034773981828567E-174" />
+      <entry key="S2" value="5.482508619364991E-44" />
+      <entry key="S5" value="4.9612570522720045E-18" />
+      <entry key="S10" value="2.227387943819399E-9" />
+      <entry key="S30" value="0.0013059662537136835" />
+      <entry key="S60" value="0.03613815509560444" />
+      <entry key="M2" value="0.19010047273716776" />
+      <entry key="M5" value="0.5178222135826215" />
+      <entry key="M10" value="0.8411869657808607" />
+      <entry key="M15" value="1.2762053026113918" />
+      <entry key="M30" value="3.0873922814534063" />
+      <entry key="H1" value="6.786945849389824" />
+      <entry key="H2" value="13.85547348491565" />
+      <entry key="H4" value="29.349857259210737" />
+      <entry key="D1" value="115.64094999081055" />
+      <entry key="W1" value="165.19889086492887" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.1610456998075407E-8" />
-      <entry key="MS500" value="0.025993026505195634" />
-      <entry key="S2" value="0.5369172874342444" />
-      <entry key="S5" value="1.5765775272321199" />
-      <entry key="S10" value="3.0430819781183067" />
-      <entry key="S30" value="6.476231282729317" />
-      <entry key="S60" value="8.849357219955289" />
-      <entry key="M2" value="11.349187997557802" />
-      <entry key="M5" value="16.30199731790415" />
-      <entry key="M10" value="27.901365415534663" />
-      <entry key="M15" value="42.89702219056241" />
-      <entry key="M30" value="87.57490113576264" />
-      <entry key="H1" value="161.72812605493294" />
-      <entry key="H2" value="302.17662294732224" />
-      <entry key="H4" value="613.747947910551" />
-      <entry key="D1" value="2184.164952067157" />
-      <entry key="W1" value="3014.1260880317536" />
+      <entry key="MS100" value="0.028173868719112576" />
+      <entry key="MS500" value="0.589291051873155" />
+      <entry key="S2" value="1.4290100124887648" />
+      <entry key="S5" value="1.9733963676343091" />
+      <entry key="S10" value="2.3544713827250656" />
+      <entry key="S30" value="2.9265857540945097" />
+      <entry key="S60" value="4.76482865061158" />
+      <entry key="M2" value="12.610698972465585" />
+      <entry key="M5" value="40.69877843795373" />
+      <entry key="M10" value="73.01779891261941" />
+      <entry key="M15" value="94.80035595333048" />
+      <entry key="M30" value="144.13094985900253" />
+      <entry key="H1" value="225.2694474507068" />
+      <entry key="H2" value="371.937926002781" />
+      <entry key="H4" value="682.3154348354055" />
+      <entry key="D1" value="2294.2224281530366" />
+      <entry key="W1" value="3173.846044109183" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -201,12 +390,12 @@
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/AspireApp1.AppHost" />
       <option name="TRACK_ENVS" value="1" />
       <envs>
-        <env name="ASPNETCORE_ENVIRONMENT" value="Development" />
         <env name="DOTNET_ENVIRONMENT" value="Development" />
+        <env name="ASPNETCORE_ENVIRONMENT" value="Development" />
         <env name="ASPIRE_DASHBOARD_OTLP_ENDPOINT_URL" value="http://localhost:19002" />
+        <env name="ASPNETCORE_URLS" value="http://localhost:5001" />
         <env name="ASPIRE_RESOURCE_SERVICE_ENDPOINT_URL" value="http://localhost:20246" />
         <env name="DOTNET_LAUNCH_PROFILE" value="http" />
-        <env name="ASPNETCORE_URLS" value="http://localhost:5001" />
       </envs>
       <option name="USE_PODMAN_RUNTIME" value="0" />
       <option name="TRACK_URL" value="1" />
@@ -341,6 +530,7 @@
       <workItem from="1783550344235" duration="2053000" />
       <workItem from="1783580351309" duration="436000" />
       <workItem from="1783580803364" duration="7041000" />
+      <workItem from="1783673979297" duration="4592000" />
     </task>
     <task id="LOCAL-00001" summary="por si acaso">
       <option name="closed" value="true" />
