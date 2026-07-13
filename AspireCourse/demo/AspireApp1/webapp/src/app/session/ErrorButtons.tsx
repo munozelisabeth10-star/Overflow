@@ -2,14 +2,20 @@
 
 import {Button} from "@heroui/button";
 import {triggerError} from "@/lib/actions/error-actions";
-import {useTransition} from "react";
+import {useState, useTransition} from "react";
+import {addToast, code} from "@heroui/react";
+import {handleError} from "@/lib/util";
 
 export default function ErrorButtons() {
     const[pending, startTranstion] =useTransition();
+    const[target, setTarget] = useState(0);
     
     const onClick = (code : number) => {
+        setTarget(code);
         startTranstion(async ()=>{
-            await triggerError(code);
+            const {error}= await triggerError(code);
+            if(error) handleError(error);
+                setTarget(0);
         })
     }
     return (
@@ -20,6 +26,7 @@ export default function ErrorButtons() {
                     color='primary'
                     key={code}
                     type='button'
+                    isLoading={pending && target == code}
                 >
                     test{code}
                 </Button>
