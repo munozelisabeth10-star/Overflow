@@ -80,7 +80,7 @@
       <secret-storage>master_key</secret-storage>
       <schema-mapping />
     </data-source>
-    <data-source name="postgres" uuid="c28ccc7c-1233-4373-8750-47c6151f6fe0">
+    <data-source name="postgres" uuid="e36f5264-e3d9-42a0-9172-3e15e30002ec">
       <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="POSTGRES" />
       <secret-storage>master_key</secret-storage>
       <schema-mapping />

@@ -1,5 +1,20 @@
 <DataSourcesHistory>
   <DataSourceFromHistory isRemovedFromProject="true">
+    <data-source source="LOCAL" name="postgres" uuid="dbbc331d-febf-4d2a-9548-b3564d0ae1d2">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="POSTGRES" />
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5432/?password=cKTkbx%29%2800gw%2B951yrden5&amp;user=postgres</jdbc-url>
+      <jdbc-additional-properties>
+        <property name="aspireResourceId" value="postgres-fpphmveb" />
+      </jdbc-additional-properties>
+      <secret-storage>master_key</secret-storage>
+      <schema-mapping />
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+  </DataSourceFromHistory>
+  <DataSourceFromHistory isRemovedFromProject="true">
     <data-source source="LOCAL" name="postgres" uuid="bbd37d85-963f-4499-910a-b895a59c797e">
       <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="POSTGRES" />
       <driver-ref>postgresql</driver-ref>
@@ -539,7 +554,7 @@
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </DataSourceFromHistory>
-  <DataSourceFromHistory isRemovedFromProject="true">
+  <DataSourceFromHistory isRemovedFromProject="false">
     <data-source source="LOCAL" name="postgres" uuid="e36f5264-e3d9-42a0-9172-3e15e30002ec">
       <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="POSTGRES" />
       <driver-ref>postgresql</driver-ref>
@@ -548,21 +563,6 @@
       <jdbc-url>jdbc:postgresql://localhost:63283/?password=cKTkbx%29%2800gw%2B951yrden5&amp;user=postgres</jdbc-url>
       <jdbc-additional-properties>
         <property name="aspireResourceId" value="postgres-myvgwxvf" />
-      </jdbc-additional-properties>
-      <secret-storage>master_key</secret-storage>
-      <schema-mapping />
-      <working-dir>$ProjectFileDir$</working-dir>
-    </data-source>
-  </DataSourceFromHistory>
-  <DataSourceFromHistory isRemovedFromProject="false">
-    <data-source source="LOCAL" name="postgres" uuid="c28ccc7c-1233-4373-8750-47c6151f6fe0">
-      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="POSTGRES" />
-      <driver-ref>postgresql</driver-ref>
-      <synchronize>true</synchronize>
-      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://localhost:60241/?password=cKTkbx%29%2800gw%2B951yrden5&amp;user=postgres</jdbc-url>
-      <jdbc-additional-properties>
-        <property name="aspireResourceId" value="postgres-xyxxwctr" />
       </jdbc-additional-properties>
       <secret-storage>master_key</secret-storage>
       <schema-mapping />
