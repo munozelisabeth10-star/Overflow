@@ -16,38 +16,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3410c2c5-45e1-48e8-84c6-c7c133854895" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/webapp/src/app/tags/TagCard.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/app/tags/TagsHeader.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/app/tags/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/lib/actions/tag-actions.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/lib/types/useTagStore.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/lib/util.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AspireApp1/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AspireApp1/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AspireApp1/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AspireApp1/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AspireApp1/.idea/dataSources/data_sources_history.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AspireApp1/.idea/dataSources/data_sources_history.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AspireApp1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AspireApp1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AspireApp1.AppHost/bin/Debug/net10.0/AspireApp1.AppHost.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AspireApp1.AppHost/bin/Debug/net10.0/AspireApp1.AppHost.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AspireApp1.AppHost/bin/Debug/net10.0/AspireApp1.AppHost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/AspireApp1.AppHost/bin/Debug/net10.0/AspireApp1.AppHost.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AspireApp1.AppHost/bin/Debug/net10.0/AspireApp1.AppHost.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/AspireApp1.AppHost/bin/Debug/net10.0/AspireApp1.AppHost.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AspireApp1.AppHost/obj/Debug/net10.0/AspireApp1.AppHost.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AspireApp1.AppHost/obj/Debug/net10.0/AspireApp1.AppHost.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AspireApp1.AppHost/obj/Debug/net10.0/AspireApp1.AppHost.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AspireApp1.AppHost/obj/Debug/net10.0/AspireApp1.AppHost.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AspireApp1.AppHost/obj/Debug/net10.0/AspireApp1.AppHost.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AspireApp1.AppHost/obj/Debug/net10.0/AspireApp1.AppHost.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AspireApp1.AppHost/obj/Debug/net10.0/AspireApp1.AppHost.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/AspireApp1.AppHost/obj/Debug/net10.0/AspireApp1.AppHost.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AspireApp1.AppHost/obj/Debug/net10.0/AspireApp1.AppHost.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/AspireApp1.AppHost/obj/Debug/net10.0/AspireApp1.AppHost.sourcelink.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AspireApp1.AppHost/obj/Debug/net10.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/AspireApp1.AppHost/obj/Debug/net10.0/apphost.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AspireApp1.AppHost/obj/Debug/net10.0/ref/AspireApp1.AppHost.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AspireApp1.AppHost/obj/Debug/net10.0/ref/AspireApp1.AppHost.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AspireApp1.AppHost/obj/Debug/net10.0/refint/AspireApp1.AppHost.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AspireApp1.AppHost/obj/Debug/net10.0/refint/AspireApp1.AppHost.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AspireApp1.AppHost/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/AspireApp1.AppHost/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AspireApp1.ServiceDefaults/obj/Debug/net10.0/AspireApp1.ServiceDefaults.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AspireApp1.ServiceDefaults/obj/Debug/net10.0/AspireApp1.ServiceDefaults.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AspireApp1.ServiceDefaults/obj/Debug/net10.0/AspireApp1.ServiceDefaults.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AspireApp1.ServiceDefaults/obj/Debug/net10.0/AspireApp1.ServiceDefaults.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AspireApp1.ServiceDefaults/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/AspireApp1.ServiceDefaults/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestionService/bin/Debug/net10.0/QuestionService.dll" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/bin/Debug/net10.0/QuestionService.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestionService/bin/Debug/net10.0/QuestionService.exe" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/bin/Debug/net10.0/QuestionService.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestionService/bin/Debug/net10.0/QuestionService.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/bin/Debug/net10.0/QuestionService.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/QuestionService/obj/Debug/net10.0/QuestionService.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/obj/Debug/net10.0/QuestionService.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/QuestionService/obj/Debug/net10.0/QuestionService.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/obj/Debug/net10.0/QuestionService.AssemblyInfoInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/QuestionService/obj/Debug/net10.0/QuestionService.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/obj/Debug/net10.0/QuestionService.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuestionService/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/app/questions/QuestionsHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/app/questions/QuestionsHeader.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/app/session/ErrorButtons.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/app/session/ErrorButtons.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/components/Providers.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/components/Providers.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestionService/obj/Debug/net10.0/QuestionService.dll" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/obj/Debug/net10.0/QuestionService.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestionService/obj/Debug/net10.0/QuestionService.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/obj/Debug/net10.0/QuestionService.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestionService/obj/Debug/net10.0/QuestionService.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/obj/Debug/net10.0/QuestionService.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestionService/obj/Debug/net10.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/obj/Debug/net10.0/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestionService/obj/Debug/net10.0/ref/QuestionService.dll" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/obj/Debug/net10.0/ref/QuestionService.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestionService/obj/Debug/net10.0/refint/QuestionService.dll" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/obj/Debug/net10.0/refint/QuestionService.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestionService/obj/Debug/net10.0/rjsmcshtml.dswa.cache.json" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/obj/Debug/net10.0/rjsmcshtml.dswa.cache.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestionService/obj/Debug/net10.0/rjsmrazor.dswa.cache.json" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/obj/Debug/net10.0/rjsmrazor.dswa.cache.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/components/nav/SearchInput.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/components/nav/SearchInput.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,61 +80,61 @@
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0000198569008705" />
-      <entry key="MS500" value="1.1147557799845866" />
-      <entry key="S2" value="1.6976074766637783" />
-      <entry key="S5" value="2.7201872286753956" />
-      <entry key="S10" value="4.22269923910299" />
-      <entry key="S30" value="7.310561084668006" />
-      <entry key="S60" value="9.400340010627" />
-      <entry key="M2" value="12.525745295271687" />
-      <entry key="M5" value="21.47887871593516" />
-      <entry key="M10" value="39.144679880302526" />
-      <entry key="M15" value="59.31927598845295" />
-      <entry key="M30" value="115.88381884170381" />
-      <entry key="H1" value="207.26956665445894" />
-      <entry key="H2" value="358.81801715114085" />
-      <entry key="H4" value="659.1447085049283" />
-      <entry key="D1" value="2212.384383303367" />
-      <entry key="W1" value="3070.681943931944" />
+      <entry key="MS100" value="1.0000000689440005" />
+      <entry key="MS500" value="1.039389674554364" />
+      <entry key="S2" value="1.9656647300376142" />
+      <entry key="S5" value="3.450904225751193" />
+      <entry key="S10" value="4.466570280844205" />
+      <entry key="S30" value="5.415567211911214" />
+      <entry key="S60" value="5.699749773609961" />
+      <entry key="M2" value="5.899291488517874" />
+      <entry key="M5" value="7.013805728830146" />
+      <entry key="M10" value="13.580508874030858" />
+      <entry key="M15" value="23.1584003161999" />
+      <entry key="M30" value="55.685386679964346" />
+      <entry key="H1" value="127.74324289049126" />
+      <entry key="H2" value="282.05492129955917" />
+      <entry key="H4" value="591.0602282121946" />
+      <entry key="D1" value="2302.6443886708234" />
+      <entry key="W1" value="3348.877893131896" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
       <entry key="MS500" value="0.0" />
-      <entry key="S2" value="1.3245648990902934E-111" />
-      <entry key="S5" value="4.454811138108594E-45" />
-      <entry key="S10" value="6.674437158374175E-23" />
-      <entry key="S30" value="4.056376108707754E-8" />
-      <entry key="S60" value="2.01404598251128E-4" />
-      <entry key="M2" value="0.014204618806077755" />
-      <entry key="M5" value="0.19780499939765256" />
-      <entry key="M10" value="0.6122761233256357" />
-      <entry key="M15" value="1.0583791807406526" />
-      <entry key="M30" value="2.6479879372711803" />
-      <entry key="H1" value="6.166446015568002" />
-      <entry key="H2" value="13.183736962938251" />
-      <entry key="H4" value="28.526479661746826" />
-      <entry key="D1" value="115.77577249214555" />
-      <entry key="W1" value="166.81695746571785" />
+      <entry key="S2" value="1.6498863392307238E-280" />
+      <entry key="S5" value="1.2232149652662245E-112" />
+      <entry key="S10" value="1.143629326100378E-56" />
+      <entry key="S30" value="2.9590060307743207E-19" />
+      <entry key="S60" value="7.712041194427975E-10" />
+      <entry key="M2" value="4.6552515576624976E-5" />
+      <entry key="M5" value="0.04512187516515881" />
+      <entry key="M10" value="0.5140866387217214" />
+      <entry key="M15" value="1.2750556605157222" />
+      <entry key="M30" value="4.039177608075384" />
+      <entry key="H1" value="9.181719046415795" />
+      <entry key="H2" value="17.493146129986535" />
+      <entry key="H4" value="32.90351345718672" />
+      <entry key="D1" value="126.32413872003893" />
+      <entry key="W1" value="187.2091070684452" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.03847326297022063" />
-      <entry key="MS500" value="0.5300722460997772" />
-      <entry key="S2" value="1.2521738538720468" />
-      <entry key="S5" value="2.3942252649406996" />
-      <entry key="S10" value="3.9641733025789887" />
-      <entry key="S30" value="7.148507845753044" />
-      <entry key="S60" value="9.287527189070891" />
-      <entry key="M2" value="12.458170066662284" />
-      <entry key="M5" value="21.61526318768482" />
-      <entry key="M10" value="39.70278666466509" />
-      <entry key="M15" value="60.32536409567731" />
-      <entry key="M30" value="118.48302792726513" />
-      <entry key="H1" value="213.39311083491953" />
-      <entry key="H2" value="371.96290372920004" />
-      <entry key="H4" value="687.6330063849565" />
-      <entry key="D1" value="2328.1400618915636" />
-      <entry key="W1" value="3237.495042403151" />
+      <entry key="MS100" value="0.9794203641824413" />
+      <entry key="MS500" value="1.0349605647197733" />
+      <entry key="S2" value="1.9627447202056558" />
+      <entry key="S5" value="3.4485713018696336" />
+      <entry key="S10" value="4.465010291480399" />
+      <entry key="S30" value="5.4149253315221335" />
+      <entry key="S60" value="5.699365574932173" />
+      <entry key="M2" value="5.898627801166715" />
+      <entry key="M5" value="7.052356166564416" />
+      <entry key="M10" value="14.069888967568762" />
+      <entry key="M15" value="24.397087076759554" />
+      <entry key="M30" value="59.67656077152037" />
+      <entry key="H1" value="136.87592194609647" />
+      <entry key="H2" value="299.50274550158974" />
+      <entry key="H4" value="623.921712523493" />
+      <entry key="D1" value="2428.945973531911" />
+      <entry key="W1" value="3536.082538681994" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -360,7 +347,13 @@
       <workItem from="1783580351309" duration="436000" />
       <workItem from="1783580803364" duration="7041000" />
       <workItem from="1783673979297" duration="6343000" />
-      <workItem from="1783935503777" duration="634000" />
+      <workItem from="1783935503777" duration="907000" />
+      <workItem from="1783937683356" duration="1154000" />
+      <workItem from="1784012306637" duration="1787000" />
+      <workItem from="1784014223479" duration="580000" />
+      <workItem from="1784014830208" duration="4296000" />
+      <workItem from="1784020421867" duration="4116000" />
+      <workItem from="1784098897211" duration="10978000" />
     </task>
     <task id="LOCAL-00001" summary="por si acaso">
       <option name="closed" value="true" />
@@ -418,7 +411,31 @@
       <option name="project" value="LOCAL" />
       <updated>1783679083699</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="por si a caso">
+      <option name="closed" value="true" />
+      <created>1783936474530</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1783936474530</updated>
+    </task>
+    <task id="LOCAL-00009" summary="por si a caso">
+      <option name="closed" value="true" />
+      <created>1783936493812</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1783936493812</updated>
+    </task>
+    <task id="LOCAL-00010" summary="End of section 8">
+      <option name="closed" value="true" />
+      <created>1784103249075</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1784103249075</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -426,6 +443,9 @@
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="next.config.ts" />
+  </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
@@ -443,7 +463,9 @@
     <MESSAGE value="por si acaso deployed" />
     <MESSAGE value="por si acaso 7,5" />
     <MESSAGE value="por si acaso 8,82" />
-    <option name="LAST_COMMIT_MESSAGE" value="por si acaso 8,82" />
+    <MESSAGE value="por si a caso" />
+    <MESSAGE value="End of section 8" />
+    <option name="LAST_COMMIT_MESSAGE" value="End of section 8" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
