@@ -10,6 +10,21 @@
 !.yarn/releases
 !.yarn/versions
 
+# Binarios
+*.dll
+*.exe
+*.pdb
+
+# Archivos de Visual Studio
+*.obj
+*.lib
+*.ilk
+*.exp
+
+# Carpetas de compilación
+bin/
+obj/
+
 # testing
 /coverage
 
