@@ -1,0 +1,16 @@
+# .NET build files
+**/bin/
+**/obj/
+
+# Binaries
+*.dll
+*.exe
+*.pdb
+
+# IDE
+.vs/
+.idea/
+
+# Secrets
+**/.env
+**/.env.*
