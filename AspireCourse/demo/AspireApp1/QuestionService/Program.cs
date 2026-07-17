@@ -1,14 +1,7 @@
-using System.Net.Sockets;
 using Common;
 using Microsoft.EntityFrameworkCore;
-using OpenTelemetry.Resources;
-using OpenTelemetry.Trace;
-using Polly;
 using QuestionService.Data;
 using QuestionService.Services;
-using RabbitMQ.Client;
-using RabbitMQ.Client.Exceptions;
-using Wolverine;
 using Wolverine.RabbitMQ;
 
 var builder = WebApplication.CreateBuilder(args);

@@ -1,0 +1,59 @@
+<changelist name="Uncommitted_changes_before_Update_at_15_07_2026_12_58_[Changes]1" date="1784113190832" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/.idea.AspireApp1/.idea/shelf/Uncommitted_changes_before_Update_at_15_07_2026_12_58_[Changes]1/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 15/07/2026 12:58 [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="QuestionService/obj/Debug/net10.0/QuestionService.csproj.AssemblyReference.cache" />
+    <option name="AFTER_PATH" value="QuestionService/obj/Debug/net10.0/QuestionService.csproj.AssemblyReference.cache" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.AspireApp1/.idea/shelf/Uncommitted_changes_before_Update_at_15_07_2026_12_58_[Changes]1/QuestionService.csproj.AssemblyReference.cache" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="QuestionService/obj/Debug/net10.0/apphost.exe" />
+    <option name="AFTER_PATH" value="QuestionService/obj/Debug/net10.0/apphost.exe" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.AspireApp1/.idea/shelf/Uncommitted_changes_before_Update_at_15_07_2026_12_58_[Changes]1/apphost.exe" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="QuestionService/obj/Debug/net10.0/QuestionService.dll" />
+    <option name="AFTER_PATH" value="QuestionService/obj/Debug/net10.0/QuestionService.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.AspireApp1/.idea/shelf/Uncommitted_changes_before_Update_at_15_07_2026_12_58_[Changes]1/QuestionService.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="AspireApp1.AppHost/bin/Debug/net10.0/AspireApp1.AppHost.pdb" />
+    <option name="AFTER_PATH" value="AspireApp1.AppHost/bin/Debug/net10.0/AspireApp1.AppHost.pdb" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.AspireApp1/.idea/shelf/Uncommitted_changes_before_Update_at_15_07_2026_12_58_[Changes]1/AspireApp1.AppHost.pdb" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="QuestionService/bin/Debug/net10.0/QuestionService.exe" />
+    <option name="AFTER_PATH" value="QuestionService/bin/Debug/net10.0/QuestionService.exe" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.AspireApp1/.idea/shelf/Uncommitted_changes_before_Update_at_15_07_2026_12_58_[Changes]1/QuestionService.exe" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="QuestionService/obj/Debug/net10.0/QuestionService.pdb" />
+    <option name="AFTER_PATH" value="QuestionService/obj/Debug/net10.0/QuestionService.pdb" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.AspireApp1/.idea/shelf/Uncommitted_changes_before_Update_at_15_07_2026_12_58_[Changes]1/QuestionService.pdb" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="QuestionService/obj/Debug/net10.0/QuestionService.AssemblyInfoInputs.cache" />
+    <option name="AFTER_PATH" value="QuestionService/obj/Debug/net10.0/QuestionService.AssemblyInfoInputs.cache" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.AspireApp1/.idea/shelf/Uncommitted_changes_before_Update_at_15_07_2026_12_58_[Changes]1/QuestionService.AssemblyInfoInputs.cache" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="AspireApp1.AppHost/obj/Debug/net10.0/AspireApp1.AppHost.dll" />
+    <option name="AFTER_PATH" value="AspireApp1.AppHost/obj/Debug/net10.0/AspireApp1.AppHost.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.AspireApp1/.idea/shelf/Uncommitted_changes_before_Update_at_15_07_2026_12_58_[Changes]1/AspireApp1.AppHost.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="AspireApp1.ServiceDefaults/obj/Debug/net10.0/AspireApp1.ServiceDefaults.AssemblyInfoInputs.cache" />
+    <option name="AFTER_PATH" value="AspireApp1.ServiceDefaults/obj/Debug/net10.0/AspireApp1.ServiceDefaults.AssemblyInfoInputs.cache" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.AspireApp1/.idea/shelf/Uncommitted_changes_before_Update_at_15_07_2026_12_58_[Changes]1/AspireApp1.ServiceDefaults.AssemblyInfoInputs.cache" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="AspireApp1.AppHost/bin/Debug/net10.0/AspireApp1.AppHost.exe" />
+    <option name="AFTER_PATH" value="AspireApp1.AppHost/bin/Debug/net10.0/AspireApp1.AppHost.exe" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.AspireApp1/.idea/shelf/Uncommitted_changes_before_Update_at_15_07_2026_12_58_[Changes]1/AspireApp1.AppHost.exe" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="AspireApp1.AppHost/obj/Debug/net10.0/AspireApp1.AppHost.AssemblyInfoInputs.cache" />
+    <option name="AFTER_PATH" value="AspireApp1.AppHost/obj/Debug/net10.0/AspireApp1.AppHost.AssemblyInfoInputs.cache" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.AspireApp1/.idea/shelf/Uncommitted_changes_before_Update_at_15_07_2026_12_58_[Changes]1/AspireApp1.AppHost.AssemblyInfoInputs.cache" />
+  </binary>
+</changelist>

@@ -1,12 +1,9 @@
 using System.Text.RegularExpressions;
 using Common;
-using OpenTelemetry.Trace;
-using OpenTelemetry.Resources;
 using SearchService.Data;
 using SearchService.Models;
 using Typesense;
 using Typesense.Setup;
-using Wolverine;
 using Wolverine.RabbitMQ;
 
 var builder = WebApplication.CreateBuilder(args);

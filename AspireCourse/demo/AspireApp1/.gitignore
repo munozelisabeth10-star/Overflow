@@ -1,13 +1,25 @@
+# Carpetas de compilación
 bin/
 obj/
-/packages/
-riderModule.iml
-/_ReSharper.Caches/
-*.user
-.vs/
+packages/
 
-Infra secrets and generated files
-/infra/.env
-/infra/.env.Production
-/infra/devcerts/
-/infra/realms/overflow-realm.json
+# IDEs
+.vs/
+riderModule.iml
+_ReSharper.Caches/
+*.user
+
+# Binarios y símbolos
+*.dll
+*.exe
+*.pdb
+*.obj
+*.lib
+*.ilk
+*.exp
+
+# Infra secrets and generated files
+infra/.env
+infra/.env.Production
+infra/devcerts/
+infra/realms/overflow-realm.json
