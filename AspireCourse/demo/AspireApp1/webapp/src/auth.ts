@@ -2,11 +2,7 @@ import NextAuth from "next-auth"
 import Keycloak from "next-auth/providers/keycloak"
 
 export const {handlers, signIn, signOut, auth} = NextAuth({
-    providers: [Keycloak({
-        authorization:{
-            params: {scope:'openid profile email offline_acess'},
-        }
-    })],
+    providers: [Keycloak],
     callbacks: {
         async jwt({token, account}) {
             const now = Math.floor(Date.now() / 1000)
