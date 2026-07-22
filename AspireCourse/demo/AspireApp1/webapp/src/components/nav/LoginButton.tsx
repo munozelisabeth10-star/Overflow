@@ -9,7 +9,8 @@ export default function LoginButton() {
             color='secondary'
             variant='bordered'
             type='button'
-            onPress={() => signIn('keycloak',{redirectTo:'/questions'})}
+            onPress={() => signIn('keycloak',
+                {redirectTo:'/questions'},{prompt:'login'})}
         >
             Login
         </Button>
