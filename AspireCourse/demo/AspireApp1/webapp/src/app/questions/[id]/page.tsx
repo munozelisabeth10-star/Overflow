@@ -1,11 +1,10 @@
-'use server';
 import {getQuestionById} from "@/lib/actions/question-actions";
 import QuestionDetailedHeader from "@/app/questions/[id]/QuestionDetailedHeader";
 import {notFound} from "next/navigation";
 import QuestionContent from "@/app/questions/[id]/QuestionContent";
 import AnswerContent from "@/app/questions/[id]/AnswerContent";
 import AnswersHeader from "@/app/questions/[id]/AnswersHeader";
-
+import AnswerForm from "./AnswerForm";
 
 type Params = Promise<{ id: string }>
 
@@ -13,7 +12,7 @@ export default async function QuestionDetailed({ params }: {params: Params}) {
     const { id } = await params;
     const {data: question, error} = await getQuestionById(id);
 
-    if(error)throw error;
+    if (error) throw error;
     if (!question) return notFound();
 
     return (
@@ -24,9 +23,9 @@ export default async function QuestionDetailed({ params }: {params: Params}) {
                 <AnswersHeader answerCount={question.answers.length} />
             )}
             {question.answers.map(answer => (
-                <AnswerContent answer={answer} key={answer.id}/>
+                <AnswerContent answer={answer} key={answer.id} />
             ))}
-            
+            <AnswerForm questionId={question.id} />
         </div>
     )
 }

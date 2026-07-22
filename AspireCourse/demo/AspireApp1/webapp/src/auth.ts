@@ -1,11 +1,19 @@
 import NextAuth from "next-auth"
 import Keycloak from "next-auth/providers/keycloak"
 
-export const {handlers, signIn, signOut, auth} = NextAuth({
-    providers: [Keycloak],
+export const { handlers, signIn, signOut, auth } = NextAuth({
+    providers: [Keycloak({
+        authorization: {
+            params: {scope: 'openid profile email offline_access'}
+        }
+    })],
     callbacks: {
-        async jwt({token, account}) {
+        async jwt({token, account,profile}) {
             const now = Math.floor(Date.now() / 1000)
+            
+            if (profile && profile.sub) {
+                token.sub = profile.sub;
+            }
 
             if (account && account.access_token && account.refresh_token) {
                 token.accessToken = account.access_token
@@ -33,15 +41,13 @@ export const {handlers, signIn, signOut, auth} = NextAuth({
                 const refreshed = await response.json()
                 
                 if(!response.ok){
-                    console.log('Failed to refresh token', refreshed)
+                    console.log('Failed to refresh token', refreshed);
                     token.error = 'RefreshAccessTokenError';
                     return token;
-                } 
-                
+                }
                 token.accessToken = refreshed.access_token;
                 token.refreshToken = refreshed.refresh_token;
                 token.accessTokenExpires = now + refreshed.expires_in!;
-                
             }catch(error){
                 console.log('Failed to refresh token', error);
                 token.error = 'RefreshAccessTokenError';
@@ -49,6 +55,9 @@ export const {handlers, signIn, signOut, auth} = NextAuth({
             return token;
         },
         async session({session, token}) {
+            if(token.sub){
+                session.user.id = token.sub
+            }
             if (token) {
                 session.accessToken = token.accessToken
             }
