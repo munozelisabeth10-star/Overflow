@@ -7,13 +7,16 @@ import {Button} from "@heroui/button";
 import {Controller, useForm} from "react-hook-form";
 import {questionSchema, QuestionSchema} from "@/lib/schemas/questionSchema";
 import { zodResolver } from "@hookform/resolvers/zod";
-import RichTextEditor from "@/components/rte/RichTextEditor";
 import {useRouter} from "next/navigation";
+import clsx from "clsx";
 import {postQuestion, updateQuestion} from "@/lib/actions/question-actions";
 import {handleError} from "@/lib/util";
 import {Question} from "@/lib/types";
 import {useEffect, useTransition} from "react";
 import {useTagStore} from "@/lib/hooks/useTagStore";
+import dynamic from "next/dynamic";
+
+const RichTextEditor = dynamic(()=> import("@/components/rte/RichTextEditor"), {ssr: false}); 
 
 type Props = {
     questionToUpdate?: Question
@@ -52,7 +55,7 @@ export default function QuestionForm({questionToUpdate}: Props) {
     return (
         <Form onSubmit={handleSubmit(onSubmit)}
               className='flex flex-col gap-3 p-6 shadow-xl bg-white dark:bg-black' >
-            <div className="flex flex-col gap-3 w-full">
+            <div className="flex flex-col gap-6 w-full">
                 <h3 className='text-2xl font-semibold'>Title</h3>
                 <Input
                     {...register('title')}
@@ -72,7 +75,9 @@ export default function QuestionForm({questionToUpdate}: Props) {
                     control={control}
                     render={({field: {onChange, onBlur, value}, fieldState}) => (
                         <>
-                            <p className={`text-sm ${fieldState.error?.message && 'text-danger'}`}>
+                            <p className={clsx('text-sm',{
+                            'text-danger':fieldState.error?.message
+                            })}>
                                 Include all the information someone would need to answer your question
                             </p>
                             <RichTextEditor

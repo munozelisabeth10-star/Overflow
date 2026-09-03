@@ -21,7 +21,7 @@ public static class WolverineExtensions
             .Or<SocketException>()
             .WaitAndRetryAsync(
                 retryCount:5,
-                retryCount => TimeSpan.FromSeconds(Math.Pow(2, retryCount)),
+                retryAttempt => TimeSpan.FromSeconds(Math.Pow(2, retryAttempt)),
                 (exception, timeSpan, retryCount)=>
                 {
                     Console.WriteLine($"Retry attempt {retryCount} failed. Retrying in"+

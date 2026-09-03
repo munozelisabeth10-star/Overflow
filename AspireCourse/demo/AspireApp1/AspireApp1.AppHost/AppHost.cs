@@ -1,8 +1,5 @@
-
-using System.Runtime.CompilerServices;
 using Microsoft.Extensions.Hosting;
 
-#pragma warning disable ASPIRECERTIFICATES001
 var builder = DistributedApplication.CreateBuilder(args);
 
 var compose = builder.AddDockerComposeEnvironment("production")
@@ -18,15 +15,18 @@ var keycloak = builder.AddKeycloak("keycloak", 6001)
 
 var postgres = builder.AddPostgres("postgres", port: 5432)
     .WithDataVolume("postgres-data")
-    .WithImage("postgres","18")
     .WithPgWeb();
 
-var typesenseApiKey = builder.AddParameter("typesense-api-key", secret: true);
+//var typesenseApiKey = builder.AddParameters("typesense-api-key", secret:true);
+
+var typesenseApiKey = builder.Environment.IsDevelopment()
+    ? builder.Configuration["Parameters:typesense-api-key"] 
+    ?? throw new InvalidOperationException("Could not get typesense api key")
+    :"${TYPESENSE-API-KEY}";
 
 var typesense = builder.AddContainer("typesense", "typesense/typesense", "30.2")
-    .WithVolume("typesense-data", "/data")
-    .WithEnvironment("TYPESENSE_DATA_DIR","/data")
-    .WithEnvironment("TYPESENSE_ENABLE_CORS","true")
+    .WithArgs("--data-dir", "/data","--api-key", typesenseApiKey,"enable-cors")
+    .WithVolume("typesense-data","/data")
     .WithEnvironment("TYPESENSE_API_KEY",typesenseApiKey)
     .WithHttpEndpoint(8108, 8108, name: "typesense");
 
@@ -66,15 +66,23 @@ var yarp = builder.AddYarp("gateway")
     .WithEnvironment("VIRTUAL_HOST", "api.overflow.local")
     .WithEnvironment("VIRTUAL_PORT", "8001");
 
-var webapp = builder.AddJavaScriptApp("webapp", "../webapp")//esta be
+var webapp = builder.AddJavaScriptApp("webapp", "../webapp") //esta be
     .WithReference(keycloak)
-    .WithHttpEndpoint(env: "PORT", port: 3000);
+    .WithHttpEndpoint(env: "PORT", port: 3000, targetPort: 4000)
+    .WithEnvironment("VIRTUAL_HOST", "app.overflow.local")
+    .WithEnvironment("VIRTUAL_PORT", "4000")
+    .PublishAsDockerFile();
     
 if (!builder.Environment.IsDevelopment())
 {   
     builder.AddContainer("nginx-proxy", "nginxproxy/nginx-proxy", "1.11")
         .WithEndpoint(80, 80, "nginx", isExternal: true)
-        .WithBindMount("/var/run/docker.sock", "/tmp/docker.sock", true);
+        .WithEndpoint(443, 443, "nginx-ssl", isExternal: true)
+        .WithBindMount("/var/run/docker.sock", "/tmp/docker.sock", true)
+        .WithBindMount("../infra/devcerts","/etc/nginx/certs", true);
+    
+    keycloak.WithEnvironment("KC_HOSTNAME", "https://id.overflow.local")
+        .WithEnvironment("KC_HOSTNAME_BACKCHANNEL_DYNAMIC", "true");
 }
 
 builder.Build().Run();
