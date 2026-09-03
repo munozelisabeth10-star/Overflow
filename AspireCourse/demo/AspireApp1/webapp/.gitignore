@@ -54,3 +54,5 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+/infra/devcerts/api.overflow.local.key
+/infra/devcerts/app.overflow.local.key
