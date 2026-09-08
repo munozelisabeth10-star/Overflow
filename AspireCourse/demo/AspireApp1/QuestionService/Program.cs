@@ -2,23 +2,24 @@ using Common;
 using Microsoft.EntityFrameworkCore;
 using QuestionService.Data;
 using QuestionService.Services;
-using Wolverine.RabbitMQ;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.//
+// Add services to the container.
+
 builder.Services.AddControllers();
 builder.Services.AddOpenApi();
 builder.AddServiceDefaults();
-builder.Services.AddMemoryCache();  
+builder.Services.AddMemoryCache();
 builder.Services.AddScoped<TagService>();
-builder.Services.AddKeycloakAuthentication();   
+
+builder.Services.AddKeycloakAuthentication();
 
 builder.AddNpgsqlDbContext<QuestionDbContext>("questionDb");
 
 await builder.UseWolverineWithRabbitMqAsync(opts =>
 {
-    opts.PublishAllMessages().ToRabbitExchange("questions");
     opts.ApplicationAssembly = typeof(Program).Assembly;
 });
 
@@ -30,23 +31,20 @@ if (app.Environment.IsDevelopment())
     app.MapOpenApi();
 }
 
-app.UseAuthorization();
-
 app.MapControllers();
 
 app.MapDefaultEndpoints();
 
-using var scope = app.Services.CreateScope();
-var services = scope.ServiceProvider;
-try
-{
-    var context = services.GetRequiredService<QuestionDbContext>();
-    await context.Database.MigrateAsync();
+using var scope = app.Services.CreateScope();  
+var services = scope.ServiceProvider;  
+try  
+{  
+    var context = services.GetRequiredService<QuestionDbContext>();  
+    await context.Database.MigrateAsync();  
+}  
+catch (Exception ex)  
+{  
+    var logger = services.GetRequiredService<ILogger<Program>>();  
+    logger.LogError(ex, "An error occured during migration");  
 }
-catch (Exception e)
-{
-    var logger = services.GetRequiredService<ILogger<Program>>();
-    logger.LogError(e, "An error occurred seeding the DB.");
-}
-
 app.Run();

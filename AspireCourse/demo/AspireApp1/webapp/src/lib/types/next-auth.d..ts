@@ -1,19 +1,37 @@
-//eslint-disable-next-line @typescript-eslint/no-unused-vars
-import NextAuth from "next-auth"
-//eslint-disable-next-line @typescript-eslint/no-unused-vars
-import {JWT} from "next-auth/jwt"
+/* eslint-disable @typescript-eslint/no-unused-vars */
+import NextAuth, {DefaultSession} from 'next-auth';
+import {JWT} from 'next-auth/jwt';
+import {number, string} from "zod";
+//los imoprts se ponen para que en auth.ts no de errores con el async jwt y el async session
 
 declare module 'next-auth' {
-    interface Session{
+    interface Session {
+        user: {
+            id: string
+            displayName: string
+            reputation: number
+        } & DefaultUser
         accessToken: string;
+    }
+    
+    interface User {
+        username: string;
+        displayName: string;
+        reputation: number;
     }
 }
 
-declare module 'next-auth/jwt'{
+declare module 'next-auth/jwt' {
     interface JWT {
         accessToken: string;
-        refreshToken : string;
+        refreshToken: string;
         accessTokenExpires: number;
-        error?:string;  
+        error?: string;
+
+        user: {
+            id: string;
+            displayName: string;
+            reputation: number;
+        }
     }
 }
